@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="correoiptv.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Checklist - Sirius+</title>
+</head>
+
+<body>
+
+    <div class="top-menu">
+    <li><a href="../modulos.html">Inicio</a></li>
+    <li><a href="../memo_quejas/memo_gpon_internet.html">Memo Quejas</a></li>
+    <li><a href="../wf/wf.html">Plantillas WF</a></li>
+    <li><a href="../checklist/cheklist.html">CheckList</a></li>
+    <li><a href="#">Manuales</a></li>
+    <li><a href="../usuarios/usuarios.html">Usuarios</a></li>
+  </div>
+
+
+<div class="titulo">
+<h2> CAMBIO DE CORREO IPTV   <h2>
+
+</div>
+
+
+<div class="regresar">
+    <button class="copy-button"><a href="../checklist/cheklist.html">Regresar</a></button>
+</div>
+
+  <div class="linea-punteada"><br></div>
+
+  <div class="padre" id="padre1">
+    <div class="puertos" id="puertos">
+      <h1>Ingresar a opcion en pisa “Cambio de correo 
+electronico”</h1>
+      <div class="opciones">
+        <div class="opcion">
+          <button onclick="openTipiPuertos()">Ver</button>
+          <div id="myModalPuertos" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeTipiPuertos()">&times;</span>
+              <b>Accion</b></br>
+              <p>Confirmar que el cable coaxial esté bien
+                conectado, apagar y encender el cable modem.</p></br>
+              <p>Despues de haber sincronizado las led, esperar
+                un minuto y confirmar la navegación aunque no
+                cambie de estado en la UMP.</p></br>
+
+              <b>No levanto el servicio</b></br>
+              <p>Se ingresa queja a etapa CZO, en el
+                memo indicar el estado del puerto.</p></br>
+              <b>Tipificacion</b></br>
+              <p>Reclamos --> Averias --> Interneh HFC --> No navega --> Se genera Averia </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="linea-punteada2"><br></div>
+  <div class="padre" id="padre2">
+    <div class="falla_voz" id="falla_voz">
+      <h1>Realice la búsqueda con el factura con</h1>
+      <div class="opciones">
+        <div class="opcion">
+          <button onclick="openTipiSenal()">Ver</button>
+          <div id="myModalSenal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeTipiSenal()">&times;</span>
+              <p><b>Accion:</b></br></b>
+                0. Verificar que el conector este bien apretado .
+                1. Desconectar de la corriente.
+                2.Solo Modem RCA (Quitar Tapa de Bateria,
+                deslizar seguro a la Izq o Derecha, Retirar Bateria.)
+                3. Conectar Energia y Conectar Bateria. </p></br>
+              <p><b>LEVANTO EL SERVICIO?:</b></br>
+              <p><b>SI --></b> Reclamos -> Averias -> Internet HFC
+                No navega -> Conexiones fisicas</p></br>
+              <p><b>NO --></b>Se genera averia a etapa CZO, en el memo indicar
+                voz y datos sin señal con niveles erroneos.
+                Reclamos -> Averias -> Internet HFC
+                No navega -> Se generó avería </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="linea-punteada3"><br></div>
+  <div class="padre" id="padre3">
+    <div class="niveles" id="niveles">
+      <h1>Ingresar “4” para cambiar el correo
+      </h1>
+      <div class="opciones">
+        <div class="opcion">
+          <button onclick="openTipiNivel()">Ver</button>
+          <div id="myModalNivel" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeTipiNivel()">&times;</span>
+              <p><b>Accion:</b></br></b>
+                1. Verificar que el conector este bien apretado.</br>
+                2. Realizar Reboot desde la UMP soporte.</br>
+                3. Actualizar en UMP y revisar los niveles. (se hace
+                cuando las led del modem estén sincronizadas)</p></br>
+
+              <p>Si los niveles no mejoran
+                se genera Avería y se tipifica como:
+                Reclamos -> Averias -> Internet HFC
+                No navega -> Se generó avería</p></br>
+
+
+              <p><b>Verificar niveles en UMP y revisar la
+                  cantidad
+                  de portadoras de transmisión.</b></br>
+
+              <p><img src="./niveles.png"></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="padre" id="padre4">
+    <div class="niveles" id="niveles">
+      <h1>Ingresar nuevo correo  en 
+minusculas y  (F6) para el cambio
+
+      </h1>
+      <div class="opciones">
+        <div class="opcion">
+          <button onclick="openTipiNivel()">Ver</button>
+          <div id="myModalNivel" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeTipiNivel()">&times;</span>
+              <p><b>Accion:</b></br></b>
+                1. Verificar que el conector este bien apretado.</br>
+                2. Realizar Reboot desde la UMP soporte.</br>
+                3. Actualizar en UMP y revisar los niveles. (se hace
+                cuando las led del modem estén sincronizadas)</p></br>
+
+              <p>Si los niveles no mejoran
+                se genera Avería y se tipifica como:
+                Reclamos -> Averias -> Internet HFC
+                No navega -> Se generó avería</p></br>
+
+
+              <p><b>Verificar niveles en UMP y revisar la
+                  cantidad
+                  de portadoras de transmisión.</b></br>
+
+              <p><img src="./niveles.png"></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="padre" id="padre5">
+    <div class="niveles" id="niveles">
+      <h1>Cambio de 
+correo 
+exitoso?
+      </h1>
+      <div class="opciones">
+        <div class="opcion">
+          <button onclick="openTipiNivel()">Acciones</button>
+          <div id="myModalNivel" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeTipiNivel()">&times;</span>
+              <p><b>Accion:</b></br></b>
+                1. Verificar que el conector este bien apretado.</br>
+                2. Realizar Reboot desde la UMP soporte.</br>
+                3. Actualizar en UMP y revisar los niveles. (se hace
+                cuando las led del modem estén sincronizadas)</p></br>
+
+              <p>Si los niveles no mejoran
+                se genera Avería y se tipifica como:
+                Reclamos -> Averias -> Internet HFC
+                No navega -> Se generó avería</p></br>
+
+
+              <p><b>Verificar niveles en UMP y revisar la
+                  cantidad
+                  de portadoras de transmisión.</b></br>
+
+              <p><img src="./niveles.png"></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./funcion.js"></script>
+  <script src="./modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantillas WF / Sirius +</title>
+    <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #a7c5eb, #fde8cd); /* Fondo degradado */
+            margin: 0;
+            padding: 0;
+          }
+
+
+         .top-menu {
+            background-color: #4a90e2; /* Azul suave */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .top-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .top-menu li {
+            margin: 0;
+             list-style-type: none;
+        }
+        .top-menu li a {
+            color: #ffffff; /* Color del texto */
+            text-decoration: none;
+            padding: 10px 10px; /* Reducir el padding */
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+             list-style-type: none;
+        }
+        .top-menu li a:hover {
+            background-color: #ffd166; /* Amarillo suave al pasar el cursor */
+            transform: translateY(-3px);
+
+        }
+
+        .top-menu li a i {
+            margin-right: 10px;
+             list-style-type: none;
+        }
+
+  
+        .container {
+            position: absolute;
+            width: 450px;
+            padding: 5px;
+        
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            top: 60px; 
+
+        }
+        .message {
+            margin-bottom: 10px;
+            font-size: 10px;
+        }
+        .message p {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 15px;
+            color: #333;
+              background-color: white;
+            margin: 0;
+            padding: 4px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+        .toggle-button {
+            font-size: 14px;
+            color: #007bff;
+        }
+        .form-container {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            width: 300px;
+            
+        }
+        .form-container form div {
+            margin-bottom: 10px;
+        }
+        .form-container label {
+            
+            display: none;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"] {
+            width: calc(100% - 22px);
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-container input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .form-container input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+
+        .botones-copiar {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #fff;
+      color: #9b59b6;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    button:hover {
+      background: #8e44ad;
+      color: #fff;
+    }
+    </style>
+</head>
+<body>
+
+       <div class="top-menu">
+    <li><a href="../modulos.html">Inicio</a></li>
+    <li><a href="../memo_quejas/memo_gpon_internet.html">Memo Quejas</a></li>
+    <li><a href="../wf/wf.html">Plantillas WF</a></li>
+    <li><a href="../checklist/cheklist.html">CheckList</a></li>
+    <li><a href="#">Manuales</a></li>
+    <li><a href="../usuarios/usuarios.html">Usuarios</a></li>
+  </div>
+
+
+    <div class="container">
+        <div class="message">
+            <p>
+                Cambio de equipo por aumento de velocidad
+                <span class="toggle-button">[+]</span>
+            </p>
+            <div class="form-container">
+
+                
+                <form>
+                    <div>
+                        <label for="asunto">ASUNTO</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="ASUNTO" >
+                    </div>
+                    <div>
+                        <label for="titular">NOMBRE DE TITULAR</label>
+                        <input type="text" id="titular" name="titular" placeholder="NOMBRE TITULAR" >
+                    </div>
+                  
+                    <div>
+                        <label for="telefono">TEL.REF</label>
+                        <input type="text" id="telefono" name="telefono" placeholder="TELEFONO">
+                    </div>
+                    <div>
+                        <label for="EquipoActual">EQUIPO ACTUAL</label>
+                        <input type="text" id="EquipoActual" name="EquipoActual" placeholder="EQUIPO ACTUAL">
+                    </div>
+                    <div>
+                        <label for="modelo">MODELO</label>
+                        <input type="text" id="modelo" name="modelo" placeholder="MODELO">
+                    </div>
+                    <div>
+                        <label for="direccion">DIRECCIÓN DE INSTALACIÓN</label>
+                        <input type="text" id="direccion" name="direccion" placeholder="DIRECCIÓN DE INSTALACIÓN">
+                    </div>
+                    <div>
+                        <label for="horario">HORARIO DE VISITA</label>
+                        <input type="text" id="horario" name="horario" placeholder="HORARIO DE VISITA">
+                    </div>
+                    <div>
+                        <label for="observaciones">OBSERVACIONES</label>
+                        <input type="text" id="observaciones" name="observaciones" placeholder="OBSERVACIONES">
+                    </div>
+                    <div>
+                        <label for="call">CALL CENTER</label>
+                        <input type="text" id="call" name="call" placeholder="CALL CENTER">
+                    </div>
+                    <div> 
+                        <label for="nombre">NOMBRE ASESORS</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="NOMBRE ASESOR">
+                    </div>
+                    <div class="botones-copiar">
+                        <button type="button" onclick="copiarFormulario()">Copiar Memo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="message">
+            <p>
+                Orden de Servicio Conectividad
+                <span class="toggle-button">[+]</span>
+            </p>
+            <div class="form-container">
+                <form>
+                    <div>
+                        <label for="name2">ASUNTO</label>
+                        <input type="text" id="name2" name="name2" placeholder="ASUNTO">
+                    </div>
+                    <div>
+                        <label for="email2">NOMBRE DE TITULAR</label>
+                        <input type="email" id="email2" name="email2" placeholder="NOMBRE DE TITULAR">
+                    </div>
+                    <div>
+                        <label for="phone2">NO. DPI TITULAR</label>
+                        <input type="text" id="phone2" name="phone2" placeholder="NO. DPI TITULAR">
+                    </div>
+                    <div>
+                        <label for="address2">TEL REF</label>
+                        <input type="text" id="address2" name="address2" placeholder="TEL REF">
+                    </div>
+                    <div>
+                        <label for="city2">DIRECCIÓN DE INSTALACIÓN</label>
+                        <input type="text" id="city2" name="city2" placeholder="DIRECCIÓN DE INSTALACIÓN">
+                    </div>
+                    <div>
+                        <label for="state2">HORARIO DE VISITA</label>
+                        <input type="text" id="state2" name="state2" placeholder="HORARIO DE VISITA">
+                    </div>
+                    <div>
+                        <label for="zip2">OBSERVACIONES:</label>
+                        <input type="text" id="zip2" name="zip2" placeholder="OBSERVACIONES">
+                    </div>
+
+                    <div>
+                        <label for="zip2">CALL CENTER</label>
+                        <input type="text" id="zip2" name="zip2" value="SOPORTE CLARO">
+                    </div>
+                    <div>
+                        <label for="zip2">NOMBRE DE ASESOR:</label>
+                        <input type="text" id="zip2" name="zip2" value="ORLANDO ZAMBRANO">
+                    </div>
+                    <div class="botones-copiar">
+                        <button type="button" onclick="copiarFormulario()">Copiar Memo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+<div class="message">
+            <p>Cita Incumplida
+                <span class="toggle-button">[+]</span>
+            </p>
+            <div class="form-container">
+                <form>
+                    <div>
+                        <label for="name2">No. Orden</label>
+                        <input type="text" id="name2" name="name2" placeholder="No. Orden">
+                    </div>
+                    <div>
+                        <label for="email2">Nombre contacto</label>
+                        <input type="email" id="email2" name="email2" placeholder="Nombre contacto">
+                    </div>
+                    <div>
+                        <label for="phone2">Numero de referencia</label>
+                        <input type="text" id="phone2" name="phone2" placeholder="Numero de referencia">
+                    </div>
+                    <div>
+                        <label for="address2">Fecha de visita</label>
+                        <input type="text" id="address2" name="address2" placeholder="Fecha de visita">
+                    </div>
+                    <div>
+                        <label for="city2">Hora de visita</label>
+                        <input type="text" id="city2" name="city2" placeholder="Hora de visita">
+                    </div>
+                    <div>
+                        <label for="state2">Gestor de Despacho que atendió la llamada</label>
+                        <input type="text" id="state2" name="state2" placeholder="Gestor de Despacho que atendió la llamada">
+                    </div>
+                    
+                    <div class="botones-copiar">
+                        <button type="button" onclick="copiarFormulario()">Copiar Memo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+<div class="message">
+            <p>Filtrado MAC
+                <span class="toggle-button">[+]</span>
+            </p>
+            <div class="form-container">
+                <form>
+                    <div>
+                        <label for="name2">Problema Reportado</label>
+                        <input type="text" id="name2" name="name2" placeholder="Problema Reportado">
+                    </div>
+                    <div>
+                        <label for="address2">Nombre Cliente</label>
+                        <input type="text" id="address2" name="address2" placeholder="Nombre Cliente">
+                    </div>
+                    <div>
+                        <label for="city2">Telefono de Contacto</label>
+                        <input type="text" id="city2" name="city2" placeholder="Telefono de Contacto">
+                    </div>
+                    <div>
+                        <label for="state2">MAC Address de la computadora</label>
+                        <input type="text" id="state2" name="state2" placeholder="MAC Address de la computadora">
+                    </div>
+                    <div>
+                        <label for="zip2">Pruebas(si se efectúan)</label>
+                        <input type="text" id="zip2" name="zip2" placeholder="Pruebas">
+                    </div>
+
+                    <div>
+                        <label for="zip2">Comentario</label>
+                        <input type="text" id="zip2" name="zip2" value="Comentario">
+                    </div>
+                                        <div class="botones-copiar">
+                        <button type="button" onclick="copiarFormulario()">Copiar Memo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+<div class="message">
+            <p>Vencido Comercial
+                <span class="toggle-button">[+]</span>
+            </p>
+            <div class="form-container">
+                <form>
+                    <div>
+                        <label for="name2">Teléfono de referencia </label>
+                        <input type="text" id="name2" name="name2" placeholder="Teléfono de referencia ">
+                    </div>
+                    <div>
+                        <label for="address2">No. de O/S </label>
+                        <input type="text" id="address2" name="address2" placeholder="No. de O/S">
+                    </div>
+                    <div>
+                        <label for="city2">Comentarios</label>
+                        <input type="text" id="city2" name="city2" placeholder="Comentarios">
+                    </div>
+                    <div>
+                        <label for="state2">Hora visita</label>
+                        <input type="text" id="state2" name="state2" placeholder="Hora visita (Aplica si fuera cita incumplida)">
+                    </div>
+                    
+                                        <div class="botones-copiar">
+                        <button type="button" onclick="copiarFormulario()">Copiar Memo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+<div class="message">
+            <p>Vencido Operaciones
+                <span class="toggle-button">[+]</span>
+            </p>
+            <div class="form-container">
+                <form>
+                    <div>
+                        <label for="name2">Teléfono de referencia </label>
+                        <input type="text" id="name2" name="name2" placeholder="Teléfono de referencia ">
+                    </div>
+                    <div>
+                        <label for="address2">No. de O/S </label>
+                        <input type="text" id="address2" name="address2" placeholder="No. de O/S">
+                    </div>
+                    <div>
+                        <label for="city2">Comentarios</label>
+                        <input type="text" id="city2" name="city2" placeholder="Comentarios">
+                    </div>
+                    <div>
+                        <label for="state2">Hora visita</label>
+                        <input type="text" id="state2" name="state2" placeholder="Hora visita (Aplica si fuera cita incumplida)">
+                    </div>
+                     <div>
+                        <label for="state2">Pruebas Realizadas</label>
+                        <input type="text" id="state2" name="state2" placeholder="Pruebas Realizadas (Aplica si es reparación) ">
+                    </div>
+                    
+                                        <div class="botones-copiar">
+                        <button type="button" onclick="copiarFormulario()">Copiar Memo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+<div class="message">
+            <p> Daño a la Infraestructura
+                <span class="toggle-button">[+]</span>
+            </p>
+            <div class="form-container">
+                <form>
+                    <div>
+                        <label for="name2">Contacto</label>
+                        <input type="text" id="name2" name="name2" placeholder="Contacto">
+                    </div>
+                    <div>
+                        <label for="address2">Teléfono de contacto </label>
+                        <input type="text" id="address2" name="address2" placeholder="Teléfono de contacto">
+                    </div>
+                    <div>
+                        <label for="city2">Dirección de daño</label>
+                        <input type="text" id="city2" name="city2" placeholder="Dirección de daño">
+                    </div>
+                    <div>
+                        <label for="state2">Daño que reporta</label>
+                        <input type="text" id="state2" name="state2" placeholder="Daño que reporta">
+                    </div>
+                                                            <div class="botones-copiar">
+                        <button type="button" onclick="copiarFormulario()">Copiar Memo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="message">
+            <p> Claro Video
+                <span class="toggle-button">[+]</span>
+            </p>
+            <div class="form-container">
+                <form>
+                    <div>
+                        <label for="name2">Nombre del Cliente</label>
+                        <input type="text" id="name2" name="name2" placeholder="Nombre del Cliente">
+                    </div>
+                    <div>
+                        <label for="address2">Número telefónico </label>
+                        <input type="text" id="address2" name="address2" placeholder="Número telefónico">
+                    </div>
+                    <div>
+                        <label for="city2">Correo electrónico a registrar</label>
+                        <input type="text" id="city2" name="city2" placeholder="Correo electrónico a registrar">
+                    </div>
+                    <div>
+                        <label for="state2">Qué problema reporta</label>
+                        <input type="text" id="state2" name="state2" placeholder="Qué problema reporta">
+                    </div>
+
+                       <div>
+                        <label for="state2">Telefonos de contacto</label>
+                        <input type="text" id="state2" name="state2" placeholder="Telefonos de contacto">
+                    </div>
+
+                       <div>
+                        <label for="state2">Plataforma donde está tratando de registrarse (Claro Video)</label>
+                        <input type="text" id="state2" name="state2" placeholder="Plataforma donde está tratando de registrarse (Claro Video)">
+                    </div>
+                             
+                                                            <div class="botones-copiar">
+                        <button type="button" onclick="copiarFormulario()">Copiar Memo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+<div class="message">
+            <p> Migración a GPON
+                <span class="toggle-button">[+]</span>
+            </p>
+            <div class="form-container">
+                <form>
+                    <div>
+                        <label for="name2">Tipo de Reporte</label>
+                        <input type="text" id="name2" name="name2" value="Migración a GPON">
+                    </div>
+                    <div>
+                        <label for="address2">Acepta Migración </label>
+                        <input type="text" id="address2" name="address2" placeholder="Acepta Migración">
+                    </div>
+                    <div>
+                        <label for="city2">No. Factura Con</label>
+                        <input type="text" id="city2" name="city2" placeholder="No. Factura Con">
+                    </div>
+                    <div>
+                        <label for="state2">Qué problema reporta</label>
+                        <input type="text" id="state2" name="state2" placeholder="Qué problema reporta">
+                    </div>
+
+                       <div>
+                        <label for="state2">Titular del Servicio</label>
+                        <input type="text" id="state2" name="state2" placeholder="Titular del Servicio">
+                    </div>
+
+                     <div>
+                        <label for="state2">Contacto en Sitio</label>
+                        <input type="text" id="state2" name="state2" placeholder="Contacto en Sitio">
+                    </div>
+                             
+
+                     <div>
+                        <label for="state2">Tels. de Contacto</label>
+                        <input type="text" id="state2" name="state2" placeholder="Tels. de Contacto">
+                    </div>
+                       <div>
+                        <label for="state2">Direccion</label>
+                        <input type="text" id="state2" name="state2" placeholder="Direccion">
+                    </div>
+                       <div>
+                        <label for="state2">Horario de visita</label>
+                        <input type="text" id="state2" name="state2" value="08:00 am a 05:00 pm ">
+                    </div>
+                                                            <div class="botones-copiar">
+                        <button type="button" onclick="copiarFormulario()">Copiar Memo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+<div class="message">
+            <p> Bloqueo Mayor a 2 Horas
+                <span class="toggle-button">[+]</span>
+            </p>
+            <div class="form-container">
+                <form>
+                    <div>
+                        <label for="name2">Nombre de quien reporta</label>
+                        <input type="text" id="name2" name="name2" value="Nombre de quien reporta">
+                    </div>
+                    <div>
+                        <label for="address2">Servicio a liberar </label>
+                        <input type="text" id="address2" name="address2" placeholder="Servicio a liberar">
+                    </div>
+                    <div>
+                        <label for="city2">No. afectado</label>
+                        <input type="text" id="city2" name="city2" placeholder="No. afectado">
+                    </div>
+                    <div>
+                        <label for="state2">Tipo de bloqueo</label>
+                        <input type="text" id="state2" name="state2" placeholder="Tipo de bloqueo">
+                    </div>
+
+                       <div>
+                        <label for="state2">Tel de Ref</label>
+                        <input type="text" id="state2" name="state2" placeholder="Tel de Ref">
+                    </div>
+
+                     <div>
+                        <label for="state2">Hora de Pago</label>
+                        <input type="text" id="state2" name="state2" placeholder="Hora de Pago">
+                    </div>
+                             
+
+                     <div>
+                        <label for="state2">Reincidente</label>
+                        <input type="text" id="state2" name="state2" placeholder="Reincidente">
+                    </div>
+                       <div>
+                        <label for="state2">Comentarios</label>
+                        <input type="text" id="state2" name="state2" placeholder="Comentarios">
+                    </div>
+                       
+                                                            <div class="botones-copiar">
+                        <button type="button" onclick="copiarFormulario()">Copiar Memo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+<div class="message">
+            <p> Servicio Mal Configurado / Otros WF
+                <span class="toggle-button">[+]</span>
+            </p>
+            <div class="form-container">
+                <form>
+                    <div>
+                        <label for="name2">Nombre de contacto</label>
+                        <input type="text" id="name2" name="name2" value="Nombre de contacto">
+                    </div>
+                    <div>
+                        <label for="address2">Teléfono de referencia </label>
+                        <input type="text" id="address2" name="address2" placeholder="Teléfono de referencia">
+                    </div>
+                    <div>
+                        <label for="city2">Número de orden y/o queja</label>
+                        <input type="text" id="city2" name="city2" placeholder="Número de orden y/o queja">
+                    </div>
+                    <div>
+                        <label for="state2">Inconveniente del cliente</label>
+                        <input type="text" id="state2" name="state2" placeholder="Inconveniente del cliente">
+                    </div>
+
+                       <div>
+                        <label for="state2">Pruebas realizadas</label>
+                        <input type="text" id="state2" name="state2" placeholder="Pruebas realizadas">
+                    </div>
+                                                            <div class="botones-copiar">
+                        <button type="button" onclick="copiarFormulario()">Copiar Memo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+<div class="message">
+            <p> Paquete de Canales
+                <span class="toggle-button">[+]</span>
+            </p>
+            <div class="form-container">
+                <form>
+                    <div>
+                        <label for="name2">ASUNTO</label>
+                        <input type="text" id="name2" name="name2" value="ASUNTO (No observa paquetes de Canales)">
+                    </div>
+                    <div>
+                        <label for="address2">NOMBRE DE TITULAR</label>
+                        <input type="text" id="address2" name="address2" placeholder="NOMBRE DE TITULAR">
+                    </div>
+                    <div>
+                        <label for="city2">TEL. REF</label>
+                        <input type="text" id="city2" name="city2" placeholder="TEL. REF">
+                    </div>
+                    <div>
+                        <label for="state2">PAQUETE</label>
+                        <input type="text" id="state2" name="state2" placeholder="PAQUETE">
+                    </div>
+
+                       <div>
+                        <label for="state2">SERIE DE SET TOP BOX</label>
+                        <input type="text" id="state2" name="state2" placeholder="SERIE DE SET TOP BOX">
+                    </div>
+
+                       <div>
+                        <label for="state2">OBSERVACIONES</label>
+                        <input type="text" id="state2" name="state2" placeholder="OBSERVACIONES">
+                    </div>
+                    
+                       <div>
+                        <label for="state2">NUMERO DE CANALES</label>
+                        <input type="text" id="state2" name="state2" placeholder="NUMERO DE CANALES">
+                    </div>
+                                                            <div class="botones-copiar">
+                        <button type="button" onclick="copiarFormulario()">Copiar Memo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+            const formContainers = document.querySelectorAll('.form-container');
+
+            toggleButtons.forEach((button, index) => {
+                button.addEventListener('click', function() {
+                    if (formContainers[index].style.display === 'none' || formContainers[index].style.display === '') {
+                        formContainers[index].style.display = 'block';
+                        button.textContent = '[-]';
+                    } else {
+                        formContainers[index].style.display = 'none';
+                        button.textContent = '[+]';
+                    }
+                });
+            });
+        });
+
+
+
+        //FUNCION DE COPIAR
+
+function capitalizeFirstLetter(element) {
+            element.value = element.value.toLowerCase().replace(/^\w|\s\w/g, function (letter) {
+                return letter.toUpperCase();
+            });
+        }
+    function copiarFormulario() {
+      var formulario = document.activeElement.parentElement.parentElement;
+      var inputs = formulario.getElementsByTagName('input');
+      var textoCopiado = '';
+
+      for (var i = 0; i < inputs.length; i++) {
+        var label = inputs[i].previousElementSibling.innerText;
+        var valor = inputs[i].value;
+        textoCopiado += label + ': ' + valor + '\n';
+      }
+
+      // Crear un textarea temporal para copiar el texto
+      var textareaTemporal = document.createElement('textarea');
+      textareaTemporal.value = textoCopiado;
+      document.body.appendChild(textareaTemporal);
+
+      // Seleccionar y copiar el texto
+      textareaTemporal.select();
+      document.execCommand('copy');
+
+      // Eliminar el textarea temporal
+      document.body.removeChild(textareaTemporal);
+
+      alert('Formulario copiado al portapapeles. Pega en el Bloc de notas o en tu editor preferido.');
+    }
+    </script>
+</body>
+</html>

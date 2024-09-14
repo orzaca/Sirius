@@ -1,0 +1,268 @@
+--> CAMBIO DE EQUIPO POR AUMENTO DE VELOCIDAD.
+
+
+ASUNTO................... CAMBIO DE EQUIPO EN VELOCIDAD   MBPS
+NOMBRE DE TITULAR........
+TEL.REF................
+EQUIPO ACTUAL............
+MODELO...................
+DIRECCIÓN DE INSTALACIÓN.
+HORARIO DE VISITA........
+OBSERVACIONES............ 
+CALL CENTER.....SOPORTE TÉCNICO.....NOMBRE Y APELLIDO.....
+
+
+--> OS CONECTIVIDAD
+
+
+ASUNTO................. Instalación / Venta Equipo Conectividad
+NOMBRE DE TITULAR...... 
+NO. DPI TITULAR........ DPI
+TEL REF  .............. 
+DIRECCIÓN DE INSTALACIÓN.
+HORARIO DE VISITA...... 
+ID DE LLAMADA..........  ID LLAMADA
+OBSERVACIONES..........
+CALL CENTER.....CLARO SOPORTE.....
+NOMBRE DE ASESOR.....7/07/2021 07:31:25
+
+
+
+
+--> OS CABLEADO ETHERNET 
+
+
+ASUNTO...............: INSTALACIÓN + DESCRIPCIÓN
+NOMBRE DE TITULAR....: 
+DPI TITULAR..........: DPI
+TELEFONO REFERENCIA. : 
+DIRECCIÓN INSTALACIÓN: 
+HORARIO DE VISITA....: 
+OBSERVACIONES........: 
+TIENDA / CALL CENTER
+
+
+--> INCONVENIENTES CON VPN
+
+Tipo de CPE:
+MAC Cable Modem o CPE:
+Problema reportado:Filtrado Mac / Conexion VPN
+Nombre del cliente:
+Tel Contacto:
+Nombre completo herramienta o aplicativo de vpn:
+Puertos UDP y TCP que desee verificar:
+Numero o nombre de error que da el aplicativo:
+Si es VPN, hacía que IP intenta conectarse:
+MAC Address de la computadora:
+Pruebas(si se efectúan):
+Comentario:
+
+
+--> FILTRADO MAC 
+
+Problema reportado:Filtrado Mac 
+Nombre del cliente:
+Tel Contacto:
+MAC Address de la computadora:
+Pruebas(si se efectúan):
+Comentario:
+
+
+--> CITA INCUMPLIDA 
+
+No. Orden.: 
+Nombre contacto:
+Numero de referencia:
+Fecha de visita:
+Hora de visita: 
+Gestor de Despacho que atendió la llamada:
+
+
+--> VENCIDO COMERCIAL 
+
+Teléfono de referencia 
+No. de O/S 
+Comentarios
+Hora visita.............................: (Aplica si fuera cita incumplida)
+
+--> VENCIDO OPERACIONES 
+
+Teléfono de referencia:
+No. de O/S............:
+Comentarios...........: 
+No. Queja.............:(Si aplica)
+Hora visita...........:(Aplica si fuera cita incumplida)
+Pruebas Realizadas....:(Aplica si es reparación) 
+
+--> LOCUCIÓN MORA ACTIVA
+
+Nombre de quien reporta: 
+Número afectado........: 
+Tel de Ref.............: 
+O/S generada...........: n/a
+Fecha de pago..........: 
+IVR....................: IVR / llaman de cobros 
+Observaciones..........:
+
+--> DEVOLUCIÓN DE LLAMADA 
+
+Nombre del cliente que visita: 
+Número afectado o virtual:
+Números de contacto: 
+Servicio y problema Reportado; 
+Saldos:(Ok)
+Horario de contacto:(MAÑANA|TARDE|NOCHE)
+
+
+--> DAÑO A LA INFRAESTRUTURA
+
+Contacto: 
+Teléfono de contacto: 
+Dirección de daño: 
+Daño que reporta: 
+
+--> RECONEXIÓN WF 
+
+Teléfono de referencia..: 
+No. de O/S..............:
+Comentarios.............:
+
+--> PAQUETE DE CANALES WF
+
+ASUNTO................... (No observa paquetes de Canales)
+NOMBRE DE TITULAR........ 
+TEL. REF................. 
+PAQUETE.................. 
+NUMERO DE SET TOP BOX.... Serie STB
+OBSERVACIONES............ 
+NUMERO DE CANALES........ 
+
+--> SERVICIO DIGITALES 
+
+Numero de Servicio Afectado...:  
+Cliente.......................:
+Teléfonos de referencia.......:
+Servicio Digital con Problemas: 
+Descripción del caso..........: 
+
+--> CAMBIO DE ACTUALIZACIÓN MAC EN IP PUBLICA HFC
+
+Mac del modem..........................: 
+Virtual de cliente (Con el que factura): 
+Nombre del cliente.....................: 
+Ip Publica asociada....................: 
+Mac Actual........................: 
+Nueva Mac........................: 
+No. deContacto................: 
+
+--> CLARO VIDEO
+
+Nombre del Cliente::: 
+Número telefónico:::: 
+Correo electrónico a registrar::: 
+Qué problema reporta::: 
+Fecha de nacimiento::: 
+Telefonos de contacto::: 
+Plataforma donde está tratando de registrarse (Claro Video).
+
+--> OTROS WF
+
+Nombre de contacto::::::::: 
+Telefonos de referencia::: 
+Numero de orden y/o queja: 
+Inconveniente del cliente: 
+Pruebas Realizada::::::::: 
+
+
+Plantilla  devolucion de  llamadas
+Nombre del cliente que visita: 
+Número afectado o virtual:
+Números de contacto: 
+Servicio y problema Reportado; 
+Saldos:(Ok)
+Horario de contacto: (MAÑANA|TARDE|NOCHE)
+
+
+pagos no posteados
+
+listo,  Validando en el sistema , me aparece que  tiene un pago pendiente por ingresar, mientras ese pago este en recientes, y no haya ingresado totalmente al sistema, no se puede enviar queja  para validar el  equipo, yo lo invitaría contactarnos el día de  mañana que ya el pago este posteado y así le podamos enviar una queja. 
+
+
+play 
+
+"Disculpe los inconvenientes ocasionados, la plataforma de Sony - Play Station está realizando algunos bloqueos de manera aleatoria.  Vamos a solicitar un reinicio de su conexión para solventar el inconveniente, por favor, le solicitamos su ayuda ingresando el reclamo en la página de soporte de Sony o llamando a su centro de atención al cliente 22337370 o por medio de  Twitter https://twitter.com/PreguntaPlay."
+
+
+Tipo de CPE...............:
+MAC Cable Modem o CPE.....:
+Problema reportado........:
+Nombre del cliente........: 
+Tel Contacto..............: 
+Puertos UDP y TCP que desee verificar...: 
+• TCP: 80, 443, 3478, 3479, 3480
+• UDP: 3478, 3479
+Pruebas................: Ninguna 
+
+wtth
+¿Su servicio se encuentra en Peten, El Quiché, Totonicapán, Escuintla?,¿El router es marca Huawei?,¿Tiene una antena afuera de su casa?.
+
+velocidad.
+No. Contacto:::::::::::: 77364793/77364793
+Inconveniente reportado: LENTITUD
+Virtual Reportado::::::: 77364793
+Velocidad Config PISA::: 10 mbps
+Velocidad config Axiros / ump: 5 mbps
+
+
+Daño: Digitalización por salida de canales Análogos
+Nombre:  
+Teléfono: 
+Dirección:
+CITA: NA
+O/S: NA
+Queja: NA
+Falla reportada: Sin señal.
+Comentario: Cliente en proceso de digitalización por salida de canales Análogos.
+
+
+MIGRACIÓN A GPON
+
+Tipo de Reporte:::::: Migración a GPON
+Acepta Migración::::: 
+No. Factura Con:::::: 
+Titular del Servicio: 
+Contacto en Sitio:::: 
+Tels. de Contacto:::: 
+Direccion::::::::::::
+Horario de visita:::: 8:00 am a 5:00 pm
+
+
+--> Bloqueo Mayor a 2 Horas
+
+Nombre de quien reporta: 
+Servicio a liberar.....: 
+No. afectado...........:
+Tipo de bloqueo........: 
+Tel de Ref.............: 
+Hora de Pago...........: 
+Reincidente............: 
+Comentarios............: 
+
+
+SERVICIO MAL CONFIGURADO
+
+
+Nombre de contacto: 
+Teléfono de referencia: 
+Número de orden y/o queja: 
+Inconveniente del cliente: 
+Pruebas realizadas: 
+
+nombre: CAMBIO DE EQUIPO EN VELOCIDAD
+apellido: 
+email: 
+telefono: 
+edad: 
+comentario: 
+direccion: 
+direccion: 

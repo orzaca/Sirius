@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/8f50e53f6f.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="styles2.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+
+    <title>Sirius</title>
+</head>
+
+<body>
+
+  <header>
+        <ul>
+
+<li><i class="fa-solid fa-link" style="color: #82030f;"></i><a href="./index.html">Bienvenida</a></li>
+
+<li><i class="fa-regular fa-handshake" style="color: #82030f;"></i><a href="./disculpas.html">Disculpas</a></li>
+
+<li><i class="fa-regular fa-face-smile" style="color: #82030f;"></i><a href="./empatia.html">Empatia</a></li>
+
+<li><i class="fa-solid fa-house-signal" style="color: #82030f;"></i><a href="./router.html">Router</a></li>
+
+<li><i class="fa-solid fa-tv" style="color: #82030f;"></i><a href="./tv.html">TV</a></li>
+
+<li><i class="fa-solid fa-wifi" style="color: #82030f;"></i><a href="./nocasa.html">Wifi</a></li>
+</ul>
+<ul>
+<li><i class="fa-solid fa-user-gear" style="color: #82030f;"></i><a href="./quejas.html">Quejas</a></li>
+
+<li><i class="fa-regular fa-clock" style="color: #82030f;"></i><a href="./espera.html">Espera</a></li>
+
+<li><i class="fa-solid fa-repeat" style="color: #82030f;"></i><a href="./transferir.html#">Transferir</a></li>
+
+<li><i class="fa-solid fa-list" style="color: #82030f;"></i><a href="./varios.html"> Guiones 1</a></li>
+
+<li><a href="./lenguaje.html">Guiones 2</a></li>
+
+
+  
+  </ul>
+    </header>
+
+  <main id="main-doc">
+        <section id="bienvenida" class="main-section">
+ 
+            <div class="guion">
+
+
+<p>
+<h2>Falla General </h2></p>
+<p>
+
+<button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())">  Lamentamos informarte que actualmente estamos experimentando una falla en uno de nuestros nodos, lo que afecta tu servicio. Nuestro equipo técnico está trabajando en ello y esperamos que se resuelva durante el día. Te pedimos disculpas por los inconvenientes. Por favor, aguarda mientras trabajamos en la reparación. ¿Puedes proporcionarme un número de contacto? 🙌</button>
+</p>
+
+<p>
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())"> Gracias por tu comprensión, ya nuestra área encargada se encuentra dando una solución a esta falla, solo es necesario estar a la espera, el número de ticket para la falla es XXXXX ¿algo adicional en que te pueda ayudar? 🙌</button>
+
+</p>
+
+
+
+<p><h2>Numeros de Servicio CLARO</h2></p>
+<p>
+    <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())">  Claro, si deseas comunicarte por medio de nuestra línea telefónica puedes comunicarte al 2502-8850 o desde otros operadores al 2205-6295. 😉 también puedes indicarme tu solicitud y con gusto te estaremos apoyando por este medio. 🙌 </button>
+</p>
+<h2>Guion Casos WF</h2>
+            </header>
+            <p>
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())">  Estamos comprometidos en solucionarte, se generó el reporte XXXXXXXXX para poder analizar esta solicitud. Nos estaremos comunicando 📲  a la brevedad posible. </button>
+            </p>
+
+
+            </div>
+
+
+
+
+
+<div class="guion2">
+
+
+<p>
+<button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())">  Muy amable, procederemos a escalar su caso con el área encargada para que puedan apoyarte con prioridad de 24 a 48 horas 😊. 
+✅Nombre del titular de la línea.
+✅2 Números de contacto. 
+✅Dirección donde está instalado el servicio.</button></p>
+
+
+
+            <p> <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())"> Lamentamos informarte que tu servicio se encuentra suspendido por saldo pendiente, el monto es QXXXX, Te invitamos a colocarte al día con tu factura ✔️, con el fin de que tu servicio sea restablecido a la normalidad lo más pronto posible, puedes realizar el pago fácil a través de 👉 gt.mipagoclaro.com. ¿Algo adicional en que te pueda ayudar? 😁 
+                 </button>
+            </p>
+
+
+
+            </header>
+           
+
+     
+
+   
+</div>
+
+
+                    
+ </section>
+    </main>
+
+    <script>
+        function copyToClipboard(text, showAlert = false) {
+
+
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+
+            try {
+                document.execCommand('copy');
+                if (showAlert) {
+                    alert('Texto copiado al portapapeles');
+                }
+            } catch (err) {
+                console.error('No se pudo     al portapapeles', err);
+            }
+
+            document.body.removeChild(textarea);
+        }
+    </script>
+</body>
+
+</html>

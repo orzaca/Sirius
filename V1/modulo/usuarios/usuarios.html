@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicaciones y Credenciales</title>
+    <style>
+     body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #a7c5eb, #fde8cd); /* Fondo degradado */
+            margin: 0;
+            padding: 0;
+            justify-content: text;    
+          }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            overflow-y: auto;
+            max-height: 90vh;
+            position: absolute;
+            top: 70px;
+            jus
+
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .app-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .app-item {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+
+        .app-item h2 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .credentials {
+            margin-bottom: 10px;
+        }
+
+        a.button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        a.button:hover {
+            background-color: #0056b3;
+        }
+
+
+         .top-menu {
+            background-color: #4a90e2; /* Azul suave */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .top-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .top-menu li {
+            margin: 0;
+             list-style-type: none;
+        }
+        .top-menu li a {
+            color: #ffffff; /* Color del texto */
+            text-decoration: none;
+            padding: 10px 10px; /* Reducir el padding */
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+             list-style-type: none;
+        }
+        .top-menu li a:hover {
+            background-color: #ffd166; /* Amarillo suave al pasar el cursor */
+            transform: translateY(-3px);
+
+        }
+        .top-menu li a i {
+            margin-right: 10px;
+             list-style-type: none;
+        }
+
+
+    </style>
+</head>
+<body>
+
+  <div class="top-menu">
+    <li><a href="../modulos.html">Inicio</a></li>
+    <li><a href="../memo_quejas/memo_gpon_internet.html">Memo Quejas</a></li>
+    <li><a href="../wf/wf.html">Plantillas WF</a></li>
+    <li><a href="../checklist/cheklist.html">CheckList</a></li>
+    <li><a href="#">Manuales</a></li>
+    <li><a href="../usuarios/usuarios.html">Usuarios</a></li>
+  </div>
+
+
+
+
+
+    <div class="container">
+        <h1>Aplicaciones y Credenciales</h1>
+        <div class="app-list">
+            <!-- Las aplicaciones se agregarán aquí dinámicamente con JavaScript -->
+        </div>
+    </div>
+    <script>
+        const apps = [
+            { name: "SUIT CLARO", username: "WGM83244", password: "Claro123", link: "https://amx-gt-ase-livechat-agents-pro.azurewebsites.net/es/Principal#!" },
+            { name: "QFLOW", username: "clarogt/orjose.zcamacho", password: "OZ83*J40", link: "https://qflowgt/QFlow62/SignIn.aspx" },
+            { name: "AXIROS", username: "GT/ORJOSE.ZCAMACHO", password: "OZ83*J40", link: "http://172.17.8.153:9673/live/AXCustomerSupportPortal/#/login</p>" },
+            { name: "UMP", username: "ORJOSE.ZCAMACHO", password: "Orjose.Zcamacho!23", link: "http://10.78.33.196:8090/#/lines/GT%23991986" },
+            { name: "GUI - CLARO IPTV", username: "orjose.zcamacho", password: "OZ83*J40", link: "http://clarovideo.sac.claro.com.gt:5502/ClaroVideoGt/" },
+            { name: "SKYWAY ANDROID TV", username: "ORJOSE.ZCAMACHO", password: "Claro#2024", link: "https://www.skywayplatform.com/skyway-platform/login?backUrl=%252Ftms%252Fanalysis%252Fbasic&tenantCode=1143" },
+            { name: "ETA- CONSULTAR QUEJA", username: "OZ083244", password: "Colombia2023*", link: "https://amx-res-cenam.etadirect.com/" },
+            { name: "USUARIO DE RED", username: "ORJOSE.ZCAMACHO", password: "Guatemala2024*", link: "#" },
+            { name: "FALLAS CLARO", link: "http://172.16.194.43/intra-sac/fallas_multimedia/listado_fallas.php#" },
+            { name: "INTRASAC", link: "http://172.17.242.185:1929/intraSac" },
+            
+            ];
+
+        const appList = document.querySelector('.app-list');
+
+        apps.forEach(app => {
+            const appItem = document.createElement('div');
+            appItem.className = 'app-item';
+
+            const appTitle = document.createElement('h2');
+            appTitle.textContent = app.name;
+
+            const credentials = document.createElement('div');
+            credentials.className = 'credentials';
+            credentials.innerHTML = `
+                <p><strong>Nombre de usuario:</strong> ${app.username}</p>
+                <p><strong>Contraseña:</strong> ${app.password}</p>
+            `;
+
+            const linkButton = document.createElement('a');
+            linkButton.href = app.link;
+            linkButton.textContent = 'Ir a la aplicación';
+            linkButton.className = 'button';
+            linkButton.target = '_blank';
+
+            appItem.appendChild(appTitle);
+            appItem.appendChild(credentials);
+            appItem.appendChild(linkButton);
+
+            appList.appendChild(appItem);
+        });
+    </script>
+</body>
+</html>

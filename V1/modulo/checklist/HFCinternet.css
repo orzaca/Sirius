@@ -1,0 +1,381 @@
+
+
+body {
+             font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #a7c5eb, #fde8cd); /* Fondo degradado */
+            margin: 0;
+            padding: 0;
+     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.top-menu {
+            background-color: #4a90e2; /* Azul suave */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .top-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .top-menu li {
+            margin: 0;
+             list-style-type: none;
+        }
+        .top-menu li a {
+            color: #ffffff; /* Color del texto */
+            text-decoration: none;
+            padding: 10px 10px; /* Reducir el padding */
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+             list-style-type: none;
+        }
+        .top-menu li a:hover {
+            background-color: #ffd166; /* Amarillo suave al pasar el cursor */
+            transform: translateY(-3px);
+
+        }
+        .top-menu li a i {
+            margin-right: 10px;
+             list-style-type: none;
+        }
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.alata-regular {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.padre {
+    margin: 17px;
+    position: absolute;
+    padding: 5px;
+    display: inline-block;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    top: 30px;
+
+}
+#padre {
+    margin: 20px;
+    background-color: white;
+    
+}
+
+#padre1 {
+    margin: 20px;
+    top: 190px;
+    background-color: white;
+}
+
+
+#padre2 {
+    margin: 20px;
+    top: 250px;
+    background-color: white;
+}
+
+
+#padre3 {
+    margin: 20px;
+    top: 310px;
+}
+
+
+.padre4 {
+    margin: 20px;
+    top: 430px;
+    left: 60px;
+}
+
+.contenido {
+    position: flex;
+
+}
+
+.pagos_recientes {
+    top: 25px;
+    position: flex;
+
+}
+
+.orden_servicio {
+
+   top: 50px;
+    position: flex;
+}
+
+.vel_contratada {
+    text-align: left;
+    top: 72px;
+    position: flex;
+}
+
+.falla_voz {
+    text-align: left;
+    top: 100px;
+    position: flex;
+}
+
+.falla_general {
+    text-align: left;
+    top: 120px;
+    position: flex;
+}
+
+.quejas {
+    text-align: left;
+    left: 10px;
+    top: 145px;
+    position: flex;
+}
+
+
+
+h1 {
+    margin: 0;
+    font-size: 10px;
+    color: #333;
+    display: inline;
+}
+
+h2 {
+    margin: 0;
+    font-size: 8px;
+    color: #333;
+    display: inline;
+}
+
+h4 {
+
+    text-align: center;
+    color: black;
+}
+
+
+.linea-punteada {
+    display: block;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 31%;
+    width: 60%;
+    height: 280px;
+    border-left: 3px solid #460000;
+}
+
+
+
+.opciones {
+    margin-top: 50px;
+    display: inline;
+}
+
+button {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+    padding: 5px 10px;
+    font-size: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #640f0f;
+    color: white;
+    /* transition: background-color 0.3s; */
+}
+
+.padre_titulo {
+    position: absolute;
+   
+    left: 45%px;
+    top: 62%;
+     background-color: darkkhaki;
+     border-radius: 3px solid black;
+    height: 30px;
+}
+
+.titulo {
+    font-size: 14px;
+    border-radius: 1px solid black;
+   
+
+
+     
+
+
+}
+
+.regresar {
+    position: absolute;
+    padding: 10px;
+    left: 65%px;
+    top: 13%;
+}
+
+
+.copy-button {
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #4298d1;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s;
+
+}
+
+.eleccion1 {
+    position: absolute;
+    padding: 10px;
+    left: 45%px;
+    top: 68%;
+}
+
+#eleccion1 {
+    font-size: 12px;
+    padding: auto;
+}
+.eleccion2 {
+    position: absolute;
+    padding: 10px;
+    left: 45%px;
+    top: 75%;
+}
+
+#eleccion2 {
+    font-size: 12px;
+    padding: auto;
+}
+.eleccion3 {
+    position: absolute;
+    padding: 10px;
+    left: 45%px;
+    top: 82%;
+}
+
+#eleccion3 {
+    font-size: 12px;
+    padding: auto;
+}
+
+.eleccion4 {
+    position: absolute;
+    padding: 10px;
+    left: 45%px;
+    top: 89%;
+}
+
+#eleccion4 {
+    font-size: 12px;
+    padding: auto;
+}
+
+.eleccion5 {
+    position: absolute;
+    padding: 10px;
+    left: 45%px;
+    top: 96%;
+}
+
+#eleccion5 {
+    font-size: 12px;
+    padding: auto;
+}
+
+.si,
+.no {
+    margin: 0 15px;
+    padding: 10px 20px;
+    font-size: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #640f0f;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c28181;
+}
+
+.copy-button:hover {
+    background-color: #0e2f9c;
+}
+
+.opcion {
+    display: inline-block;
+}
+
+
+.pie_pagina{
+
+    font-size: 10px;
+    text-align: center;
+}
+
+.centrar{
+
+    text-align: center;
+}
+
+  a{
+        text-decoration: none; 
+        color: white;
+
+    }

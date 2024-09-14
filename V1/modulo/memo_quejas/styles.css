@@ -1,0 +1,188 @@
+ body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #a7c5eb, #fde8cd); /* Fondo degradado */
+            margin: 0;
+            padding: 0;
+          }
+
+    .menu1 {
+      background-color: rgb(233, 219, 72);
+      color: black;
+      padding: 10px;
+      position: fixed;
+      top: 40px;
+      width: 100%;
+      z-index: 1000;
+      text-align: justify;
+      font-size: 10px;
+    }
+
+       .menu1 a {
+      text-decoration: none;
+      color: rgb(14, 9, 9);
+      font-weight: bold;
+
+    }
+
+         .top-menu {
+            background-color: #4a90e2; /* Azul suave */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .top-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .top-menu li {
+            margin: 0;
+             list-style-type: none;
+        }
+        .top-menu li a {
+            color: #ffffff; /* Color del texto */
+            text-decoration: none;
+            padding: 10px 10px; /* Reducir el padding */
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+             list-style-type: none;
+        }
+        .top-menu li a:hover {
+            background-color: #ffd166; /* Amarillo suave al pasar el cursor */
+            transform: translateY(-3px);
+
+        }
+        .top-menu li a i {
+            margin-right: 10px;
+             list-style-type: none;
+        }
+
+
+    header {
+      background-color: dodgerblue;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      font-size: 12px;
+      list-style: none;
+    }
+
+
+    header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      list-style: none;
+
+    }
+
+    header li {
+      float: left;
+      margin-right: 10px;
+      list-style: none;
+
+    }
+
+    header a {
+      padding: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      list-style: none;
+     }
+
+
+    main {
+
+      /* Ajusta el margen superior para dejar espacio para el menú */
+      padding: 10px;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      /* Permite que los formularios se envuelvan a la siguiente línea */
+    }
+
+    .codigo {
+      margin: 8px;
+      padding: 3px;
+      left: 0;
+      position: absolute;
+      border: 1px solid black;
+      border-radius: 4px;
+      font-size: 10px;
+      justify-content: flex-start;
+
+    }
+
+    #CodigoGpon {
+      top: 80px;
+    }
+
+    .gpon_internet {
+      background-color: #ffe5f0;
+      position: absolute;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 0;
+      left: 80px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 10px;
+      background: linear-gradient(135deg, #71b7e6, #9b59b6);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+
+    
+}
+h5 {
+margin-bottom: 3px;
+margin-top: 5px;
+text-align: center;
+}
+
+    #formulario {
+      margin-bottom: 5px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+
+
+    label {
+      display: none;
+      /* Oculta los textos de las etiquetas */
+    }
+
+
+
+    .botones-copiar {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #fff;
+      color: #9b59b6;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    button:hover {
+      background: #8e44ad;
+      color: #fff;
+    }

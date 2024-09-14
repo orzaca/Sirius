@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/8f50e53f6f.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="styles2.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <title>Sirius</title>
+</head>
+
+<body>
+
+  <header>
+        <ul>
+
+<li><i class="fa-solid fa-link" style="color: #82030f;"></i><a href="./index.html">Bienvenida</a></li>
+
+<li><i class="fa-regular fa-handshake" style="color: #82030f;"></i><a href="./disculpas.html">Disculpas</a></li>
+
+<li><i class="fa-regular fa-face-smile" style="color: #82030f;"></i><a href="./empatia.html">Empatia</a></li>
+
+<li><i class="fa-solid fa-house-signal" style="color: #82030f;"></i><a href="./router.html">Router</a></li>
+
+<li><i class="fa-solid fa-tv" style="color: #82030f;"></i><a href="./tv.html">TV</a></li>
+
+<li><i class="fa-solid fa-wifi" style="color: #82030f;"></i><a href="./nocasa.html">Wifi</a></li>
+</ul>
+<ul>
+<li><i class="fa-solid fa-user-gear" style="color: #82030f;"></i><a href="./quejas.html">Quejas</a></li>
+
+<li><i class="fa-regular fa-clock" style="color: #82030f;"></i><a href="./espera.html">Espera</a></li>
+
+<li><i class="fa-solid fa-repeat" style="color: #82030f;"></i><a href="./transferir.html#">Transferir</a></li>
+
+<li><i class="fa-solid fa-list" style="color: #82030f;"></i><a href="./varios.html"> Guiones 1</a></li>
+
+<li><a href="./lenguaje.html">Guiones 2</a></li>
+
+
+  
+  </ul>
+    </header>
+
+
+  <main id="main-doc">
+        <section id="bienvenida" class="main-section">
+ 
+            <div class="guion">
+
+
+
+
+
+		<p><h2>Informacion / Comercial</h2></p>
+<p>
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())"> Te voy a transferir al área de información/comercial, para que te apoyen en tu gestión 👌 </button>
+            </p>
+
+
+            <p>
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())">  Gracias por el tiempo en línea ⏰, te has comunicado al área de soporte hogar. Para comunicarte con el área de Información hogar 📞 Por favor ingresa al siguiente link: 👉 https://wa.me/50242147100?text=Consulta%20informaci%C3%B3n%20sobre%20tu%20servicio%20residencial </button>
+            </p>
+		 <p><h2>Movil</h2></p>
+
+<p>
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())"> Te voy a transferir al área móvil, para que te apoyen en tu gestión 👌</button>
+            </p>
+            <p>
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())"> Gracias por el tiempo en línea ⏰, te has comunicado al área de soporte hogar. Para comunicarte con el área de Móvil 📞 Por favor ingresa al siguiente link: 👉  https://wa.me/50242147100?text=Consulta%20con%20un%20asesor%20sobre%20tus%20servicios%20prepago  </button>
+            </p>
+
+           
+
+<p><h2>Cliente no esta en casa</h2></p>
+
+            <p>
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())"> De acuerdo, muchas gracias en este caso sería necesario realizar las validaciones correspondientes, para ello es indispensable que te encuentres cerca de los equipos para que a medida que vayamos realizando las pruebas nos apoyes confirmando el estado del servicio. 📶 Recuerda que nosotros atendemos las 24 horas del día ⏰ y nos puedes escribir una vez estés en casa. 🏡
+</button>
+            </p>
+
+            </div>
+                    
+ </section>
+    </main>
+
+    <script>
+        function copyToClipboard(text, showAlert = false) {
+
+
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+
+            try {
+                document.execCommand('copy');
+                if (showAlert) {
+                    alert('Texto copiado al portapapeles');
+                }
+            } catch (err) {
+                console.error('No se pudo     al portapapeles', err);
+            }
+
+            document.body.removeChild(textarea);
+        }
+    </script>
+</body>
+
+</html>

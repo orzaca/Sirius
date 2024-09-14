@@ -1,0 +1,244 @@
+* {
+
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Alata", sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+
+
+.top-menu {
+            background-color: #4a90e2; /* Azul suave */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .top-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .top-menu li {
+            margin: 0;
+             list-style-type: none;
+        }
+        .top-menu li a {
+            color: #ffffff; /* Color del texto */
+            text-decoration: none;
+            padding: 10px 10px; /* Reducir el padding */
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+             list-style-type: none;
+        }
+        .top-menu li a:hover {
+            background-color: #ffd166; /* Amarillo suave al pasar el cursor */
+            transform: translateY(-3px);
+
+        }
+        .top-menu li a i {
+            margin-right: 10px;
+             list-style-type: none;
+        }
+
+h1 {
+    margin: 0;
+    font-size: 10px;
+    color: #333;
+    display: inline;
+}
+
+h2 {
+    margin: 0;
+    font-size: 8px;
+    color: #333;
+    display: inline;
+}
+
+h4 {
+
+    text-align: center;
+    color: black;
+}
+
+
+.linea-punteada {
+    display: block;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 12.5%;
+    width: 10%;
+    height: 39px;
+    border-left: 3px solid #070505;
+}
+
+
+
+.linea-punteada1 {
+    display: block;
+    justify-content: center;
+    position: absolute;
+    left: 65%;
+    top: 19%;
+    width: 10%;
+    height: 42px;
+    border-left: 3px dotted #070505;
+}
+
+.linea-punteada2 {
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    left: 65%;
+    top: 35%;
+    width: 10%;
+    height: 50px;
+    border-left: 3px dotted #070505;
+}
+
+.linea-punteada3 {
+    display: block;
+    justify-content: center;
+    position: absolute;
+    left: 40%;
+    top: 19%;
+    width: 10%;
+    height: 152px;
+    border-left: 3px solid #070505;
+}
+
+
+
+.opciones {
+    margin-top: 50px;
+    display: inline;
+}
+
+button {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+    padding: 5px 10px;
+    font-size: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #640f0f;
+    color: white;
+    /* transition: background-color 0.3s; */
+}
+
+.padre_titulo {
+    margin: 17px;
+    position: absolute;
+    padding: 8px;
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+    max-width: 300px;
+    left: 45%px;
+    top: 10%;
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: darkkhaki;
+}
+
+.titulo {
+    font-size: 12px;
+    padding: auto;
+
+}
+.padre_titulo2 {
+    margin: 17px;
+    position: absolute;
+    padding: 8px;
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+    max-width: 300px;
+    left: 45%px;
+    top: 40%;
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color:rgb(136, 150, 150);
+}
+.titulo2 {
+    font-size: 12px;
+    padding: auto;
+ 
+
+
+
+    
+}
+.padre_titulo3 {
+    margin: 17px;
+    position:absolute;
+    padding: 8px;
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+    max-width: 100px;
+    left: 48%;
+    top: 23%;
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color:rgb(223, 234, 125);
+}
+.titulo3 {
+    font-size: 8px;
+    padding: auto;
+ 
+
+}
+
+.copy-button {
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #4298d1;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s;
+
+}
+
+.
+button:hover {
+    background-color: #c28181;
+}
+
+.copy-button:hover {
+    background-color: #0e2f9c;
+}
+
+.opcion {
+    display: inline-block;
+}
+
+
+.pie_pagina{
+
+    font-size: 10px;
+    text-align: center;
+}
+
+.centrar{
+
+    text-align: center;
+}

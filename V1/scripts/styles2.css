@@ -1,0 +1,144 @@
+body {
+  	margin: 0;
+  	 font-family: 'Roboto', sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+
+
+
+
+header {
+	padding:1px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+	border-left: 3px solid #ccc;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+
+
+        }
+
+header ul {
+	list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        }
+
+
+header li {
+	float: left;
+	font-size: 13px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	padding:5px;
+	display: inline-block; 
+	border-radius: 5px;
+	border: 1px solid #B7202E;
+	background-color: white;
+	
+        }
+
+
+header a{
+	padding:5px;
+	text-decoration: none;
+        color:#B7202E ;
+	text-align: center;
+	border-radius: 5px;
+	}
+
+header li:hover {
+	background-color: #E03A36; 
+	}
+
+.MenuBienvenida{
+color: #E05F5A;
+}
+
+header a:hover {
+	color: white; 
+	}
+
+h2	{
+	font-size: 8px;
+	 text-align: center;
+	padding: 0px;
+	}
+
+main 	{
+        margin-top: 50px; 
+	margin-left:-60px;
+	padding: 20px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        }
+       
+
+.main-section {
+	margin-left: 0px;
+	left: 0px;
+	top: 0px;
+	padding:40px;
+	font-size: 3px;
+    	}
+
+
+
+.copy-button {
+	cursor: pointer;
+    	background-color: #eae2b7;
+    	color: black;
+    	border: none;
+    	padding: 5px 10px;
+    	margin-left: 10px;
+    	border-radius: 5px;
+	font-family: "Exo 2", sans-serif;
+ 	font-size: 8.8px;
+    	transition: background-color 0.3s; 
+	border: 1px solid black;
+	}
+
+.copy-button:hover {
+    	background-color: #D98218; 
+		}
+
+.copy-button::before {
+	font-size: 20px;
+        margin-right: 5px;
+	}
+
+
+  
+.guion{
+	position: absolute;
+	width: 35%;
+	left: 0%;
+	height: 35%;
+    	top: 13%;
+    	text-align: justify;
+	font-size: 5px;
+	}
+
+.guion2{
+    	position: absolute;
+    	left: 38%;
+    	top: 13%;
+    	width: 35% ;
+    	height: 50%;
+	font-size: 5px;
+	}
+
+.guion3{
+    	position: absolute;
+    	left: 68%;
+    	top: 60px;
+    	width: 35% ;
+    	height: 50%;
+	font-size: 5px;
+	}
+
+

@@ -1,0 +1,63 @@
+/* Estilos generales para el contenedor del dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-left {
+    flex: 1;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right span {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.navbar-right .logout-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-right .logout-link:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.role-message {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.role-message p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}

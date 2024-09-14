@@ -1,0 +1,152 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="image/favicon.png"/>
+    <title>Plantillas Quejas</title>
+</head>
+
+<body>
+    <nav id="navbar">
+       
+        <a href="#gpon_internet" class="nav-link">Gpon Internet</a>
+
+<a href="#hfc_internet" class="nav-link">HFC Internet</a>
+
+        <a href="#DSL_internet" class="nav-link">DSL Internet</a>
+
+        <a href="#linea" class="nav-link">Linea Telefonica</a>
+
+        <a href="#tv_dth" class="nav-link">TV DTH</a>
+
+       <a href="#tv_hfc" class="nav-link">TV HFC</a>
+
+       <a href="#IPTV" class="nav-link">IPTV</a>
+
+
+
+</nav>
+    <main id="main-doc">
+       9:05 a. m. 3/05/2024
+            <div class="codigo_gpon" >
+                <h3 text-align=center>Codigo de queja y Etapa</h3>
+            
+<p><b>LINEA GPON:</b> GP - 72 / ETAPA 35 </p>
+<p><b>INTERNET: </b>GP - 73 / ETAPA 35</p>
+<p><b>LINEA FIJA E INTERNET:</b>  GP-74 / ETAPA 35</p>
+<p><b>IPTV </b>----> GP-75 A</p>
+<p><b>TODO LOS SERVICIOS GPON </b>----> GP-76 A </p>
+
+
+</p>
+</div>
+<div class="plantilla">
+            <h5>INTERNET GPON</h5>
+            
+<form id="formulario">
+                 <label for="num_tel_gpon">Número de teléfono::</label> 
+  <input type="text" id="num_tel_gpon" 
+name="num_tel_gpon" placeholder="Número de teléfono" required>
+
+  <label for="serie_ont">Serie ONT:::::::::::</label>
+  <input type="text" id="serie_ont" name="serie_ont" placeholder="Serie ONT" required>
+
+  <label for="slot">Slot::::::::::::::::</label>
+  <input type="text="slot" name="slot" placeholder="Slot" required>
+
+  <label for="Puerto">Puerto::::::::::::::</label> 
+  <input type="text" id="Puerto" name="Puerto" placeholder="Puerto" required>
+
+  <label for="Nap">Nap:::::::::::::::::</label>
+  <input type="text" id="Nap" name="Nap"  placeholder="Nap" required>
+
+  <label for="Ontid">Ontid ::::::::::::::</label>
+  <input type="text" id="Ontid" name="Ontid"  placeholder="Ontid" required>
+
+  <label for="Perfil_Velocidad">Perfil Velocidad :::</label>
+  <input type="text" id="Ontid" name="Ontid"  placeholder="Perfil Velocidad" required> 
+
+ <label for="Luz_Portadora">Luz Portadora ::::::</label>
+  <input type="text" id="Luz_Portadora" name="Luz_Portadora" placeholder="Luz Portadora" value="off Luz Internet:rojo" required> 
+
+<label for="Canal">Canal dañado :::::::</label>
+  <input type="text" id="Canal" name="Canal" placeholder="Canal dañado" value="Datos" required>
+
+
+<label for="problema">Problema reportado::</label>
+  <input type="text" id="problema" name="problema" value="NO NAVEGA" required>
+
+<label for="pruebas">Pruebas realizadas::</label>
+  <input type="text" height=500 id="pruebas" name="pruebas" value="SALDOS OK, NO FALLAS, NO QUEJAS, NO BLOQUEO, NO O/S, NO QUEJAS, SE DESCONECTA Y CONECTA CORRIENTE. SE REALIZA RESET DE PISA, SE GENERA AVERIA" required>
+
+
+
+  <label for="contacto">Contacto en sitio:::</label>
+  <input type="text" id="contacto" name="contacto"  placeholder="Contacto en sitio" required> 
+
+
+<label for="tel">Tel de contacto:::::</label>
+  <input type="text" id="tel" name="tel"  placeholder="Tel de contacto"  required>
+
+<label for="direccion">Direccion:::::::::::</label>
+  <input type="text" id="direccion" name="direccion"  placeholder="Direccion"  required>
+
+
+
+<label for="horario">Horario de visita:::</label>
+  <input type="text" id="horario" name="horario"  value="08:00 a 17:00" required>
+
+
+                
+   <div class="botones-copiar">
+                    <button type="button" onclick="copiarFormulario()">COPIAR MEMO</button>
+                </div>
+            </form>
+        </div>
+        </section>
+
+
+ 
+    </main>
+
+
+
+
+
+
+
+
+   <script>
+        function copiarFormulario() {
+            var formulario = document.activeElement.parentElement.parentElement;
+            var inputs = formulario.getElementsByTagName('input');
+            var textoCopiado = '';
+
+            for (var i = 0; i < inputs.length; i++) {
+                var label = inputs[i].previousElementSibling.innerText;
+                var valor = inputs[i].value;
+                textoCopiado += label + ': ' + valor + '\n';
+            }
+
+            // Crear un textarea temporal para copiar el texto
+            var textareaTemporal = document.createElement('textarea');
+            textareaTemporal.value = textoCopiado;
+            document.body.appendChild(textareaTemporal);
+
+            // Seleccionar y copiar el texto
+            textareaTemporal.select();
+            document.execCommand('copy');
+
+            // Eliminar el textarea temporal
+            document.body.removeChild(textareaTemporal);
+
+            alert('PLANTILLA COPIADA CORRECTAMENTE, revisa los datos antes de pegarla en PISA.');
+        }
+    </script>
+</body>
+
+</html>

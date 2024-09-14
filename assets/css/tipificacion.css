@@ -1,0 +1,93 @@
+/* Estilo general del formulario */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Color de fondo claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff; /* Fondo blanco para el formulario */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header.header {
+    background: #d1c4e9; /* Color pastel para el header */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header.header h1 {
+    margin: 0;
+    color: #4a148c; /* Color de texto en el header */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6a1b9a; /* Color de las etiquetas */
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d1c4e9;
+    outline: none;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-buttons button {
+    background-color: #6a1b9a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.form-buttons button:hover {
+    background-color: #4a148c;
+}
+
+.form-buttons button[type="button"] {
+    background-color: #9c27b0;
+}
+
+.form-buttons button[type="button"]:hover {
+    background-color: #7b1fa2;
+}

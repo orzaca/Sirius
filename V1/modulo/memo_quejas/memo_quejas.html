@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/imagen/favicon.ico" />
+<link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memo Quejas +</title>
+</head>
+
+<body>
+
+  <header>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Memo Quejas</a></li>
+    <li><a href="#">Plantillas WF</a></li>
+    <li><a href="#">CheckList</a></li>
+    <li><a href="#">Manuales</a></li>
+    <li><a href="#">Grillas TV</a></li>
+    </ul>
+  </header>
+  <header class="menu1">
+    <li><a href="#">Internet Gpon</a></li>
+    <li><a href="#">Internet HFC</a></li>
+    <li><a href="#">Internet DSL</a></li>
+    <li><a href="#">TV HFC</a></li>
+    <li><a href="#">IPTV</a></li>
+    <li><a href="#">TV DTH</a></li>
+    <li><a href="#">Linea Adsl</a></li>
+    </ul>
+  </header>
+
+
+
+  <main>
+    <!-- ... INTERNET GPON -->
+
+    <section id="gpon_internet" class="main-section">
+      <div class="codigo" id="CodigoGpon">
+        <p class="titulo_codigo"><b>CODIGO QUEJAS Y ETAPA</b></p>
+        <p><b>Tipo &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Codigo&emsp;&emsp;&emsp;&emsp;Etapa</b></p>
+        <p>LINEA FIJA &emsp;&emsp;&emsp;&emsp;&emsp;GP 72&emsp;&emsp;&emsp;&emsp;&emsp;A</p>
+        <p>INTERNET &emsp;&emsp;&emsp;&emsp;&emsp;GP 73&emsp;&emsp;&emsp;&emsp;&emsp;A</p>
+        <p>IPTV&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GP 75&emsp;&emsp;&emsp;&emsp;&emsp;A</p>
+        <p>TODOS/SERVICIOS&emsp;GP 76&emsp;&emsp;&emsp;&emsp;&emsp;A</p>
+      </div>
+
+      <div class="gpon_internet">
+        <h5>INTERNET GPON</h5>
+
+        <form id="formulario">
+          <label for="num_tel_gpon">Número de teléfono::</label>
+          <input type="text" id="num_tel_gpon" name="num_tel_gpon" placeholder="Número de teléfono" required>
+
+          <label for="serie_ont">Serie ONT:::::::::::</label>
+          <input type="text" id="serie_ont" name="serie_ont" placeholder="Serie ONT" required>
+
+          <label for="slot">Slot::::::::::::::::</label>
+          <input type="text" id="slot" name="slot" placeholder="Slot" required>
+
+          <label for="Puerto">Puerto::::::::::::::</label>
+          <input type="text" id="Puerto" name="Puerto" placeholder="Puerto" required>
+
+          <label for="Nap">Nap:::::::::::::::::</label>
+          <input type="text" id="Nap" name="Nap" placeholder="Nap" required>
+
+          <label for="Ontid">Ontid ::::::::::::::</label>
+          <input type="text" id="Ontid" name="Ontid" placeholder="Ontid" required>
+
+          <label for="Perfil_Velocidad">Perfil Velocidad :::</label>
+          <input type="text" id="Ontid" name="Ontid" placeholder="Perfil Velocidad" required>
+
+          <label for="Luz_Portadora">Luz Portadora ::::::</label>
+          <input type="text" id="Luz_Portadora" name="Luz_Portadora" placeholder="Luz Portadora"
+            value="off Luz Internet:rojo" required>
+
+          <label for="Canal">Canal dañado :::::::</label>
+          <input type="text" id="Canal" name="Canal" placeholder="Canal dañado" value="Datos" required>
+
+
+          <label for="problema">Problema reportado::</label>
+          <input type="text" id="problema" name="problema" value="NO NAVEGA" required>
+
+          <label for="pruebas">Pruebas realizadas::</label>
+          <input type="text" height=500 id="pruebas" name="pruebas"
+            value="SALDOS OK, NO FALLAS, NO QUEJAS, NO BLOQUEO, NO O/S, NO QUEJAS, SE DESCONECTA Y CONECTA CORRIENTE. SE REALIZA RESET DE PISA, SE GENERA AVERIA"
+            required>
+
+
+          <label for="contacto">Contacto en sitio:::</label>
+          <input type="text" id="contacto" name="contacto" placeholder="Contacto en sitio" required>
+
+
+          <label for="tel">Tel de contacto:::::</label>
+          <input type="text" id="tel" name="tel" placeholder="Tel de contacto" required>
+
+          <label for="direccion">Direccion:::::::::::</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Direccion" required>
+
+
+
+          <label for="horario">Horario de visita:::</label>
+          <input type="text" id="horario" name="horario" value="08:00 a 17:00" required>
+
+
+
+          <div class="botones-copiar">
+            <button type="button" onclick="copiarFormulario()">Copiar Formulario 1</button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </section>
+    <!-- ... INTERNET DLS -->
+ <section id="dsl_internet" class="main-section">
+        <div class="dsl">
+            <h5>INTERNET DSL</h5>
+            <form id="formulario2">
+               <label for="cpe">CPE model::::::::::</label> 
+  <input type="text" id="cpe" 
+name="cpe" placeholder="CPE model" required>
+
+  <label for="luz">Luz Portadora::::::</label>
+  <input type="text" id="luz" name="serie_ont" value="LUZ INTERNET: OFF/ON" required>
+
+   <label for="Mediciones">Mediciones:::::::::</label>
+  <input type="text" id="Mediciones" name="Mediciones"  placeholder="Mediciones" required>
+
+  <label for="Puerto">Estado del Puerto::</label> 
+  <input type="text" id="Puerto" name="Puerto" placeholder="(Down /Up /Dormant)" required>
+
+  <label for="Velocidad">Velocidad Current::</label>
+  <input type="text" id="Velocidad" name="Velocidad"  placeholder="Velocidad Current" required>
+
+  <label for="SNR">SNR::::::::::::::::</label>
+  <input type="text" id="SNR" name="SNR"  placeholder="SNR" required>
+
+  <label for="atenuacion">Perfil Atenuacion:::</label>
+  <input type="text" id="atenuacion" name="atenuacion"  placeholder="Atenuacion" required> 
+
+ <label for="canal_dls">Canal Dañado::::::</label>
+  <input type="text" id="canal_dsl" name="canal_dsl"  value="DATOS / VOZ" required> 
+
+<label for="problema_dsl">Problema reportado::</label>
+  <input type="text" id="problema_dsl" name="problema_dsl" value="NO NAVEGA" required>
+
+<label for="pruebas_dls">Pruebas realizadas::</label>
+  <input type="text" id="pruebas_dsl" name="pruebas" value="SALDOS OK, NO FALLAS, NO QUEJAS, NO BLOQUEO, NO O/S, NO QUEJAS, SE DESCONECTA Y CONECTA CORRIENTE. SE REALIZA REBOOT DESDE UMP, SE REALZA RESET DE PUERTOS, SE GENERA AVERIA" required>
+
+
+  <label for="contacto_dsl">Contacto en sitio:::</label>
+  <input type="text" id="contacto_dsl" name="contacto_dsl"  placeholder="Contacto en sitio" required> 
+
+
+<label for="tel_dsl">Tel de contacto:::::</label>
+  <input type="text" id="tel_dsl" name="tel_dsl"  placeholder="Tel de contacto"  required>
+
+<label for="direccion_dsl">Direccion:::::::::::</label>
+  <input type="text" id="direccion_dsl" name="direccion_dsl"  placeholder="Direccion"  required>
+
+
+
+<label for="horario_dsl">Horario de visita:::</label>
+  <input type="text" id="horario_dsl" name="horario_dsl"  value="08:00 a 17:00" required>
+
+
+              
+
+                <div class="botones-copiar">
+                    <button type="button" onclick="copiarFormulario()">Copiar Formulario 2</button>
+                </div>
+            </form>
+        </div>
+
+</section>
+    <!--
+
+        <div class="gpon">
+            <h5>INTERNET HFC</h5>
+
+            <form id="formulario3">
+
+               <label for="tipo_hfc">Tipo de servicio:::</label> 
+  <input type="text" id="tipo_hfc" 
+name="tipo_hfc" placeholder="Tipo de servicio" required>
+
+  <label for="Estado">Estado CMTS UMP / Axiros: </label>
+  <input type="text" id="Estado" name="Estado" placeholder="Estado CMTS UMP / Axiros" required>
+
+  <label for="SNR">SNR::::::::::::::::</label>
+  <input type="text="SNR" name="SNR" placeholder="SNR" required>
+
+  <label for="Output">Output power:::::::</label> 
+  <input type="text" id="Output" name="Output" placeholder="Output power" required>
+
+  <label for="cable_SNR">Primary cable SNR::</label>
+  <input type="text" id="cable_SNR" name="cable_SNR"  placeholder="Primary cable SNR" required>
+
+  <label for="cable_power">Primary cable output power</label>
+  <input type="text" id="cable_power" name="cable_power"  placeholder="Primary cable output power" required>
+
+  <label for="Mac">Mac Address::::::::</label>
+  <input type="text" id="Mac" name="Mac"  placeholder="Mac Address" required> 
+
+ <label for="Luz_Portadora">Luz Portadora ::::::</label>
+  <input type="text" id="Luz_Portadora" name="Luz_Portadora" placeholder="Luz Portadora" value="off Luz Internet:rojo" required> 
+
+<label for="Canal">Canal dañado :::::::</label>
+  <input type="text" id="Canal" name="Canal" placeholder="Canal dañado" value="Datos" required>
+
+
+<label for="problema">Problema reportado::</label>
+  <input type="text" id="problema" name="problema" value="NO NAVEGA" required>
+
+<label for="pruebas">Pruebas realizadas::</label>
+  <input type="text" height=500 id="pruebas" name="pruebas" value="SALDOS OK, NO FALLAS, NO QUEJAS, NO BLOQUEO, NO O/S, NO QUEJAS, SE DESCONECTA Y CONECTA CORRIENTE. SE REALIZA RESET DE PISA, SE GENERA AVERIA" required>
+
+
+  <label for="contacto">Contacto en sitio:::</label>
+  <input type="text" id="contacto" name="contacto"  placeholder="Contacto en sitio" required> 
+
+
+<label for="tel">Tel de contacto:::::</label>
+  <input type="text" id="tel" name="tel"  placeholder="Tel de contacto"  required>
+
+<label for="direccion">Direccion:::::::::::</label>
+  <input type="text" id="direccion" name="direccion"  placeholder="Direccion"  required>
+
+
+
+<label for="horario">Horario de visita:::</label>
+  <input type="text" id="horario" name="horario"  value="08:00 a 17:00" required>
+
+
+               
+
+                <div class="botones-copiar">
+                    <button type="button" onclick="copiarFormulario()">Copiar Formulario 3</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="gpon">
+            <h5>PLANTILLA LINEA FIJA</h5>
+
+            <form id="formulario3">
+               <label for="levantar">AL LEVANTAR EL AURICULAR:</label> 
+  <input type="text" id="levantar" 
+name="levantar" placeholder="AL LEVANTAR EL AURICULAR:" required>
+
+  <label for="llaman">CUANDO LE LLAMAN........:</label>
+  <input type="text" id="llaman" name="llaman" placeholder="CUANDO LE LLAMAN" required>
+
+  <label for="contacto">CONTACTO................:</label>
+  <input type="text id="contacto" name="contacto" placeholder="CONTACTO" required>
+
+  <label for="tel_fija">TELEFONO DE REFERENCIA..: </label> 
+  <input type="text" id="tel_fija" name="tel_fija" placeholder="TELEFONO DE REFERENCIA" required>
+
+<label for="direccion_fijo">DIRECCIÒN...............:</label>
+  <input type="text" id="direccion_fijo" name="direccion_fijo"  placeholder="DIRECCIÒN"  required>
+
+<label for="horario_fijo">Horario de visita:::</label>
+  <input type="text" id="horario_fijo" name="horario_fijo"  value="08:00 a 17:00" required>
+
+
+        
+
+                <div class="botones-copiar">
+                    <button type="button" onclick="copiarFormulario()">Copiar Formulario 3</button>
+                </div>
+            </form>
+        </div>
+
+ <div class="gpon">
+            <h5>PLANTILLA TV DTH</h5>
+
+            <form id="formulario3">
+               <label for="tipo_queja">Tipo de Queja:::::::</label> 
+  <input type="text" id="tipo_queja" 
+name="tipo_queja" placeholder="ipo de Queja" required>
+
+  <label for="tvs">No. TVS afectados:::</label>
+  <input type="text" id="tvs" name="tvs" placeholder="No. TVS afectados" required>
+
+  <label for="marcastb">Marca STB:::::::::::</label>
+  <input type="text" id="marcastb" name="marcastb" placeholder="Marca STB" required>
+
+  <label for="seriestb">Serie STB:::::::::::</label> 
+  <input type="text" id="seriestb" name="seriestb" placeholder="Serie STB" required>
+
+  <label for="seriesmc">Serie SMC:::::::::::</label>
+  <input type="text" id="seriesmc" name="seriesmc"  placeholder="Serie SMC" required>
+
+  <label for="problemastb">Problema reportado::</label>
+  <input type="text" id="problemastb" name="problemastb" value="SIN SEÑAL TV" required>
+
+<label for="pruebasstb">Pruebas realizadas::</label>
+  <input type="text" id="pruebasstb" name="pruebasstb" value="SALDOS OK, NO FALLAS, NO QUEJAS, NO BLOQUEO, NO O/S, NO QUEJAS, SE DESCONECTA Y CONECTA CORRIENTE. SE ENVIAN COMANDOS, SE GENERA AVERIA" required>
+
+
+  <label for="contacto">Contacto en sitio:::</label>
+  <input type="text" id="contacto" name="contacto"  placeholder="Contacto en sitio" required> 
+
+
+<label for="tel">Tel de contacto:::::</label>
+  <input type="text" id="tel" name="tel"  placeholder="Tel de contacto"  required>
+
+<label for="direccion">Direccion:::::::::::</label>
+  <input type="text" id="direccion" name="direccion"  placeholder="Direccion"  required>
+
+
+
+<label for="horario">Horario de visita:::</label>
+  <input type="text" id="horario" name="horario"  value="08:00 a 17:00" required>
+
+
+
+                <div class="botones-copiar">
+                    <button type="button" onclick="copiarFormulario()">Copiar Formulario 3</button>
+                </div>
+            </form>
+        </div>
+
+
+
+ <div class="gpon">
+            <h5>PLANTILLA TV HFC</h5>
+
+            <form id="formulario3">
+               <label for="Tipo_de_ Queja">Tipo de Queja::::::</label> 
+  <input type="text" id="Tipo_de_ Queja" 
+name="Tipo_de_ Queja" placeholder="Tipo de Queja" required>
+
+  <label for="TVS_Afectados">No. TVS Afectados::</label>
+  <input type="text" id="TVS_Afectados" name="TVS_Afectados" placeholder="No. TVS Afectados" required>
+
+  <label for="Modelo">Modelo de STB::::::</label>
+  <input type="text= id="Modelo" name="Modelo" placeholder="Modelo de STB" required>
+
+  <label for="Serie">No. Serie STB:::::: </label> 
+  <input type="text" id="Serie" name="Serie" placeholder="No. Serie STB" required>
+
+
+<label for="problema">Problema reportado::</label>
+  <input type="text" id="problema" name="problema" value="SIN SEÑAL" required>
+
+<label for="pruebas">Pruebas realizadas::</label>
+  <input type="text" height=500 id="pruebas" name="pruebas" value="SALDOS OK, NO FALLAS, NO QUEJAS, NO BLOQUEO, NO O/S, NO QUEJAS, SE DESCONECTA Y CONECTA CORRIENTE. SE ENVIAN COMANDOS DE PISA, SE GENERA AVERIA" required>
+
+
+  <label for="contacto">Contacto en sitio:::</label>
+  <input type="text" id="contacto" name="contacto"  placeholder="Contacto en sitio" required> 
+
+
+<label for="tel">Tel de contacto:::::</label>
+  <input type="text" id="tel" name="tel"  placeholder="Tel de contacto"  required>
+
+<label for="direccion">Direccion:::::::::::</label>
+  <input type="text" id="direccion" name="direccion"  placeholder="Direccion"  required>
+
+
+
+<label for="horario">Horario de visita:::</label>
+  <input type="text" id="horario" name="horario"  value="08:00 a 17:00" required>
+
+
+
+
+                <div class="botones-copiar">
+                    <button type="button" onclick="copiarFormulario()">Copiar Formulario 3</button>
+                </div>
+            </form>
+        </div>
+
+
+
+ 
+ <div class="gpon">
+            <h5>PLANTILLA IPTV </h5>
+
+            <form id="formulario3">
+               
+
+<label for="Modelo">Modelo de STB::::::::</label> 
+  <input type="text" id="Modelo" 
+name="Modelo" placeholder="Modelo de STB" required>
+
+  <label for="Numero">Número:::::::::::::::</label>
+  <input type="text" id="Numero" name="Numero" placeholder="Numero" required>
+
+  <label for="Correo">Correo Claro Video:::</label>
+  <input type="text="Correo" name="Correo" id="Correo" placeholder="Correo Claro Video" required>
+
+  <label for="Plan">Paquete contratado:::</label> 
+  <input type="text" id="Plan" name="Plan" placeholder="Plan o paquete contratado" required>
+
+  <label for="Check">Check AMCO y PLE:::::</label>
+  <input type="text" id="Check" name="Check"  value="Ambos en verde" required>
+
+  <label for="Mensaje">Mensaje en la TV:::::</label>
+  <input type="text" id="Mensaje" name="Mensaje"  placeholder="Mensaje en la TV" required>
+
+<label for="tel">Tel de contacto::::::</label>
+  <input type="text" id="tel" name="tel"  placeholder="Tel de contacto"  required>
+
+  <label for="contacto">Cliente::::::::::::::</label>
+  <input type="text" id="contacto" name="contacto"  placeholder="Contacto en sitio" required> 
+
+
+<label for="descripcion">Descripcion::::::::::</label>
+  <input type="text" id="descripcion" name="descripcion" placeholder="Descripcion" required>
+
+<label for="pruebas">Pruebas realizadas:::</label>
+  <input type="text" height=500 id="pruebas" name="pruebas" placeholder="Pruebas realizadas" required>
+
+
+<label for="direccion">Direccion::::::::::::</label>
+  <input type="text" id="direccion" name="direccion"  placeholder="Direccion"  required>
+
+
+
+<label for="horario">Horario de visita::::</label>
+  <input type="text" id="horario" name="horario"  value="08:00 a 17:00" required>
+
+
+
+                <div class="botones-copiar">
+                    <button type="button" onclick="copiarFormulario()">Copiar Formulario 3</button>
+                </div>
+            </form>
+        </div>
+      -->
+
+  </main>
+
+  <script>
+    function copiarFormulario() {
+      var formulario = document.activeElement.parentElement.parentElement;
+      var inputs = formulario.getElementsByTagName('input');
+      var textoCopiado = '';
+
+      for (var i = 0; i < inputs.length; i++) {
+        var label = inputs[i].previousElementSibling.innerText;
+        var valor = inputs[i].value;
+        textoCopiado += label + ': ' + valor + '\n';
+      }
+
+      // Crear un textarea temporal para copiar el texto
+      var textareaTemporal = document.createElement('textarea');
+      textareaTemporal.value = textoCopiado;
+      document.body.appendChild(textareaTemporal);
+
+      // Seleccionar y copiar el texto
+      textareaTemporal.select();
+      document.execCommand('copy');
+
+      // Eliminar el textarea temporal
+      document.body.removeChild(textareaTemporal);
+
+      alert('Formulario copiado al portapapeles. Pega en el Bloc de notas o en tu editor preferido.');
+    }
+  </script>
+
+</body>
+
+</html>

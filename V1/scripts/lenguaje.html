@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/8f50e53f6f.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="styles2.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+
+    <title>Sirius</title>
+</head>
+
+<body>
+
+ <header>
+        <ul>
+
+<li><i class="fa-solid fa-link" style="color: #82030f;"></i><a href="./index.html">Bienvenida</a></li>
+
+<li><i class="fa-regular fa-handshake" style="color: #82030f;"></i><a href="./disculpas.html">Disculpas</a></li>
+
+<li><i class="fa-regular fa-face-smile" style="color: #82030f;"></i><a href="./empatia.html">Empatia</a></li>
+
+<li><i class="fa-solid fa-house-signal" style="color: #82030f;"></i><a href="./router.html">Router</a></li>
+
+<li><i class="fa-solid fa-tv" style="color: #82030f;"></i><a href="./tv.html">TV</a></li>
+
+<li><i class="fa-solid fa-wifi" style="color: #82030f;"></i><a href="./nocasa.html">Wifi</a></li>
+</ul>
+<ul>
+<li><i class="fa-solid fa-user-gear" style="color: #82030f;"></i><a href="./quejas.html">Quejas</a></li>
+
+<li><i class="fa-regular fa-clock" style="color: #82030f;"></i><a href="./espera.html">Espera</a></li>
+
+<li><i class="fa-solid fa-repeat" style="color: #82030f;"></i><a href="./transferir.html#">Transferir</a></li>
+
+<li><i class="fa-solid fa-list" style="color: #82030f;"></i><a href="./varios.html"> Guiones 1</a></li>
+
+<li><a href="./lenguaje.html">Guiones 2</a></li>
+
+
+  
+  </ul>
+    </header>
+
+
+
+
+
+  <main id="main-doc">
+        <section id="bienvenida" class="main-section">
+ 
+            <div class="guion">
+
+ <p>
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())"> XXXXXXX, apóyanos por favor verificando 🔎 que no haya cortes físicos en tu fibra óptica. </button>
+</p>
+          <p>
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())"> XXXXXX, desconecta tu router de la corriente y lo conectas a un tomacorriente diferente sin moverlo de lugar para evitar dañar la fibra. 🔌.  después presiona el botón de power, esperas 2 minutos y lo vuelves a presionar encendiendo 💡 tu router, esperas por favor otro par de minutos a que enciendan todas las luces y nos confirmas si el inconveniente persiste. </button>
+</p>
+
+            </div>
+
+<div class="guion2">
+
+
+
+<p>
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())">
+XXXXX, apóyanos por favor realizando los siguientes pasos. 👇
+
+1️⃣ Presiona de manera simultánea las teclas Windows + R
+
+2️⃣ En el cuadro de búsqueda que te va a salir vas a escribir las siglas 👉 cmd
+
+3️⃣ Te va a salir un recuadro de color negro donde vas a escribir el siguiente comando 👉 ping www.google.com -n 50 👈 y presionas enter.
+
+4️⃣ Por favor compártenos una foto 📷 del resultado final. 
+
+Nota: por favor copia y pega el comando que te indicamos para así evitar errores de transcripción al momento de la ejecución. ✅</button>
+</p>
+<p>
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())">XXXXXX, realizamos unas configuraciones en nuestro sistema para que la conectividad se te pueda mantener y no sigas presentando este tipo de inconvenientes. ¡No te preocupes! ⌛ Realmente nos encargaremos de que tu servicio de internet pueda funcionar sin ninguna falencia. ✔ </button>
+
+</p>
+
+<p> 
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())"> 
+XXXXXXX, queremos ofrecerte disculpas por los inconvenientes en tu servicio de Claro Hogar. En estos momentos te quedaste sin servicio debido a trabajos de migración de la red que se están realizando en tu sector. Estamos migrando a todos nuestros clientes de Claro Hogar en hacia nuestra nueva tecnología de Claro Fibra, con este cambio en tu Internet tendrá:
+
+✅ Un servicio más estable 
+✅ Mejor cobertura Wifi en su casa 
+✅ Velocidades más altas, hasta 200 Megas  </button>
+
+</p>
+
+<p> 
+
+                <button class="copy-button" onclick="copyToClipboard(this.parentElement.innerText.trim())"> ¿Te gustaría migrar tu servicio? 😀  </button>
+
+</p>
+
+            </div>
+                    
+ </section>
+    </main>
+
+    <script>
+        function copyToClipboard(text, showAlert = false) {
+
+
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+
+            try {
+                document.execCommand('copy');
+                if (showAlert) {
+                    alert('Texto copiado al portapapeles');
+                }
+            } catch (err) {
+                console.error('No se pudo     al portapapeles', err);
+            }
+
+            document.body.removeChild(textarea);
+        }
+    </script>
+</body>
+
+</html>
