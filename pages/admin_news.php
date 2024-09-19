@@ -1,9 +1,9 @@
 <?php
 session_start();
-require '../includes/db.php'; // Asegúrate de que la ruta sea correcta
+require '../includes/db.php';
 
-// Verifica si el usuario está logueado y es admin
-if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
+// Verifica si el usuario está logueado
+if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'telefonico') {
     header("Location: login.php");
     exit;
 }
@@ -83,5 +83,53 @@ $news_list = $stmt->fetchAll();
             </ul>
         </section>
     </main>
+
+    <script>
+        // Solicitar permiso para notificaciones de escritorio
+        function requestNotificationPermission() {
+            if (Notification.permission === "default") {
+                Notification.requestPermission().then(permission => {
+                    if (permission === "granted") {
+                        console.log("Notificaciones habilitadas.");
+                    } else {
+                        console.log("Notificaciones bloqueadas.");
+                    }
+                });
+            }
+        }
+
+        // Mostrar una notificación
+        function showNotification(title, body) {
+            if (Notification.permission === "granted") {
+                new Notification(title, {
+                    body: body,
+                    icon: '/assets/img/news-icon.png' // Opcional: puedes agregar un icono
+                });
+            }
+        }
+
+        // Verificar si hay nuevas noticias
+        let lastNewsId = 0;
+        function checkForNews() {
+            fetch('/check_news.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (data && data.id > lastNewsId) {
+                        // Si es una nueva noticia, mostrar la notificación
+                        showNotification("Nueva Noticia", data.title);
+                        lastNewsId = data.id;
+                    }
+                })
+                .catch(error => console.error('Error al verificar noticias:', error));
+        }
+
+        // Al cargar la página, solicitar permisos
+        document.addEventListener("DOMContentLoaded", function() {
+            requestNotificationPermission();
+
+            // Verificar cada 30 segundos si hay noticias nuevas
+            setInterval(checkForNews, 30000);
+        });
+    </script>
 </body>
 </html>

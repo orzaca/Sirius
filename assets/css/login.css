@@ -1,24 +1,38 @@
 /* Estilos generales para el contenedor de autenticación */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(to right, #4caf50, #81c784);
+}
+
+
 .auth-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f2f2f2;
+    background: linear-gradient(to right, #f2f5f2, #81c784);
 }
 
 .auth-form {
-    background-color: #ffffff;
+    position: absolute;
+    right:  160px;
+    background-color: #3fe472;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    box-shadow: 10px 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     text-align: center;
+   
 }
 
 .auth-form h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 24px;
     color: #333;
 }
@@ -26,7 +40,7 @@
 .auth-form label {
     display: block;
     margin-bottom: 8px;
-    font-size: 14px;
+    font-size: 20px;
     color: #555;
 }
 
@@ -36,19 +50,23 @@
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 14px;
+    background-color: #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .auth-form button {
-    width: 100%;
+    width: 40%;
+    margin-bottom: 30px;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #fff;
     border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
+    border-radius: 15px;
+    color: #090909;
+    font-size: 20px;
     cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .auth-form button:hover {
@@ -67,4 +85,17 @@
 
 .auth-form a:hover {
     text-decoration: underline;
+}
+
+.logo{
+
+    position: absolute;
+    left: 250px;
+}
+
+.fondo{
+    position: relative;
+    left: 0px;
+    width: 400px;
+    height: 200px;
 }

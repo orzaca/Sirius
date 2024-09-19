@@ -61,11 +61,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <input type="email" id="email" name="email" required>
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required>
-                <button type="submit">Iniciar sesión</button>
+                <button type="submit">Ingresar</button>
             </form>
-            <p><a href="register.php">Registrar Asesor</a></p>
-            <p><a href="forgot_password.php">Olvidé mi contraseña</a></p>
+            
         </div>
+
+
+        <div class="logo">
+        <img src="/assets/img/Zirius.png" />
+        </div>
+
     </div>
 </body>
 </html>
