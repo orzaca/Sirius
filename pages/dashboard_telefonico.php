@@ -37,7 +37,7 @@ $news_list = $news_stmt->fetchAll();
     <header class="header">
         <nav class="navbar">
             <div class="navbar-left">
-                <h1>Dashboard Telefónico</h1>
+                <h1>Zirius Desk</h1>
             </div>
             <div class="navbar-icons">
                 <a href="#" class="icon" title="Inicio"><i class="fas fa-home"></i></a>
@@ -68,8 +68,7 @@ $news_list = $news_stmt->fetchAll();
 <main class="main-content">
     <!-- Sección de Noticias en la parte superior -->
     <section class="news-section">
-    <div class="new-message">¡Nueva Mensaje disponible!</div>
-    
+       
     <h2>Mensajes</h2>
         <ul>
             <?php foreach ($news_list as $news): ?>
@@ -80,15 +79,21 @@ $news_list = $news_stmt->fetchAll();
                 </li>
             <?php endforeach; ?>
         </ul>
+
+
+        
+    </div>
+
+    <div class="news-images">
+              <div class="image-gallery">
+            <img src="/assets/img/promo.jpg" alt="Noticia 1" />
+            <!-- Más imágenes -->
+        </div>
     </section>
 
     <!-- Módulos en la parte superior -->
     <section class="top-modules">
-    <div class="module" id="daily-statistics">
-    <h3>Tipificación Diaria</h3>
-    <p id="tipification-count">Cargando...</p> <!-- Aquí se mostrará el número de tipificaciones -->
-</div>
-
+   
 
 <!-- Botón de pestaña flotante -->
 <!-- Botón de pestaña flotante -->
@@ -115,10 +120,18 @@ $news_list = $news_stmt->fetchAll();
         </div>
     </form>
 </div>
-       <div class="module">
-            <h3>Módulo 2</h3>
-            <p>Este es el contenido del Módulo 2. Aquí puedes colocar más información o funcionalidades importantes.</p>
-        </div>
+<button id="show-timer-btn">Cronómetro</button>
+       <!-- Cronómetro Flotante -->
+       <div class="floating-timer" id="floating-timer">
+    <h3>Cronómetro</h3>
+    <div id="timer">
+        <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+    <button id="start-btn">Iniciar</button>
+    <button id="stop-btn">Detener</button>
+    <button id="reset-btn">Reiniciar</button>
+</div>
+
     </section>
 
     
@@ -310,7 +323,65 @@ function updateNewsList(newNewsItem) {
 }
 </script>
 
-<script src="path/to/news.js"></script>
+<script>
+// Variables para el cronómetro
+let timerInterval;
+let hours = 0;
+let minutes = 0;
+let seconds = 0;
+
+// Función para actualizar el cronómetro
+function updateTimer() {
+    document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+    document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+}
+
+// Función para iniciar el cronómetro
+function startTimer() {
+    timerInterval = setInterval(() => {
+        seconds++;
+        if (seconds >= 60) {
+            seconds = 0;
+            minutes++;
+        }
+        if (minutes >= 60) {
+            minutes = 0;
+            hours++;
+        }
+        updateTimer();
+    }, 1000);
+}
+
+// Función para detener el cronómetro
+function stopTimer() {
+    clearInterval(timerInterval);
+}
+
+// Función para reiniciar el cronómetro
+function resetTimer() {
+    clearInterval(timerInterval);
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+    updateTimer();
+}
+
+// Mostrar/Ocultar el cronómetro al hacer clic en el botón
+document.getElementById('show-timer-btn').addEventListener('click', () => {
+    const timerElement = document.getElementById('floating-timer');
+    timerElement.style.display = timerElement.style.display === 'none' ? 'block' : 'none';
+});
+
+// Asignar eventos a los botones del cronómetro
+document.getElementById('start-btn').addEventListener('click', startTimer);
+document.getElementById('stop-btn').addEventListener('click', stopTimer);
+document.getElementById('reset-btn').addEventListener('click', resetTimer);
+
+// Inicializar el cronómetro
+updateTimer();
+
+</script>
 
 
 

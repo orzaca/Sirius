@@ -6,11 +6,11 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: #e0f7fa; /* Fondo más fresco */
+    background-color: linear-gradient(90deg, rgb(134, 194, 246) 0%, rgba(0,150,136,1) 100%);
 }
 
 .header {
-    background: linear-gradient(90deg, rgba(0,188,212,1) 0%, rgba(0,150,136,1) 100%);
+    background: linear-gradient(90deg, rgb(181, 228, 203) 0%, rgba(0,150,136,1) 100%);
     color: #fff;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -24,7 +24,8 @@ body {
 
 .sidebar {
     width: 250px; /* Ancho fijo del menú lateral */
-    background-color: #b2dfdb; /* Color de fondo más fresco */
+    background-color: #a8cdc9; /* Color de fondo más fresco */
+    transition: background-color 0.3s, transform 0.3s;
     padding: 15px;
     position: fixed;
     top: 60px; /* Ajusta según el alto de tu header */
@@ -132,40 +133,67 @@ body {
 
 /* Estilo para la sección de noticias flotante */
 /* Estilo para la sección de noticias flotante */
+/* Estilos para la Sección de Noticias */
+/* Estilos para la Sección de Noticias */
 .news-section {
-    background: linear-gradient(135deg, #b2dfdb, #80cbc4); /* Fondo degradado */
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: fixed; /* Posición fija para el diseño flotante */
-    right: 20px; /* Ajusta el espacio desde el borde derecho */
-    top: 80px; /* Espacio desde el borde superior */
-    z-index: 1; /* Asegúrate de que esté sobre otros elementos */
-    width: 300px; /* Ancho ajustado para la sección de noticias */
-    height: auto; /* Altura automática según el contenido */
-    transition: transform 0.3s ease-in-out; /* Transición para animación */
+    background-color: #ffffff; /* Fondo blanco para el módulo */
+    border: 1px solid #dddddd; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Padding para el contenido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    position: absolute; /* Posicionamiento absoluto para moverlo */
+    top: 80px; /* Espacio desde la parte superior del contenedor */
+    left: 300px; /* Espacio desde la parte izquierda del contenedor */
+    width: 250px; /* Ajustar el ancho según sea necesario */
 }
-
-/* Estilo para el aviso de nuevo mensaje */
-.news-section .new-message {
-    background-color: #ffeb3b; /* Color de fondo para el aviso */
-    color: #000; /* Color de texto para el aviso */
-    border: 1px solid #fbc02d; /* Borde para el aviso */
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    display: none; /* Ocultamos el aviso por defecto */
-}
-
-
-
-
 
 .news-section h2 {
-    margin-top: 0;
-    color: #00796b; /* Color de texto que contrasta bien con el fondo */
+    font-size: 1.2em; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #f70e0e; /* Color del texto */
 }
+
+.news-section .news-item {
+    margin-bottom: 15px; /* Espacio entre noticias */
+}
+
+.news-section .news-item:last-child {
+    margin-bottom: 0; /* Quitar margen en el último elemento */
+}
+
+
+.news-images {
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Mismo ancho que la sección de noticias */}
+
+
+.news-images h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.news-images .image-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-images .image-gallery img {
+    width: 100%;
+    height: auto; /* Mantener la proporción de la imagen */
+    margin-bottom: 10px; /* Espacio entre imágenes */
+    border-radius: 4px; /* Bordes redondeados para las imágenes */
+}
+
+
+
 
 .news-section ul {
     list-style: none;
@@ -195,7 +223,7 @@ body {
 }
 
 .dark-mode .header {
-    background: linear-gradient(90deg, rgba(0,188,212,1) 0%, rgba(0,150,136,1) 100%);
+    background: linear-gradient(90deg, rgba(62, 73, 76, 0.681) 0%, rgb(83, 86, 86) 100%);
 }
 
 .dark-mode .navbar-icons .icon {
@@ -207,7 +235,7 @@ body {
 }
 
 .dark-mode .logout-link {
-    background-color: #c82333;
+    background-color: #706a6a;
 }
 
 .dark-mode .sidebar {
@@ -215,7 +243,7 @@ body {
 }
 
 .dark-mode .menu a {
-    color: #bb86fc;
+    color: #f2f2f8;
 }
 
 .dark-mode .menu a:hover {
@@ -250,12 +278,89 @@ body {
     width: 100%; /* Ajusta el ancho del módulo al contenedor */
     box-sizing: border-box; /* Incluye el padding y border en el ancho total */
 }
-
-.module-1,
-.module-2 {
-    min-width: 300px; /* Ancho mínimo para ambos módulos */
-    min-height: 200px; /* Altura mínima para ambos módulos */
+/* Estilos para el Módulo 1 */
+/* Estilos para el Módulo 1 Compacto */
+.module-1 {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px; /* Reducir el padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más ligera */
+    max-width: 300px; /* Limitar el ancho para hacerlo más compacto */
+    margin: 10px; /* Espacio alrededor del módulo */
 }
+
+.module-1 h2 {
+    font-size: 1.2em; /* Tamaño de fuente reducido */
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.module-1 .chart-container {
+    height: 150px; /* Limitar la altura del contenedor del gráfico */
+    margin-top: 10px;
+}
+
+/* Estilos para el Módulo 2 */
+/* Estilos para el Módulo 2 Compacto */
+.module-2 {
+    background-color: #f9f9f9;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 15px; /* Reducir el padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más ligera */
+    max-width: 300px; /* Limitar el ancho para hacerlo más compacto */
+    margin: 10px; /* Espacio alrededor del módulo */
+}
+
+.module-2 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.module-2 th, .module-2 td {
+    padding: 8px; /* Reducir el padding en las celdas */
+    text-align: left;
+}
+
+.module-2 th {
+    background-color: #eeeeee;
+    font-size: 0.9em; /* Tamaño de fuente reducido */
+}
+
+
+/* Estilos para el Módulo 3 Compacto */
+.module-3 {
+    background-color: #f9f9f9; /* Fondo gris claro para diferenciación */
+    border: 1px solid #cccccc; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Padding reducido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    max-width: 300px; /* Limitar el ancho */
+    margin: 10px; /* Espacio alrededor del módulo */
+}
+
+.module-3 h2 {
+    font-size: 1.2em; /* Tamaño de fuente reducido */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #333333; /* Color de texto oscuro */
+}
+
+.module-3 .content ul {
+    list-style-type: none; /* Quitar viñetas */
+    padding: 0; /* Quitar padding por defecto */
+    margin: 0; /* Quitar márgenes */
+}
+
+.module-3 .content li {
+    padding: 5px 0; /* Espacio entre elementos de la lista */
+    border-bottom: 1px solid #dddddd; /* Línea divisoria entre elementos */
+}
+
+.module-3 .content li:last-child {
+    border-bottom: none; /* Quitar línea divisoria en el último elemento */
+}
+
 .module h3 {
     margin-top: 0;
 }
@@ -439,4 +544,57 @@ button#copy-button:hover {
     flex-direction: column;
     position: relative;
 }
+/* Estilos para el Cronómetro Flotante */
+.floating-timer {
+    display: none; /* Ocultar el cronómetro inicialmente */
+    position: fixed; /* Fijar la posición del cronómetro en la pantalla */
+    bottom: 20px; /* Espacio desde la parte inferior */
+    left: 170px; /* Ajustar el espacio desde la parte derecha (mover más a la izquierda) */
+    background-color: #ffffff; /* Fondo blanco para el cronómetro */
+    border: 1px solid #dddddd; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espacio interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
 
+.floating-timer h3 {
+    margin: 0 0 10px 0; /* Espacio debajo del título */
+    font-size: 1.2em; /* Tamaño del texto */
+    color: #444444; /* Color del texto */
+}
+
+#timer {
+    font-size: 2em; /* Tamaño grande del cronómetro */
+    margin-bottom: 10px; /* Espacio debajo del cronómetro */
+}
+
+button {
+    background-color: #13d584; /* Color de fondo para los botones */
+    color: white; /* Color del texto en los botones */
+    border: none; /* Quitar borde de los botones */
+    padding: 10px 15px; /* Espacio interno en los botones */
+    border-radius: 4px; /* Bordes redondeados en los botones */
+    margin: 5px; /* Espacio entre los botones */
+    cursor: pointer; /* Cambiar cursor al pasar sobre los botones */
+    font-size: 1em; /* Tamaño del texto en los botones */
+}
+
+button:hover {
+    background-color: #50ec58; /* Color más oscuro al pasar el cursor sobre los botones */
+}
+
+/* Estilos para el Botón de Mostrar el Cronómetro */
+#show-timer-btn {
+    position: fixed; /* Posición fija en la pantalla */
+    bottom: 20px; /* Espacio desde la parte inferior */
+    left: 20px; /* Espacio desde la parte derecha */
+    background-color: #61e3ef; /* Color de fondo del botón */
+    color: white; /* Color del texto en el botón */
+    border: none; /* Quitar borde del botón */
+    padding: 10px 15px; /* Espacio interno en el botón */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    font-size: 1em; /* Tamaño del texto en el botón */
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
