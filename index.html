@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zirius Desk</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> 
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon"> 
     <style>
         body, html {
@@ -24,15 +24,28 @@
         .logo {
             width: 600px; /* Aumenta el tamaño del logo */
             height: auto;
+            opacity: 0; /* Comienza invisible */
+            animation: fadeIn 1s forwards; /* Aplica la animación */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px); /* Comienza desde arriba */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Termina en su posición original */
+            }
         }
 
         .loading {
             position: absolute;
             margin-top: 20px;
-            left: 570px;
-            top: 190px;
-            width: 200px;
-            height: 200px;
+            left: 47%;
+            top: 380px;
+            width: 50px;
+            height: 50px;
             border: 6px solid #ccc;
             border-top-color: #4da0e8;
             border-radius: 50%;
@@ -57,9 +70,9 @@
 
     <script>
         // Redirigir a otra página después de 3 segundos
-       setTimeout(function() {
-            window.location.href = 'http://localhost/pages/login.php'; // Cambia a la URL deseada
-       }, 3000);
+        setTimeout(function() {
+            window.location.href = 'http://zirius.online/pages/login.php'; // Cambia a la URL deseada
+        }, 3000);
     </script>
 </body>
 </html>

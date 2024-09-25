@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #a7c5eb, #fde8cd); /* Fondo degradado */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Permite que los botones se envuelvan si no hay suficiente espacio */
+            max-width: 600px; /* Limita el ancho del menú para mantenerlo centrado */
+            padding: 20px;
+            text-decoration: none; 
+        }
+        .menu button {
+            background-color: #4a90e2; /* Azul suave */
+            color: #ffffff; /* Color del texto */
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+         
+        }
+        .menu button:hover {
+            background-color: #ffd166; /* Amarillo suave al pasar el cursor */
+            transform: translateY(-5px);
+            text-decoration: none; 
+        }
+        .menu button i {
+            margin-right: 10px;
+            font-size: 24px;
+            text-decoration: none; 
+
+        }
+
+        h1{
+
+            font-size: 18px;
+            text-align: center;
+            color: white;
+        }
+
+        .iconoMemo {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url('./iconos/ico1.svg'); /* Cambia 'icono.png' por la ruta de tu icono */
+      background-size: cover;
+      margin-right: 10px;
+    }
+
+    
+    .iconoWF {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url('./iconos/ico2.svg'); /* Cambia 'icono.png' por la ruta de tu icono */
+      background-size: cover;
+      margin-right: 10px;
+    }
+    a{
+        text-decoration: none; 
+        color: white;
+
+    }
+
+    </style>
+    </head>
+<body>
+    
+    <div class="menu">
+        <button><i class="iconoMemo"></i><a href="./memo_quejas/memo_gpon_internet.html">Memos Quejas</a></button>
+        <button><i class="iconoWF"></i><a href="../modulo/wf/wf.html">Memos WF</a></button>
+        <button><i class="iconoWF"></i><a href="./checklist/cheklist.html">CheckList</a></button>
+        <button><i class="iconoWF"></i><a href="#">Manuales</a></button>
+        <button><i class="iconoWF"></i><a href="./usuarios/usuarios.html">Usuarios</a></button>
+        <button><i class="iconoWF"></i><a href="#">Ayuda</a></button>
+    </div>
+</body>
+</html>

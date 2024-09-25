@@ -53,40 +53,13 @@
     /*margin: 1px 0; Espacio por encima y por debajo */
 }
 
-.horizontal-menu {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 6px 0; /* Espacio arriba y abajo del menú */
-            position: sticky; /* Fija el menú en la parte superior cuando se desplaza */
-            top: 0; /* Posiciona el menú en la parte superior */
-            margin-top: 0;
-        }
-
-        .horizontal-menu a {
-            color: white;
-            padding: 10px 10px;
-            text-decoration: none;
-            text-align: center;
-            display: block;
-            
-        }
-
-        .horizontal-menu a:hover {
-            background-color: #575757;
-        }
-
 
     </style>
 </head>
 <body>
 
-    <nav class="horizontal-menu">
-        <a href="#home">Inicio</a>
-        <a href="#about">Acerca de</a>
-        <a href="#services">Servicios</a>
-        <a href="#contact">Contacto</a>
-    </nav>
+<?php include 'menu_navegacion.html'; ?>
+
 
     <div class="container">
         <h3>Programacion no coincide con GUÍA</h3>

@@ -88,16 +88,19 @@ $news_list = $news_stmt->fetchAll();
               <div class="image-gallery">
             <img src="/assets/img/promo.jpg" alt="Noticia 1" />
             <!-- Más imágenes -->
-        </div>
+    </div>
+
+
+   
     </section>
 
  
     <!-- Módulos en la parte superior -->
     <section class="top-modules">
-   
+
 
 <!-- Botón de pestaña flotante -->
-<!-- Botón de pestaña flotante -->
+
 <div id="floating-button" class="floating-button">
     <button id="open-form-button">Tipificación</button>
 </div>
@@ -137,8 +140,10 @@ $news_list = $news_stmt->fetchAll();
     <section class="checklist-section" id="checklist-section" style="display: none;">
         <!-- Contenido de checklist.php se cargará aquí -->
     </section>
+
     
 </main>
+
 
 
 
@@ -383,7 +388,12 @@ document.getElementById('reset-btn').addEventListener('click', resetTimer);
 
 // Inicializar el cronómetro
 updateTimer();
+</script>
 
+
+<script>
+
+// LLAMA A CHECKLIST.PHP
 document.addEventListener('DOMContentLoaded', function() {
     const checklistLink = document.getElementById('load-checklist');
     const checklistSection = document.getElementById('checklist-section');
@@ -398,13 +408,13 @@ document.addEventListener('DOMContentLoaded', function() {
         checklistSection.style.display = 'block';
 
         // Carga el contenido de checklist.php
-        fetch('checklist.php')
+        fetch('Inicio_checklist.php')
             .then(response => response.text())
             .then(html => {
                 checklistSection.innerHTML = html;
             })
             .catch(error => {
-                console.error('Error al cargar checklist.php:', error);
+                console.error('Error al cargar Inicio_checklist.php:', error);
             });
     });
 });
@@ -477,6 +487,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('resultMessage').innerText = '';
     }
 </script>
+
 
 
 
