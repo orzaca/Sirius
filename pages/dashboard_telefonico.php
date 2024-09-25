@@ -40,7 +40,7 @@ $news_list = $news_stmt->fetchAll();
                 <h1>Zirius Desk</h1>
             </div>
             <div class="navbar-icons">
-                <a href="#" class="icon" title="Inicio"><i class="fas fa-home"></i></a>
+                <a href="dashboard_telefonico.php" class="icon" title="Inicio"><i class="fas fa-home"></i></a>
                 <a href="#" class="icon" title="Mensajes"><i class="fas fa-envelope"></i></a>
                 <a href="#" class="icon" title="Notificaciones"><i class="fas fa-bell"></i></a>
                 <a href="#" class="icon" title="Configuración"><i class="fas fa-cog"></i></a>
@@ -60,7 +60,7 @@ $news_list = $news_stmt->fetchAll();
         <li><a href="#"><i class="fas fa-sticky-note"></i> Memo de quejas</a></li>
         <li><a href="#"><i class="fas fa-layer-group"></i> Plantillas WF</a></li>
         <li><a href="#"><i class="fas fa-book"></i> Manuales</a></li>
-        <li><a href="#"><i class="fas fa-check-circle"></i> Checklist</a></li>
+        <li><a href="#" id="load-checklist"><i class="fas fa-check-circle"></i> Checklist</a></li>
         <li><a href="#"><i class="fas fa-comments"></i> Guiones</a></li>
         <li><a href="#"><i class="fas fa-cogs"></i> Configuración</a></li>
     </ul>
@@ -68,7 +68,7 @@ $news_list = $news_stmt->fetchAll();
 <main class="main-content">
     <!-- Sección de Noticias en la parte superior -->
     <section class="news-section">
-       
+
     <h2>Mensajes</h2>
         <ul>
             <?php foreach ($news_list as $news): ?>
@@ -91,6 +91,7 @@ $news_list = $news_stmt->fetchAll();
         </div>
     </section>
 
+ 
     <!-- Módulos en la parte superior -->
     <section class="top-modules">
    
@@ -133,7 +134,9 @@ $news_list = $news_stmt->fetchAll();
 </div>
 
     </section>
-
+    <section class="checklist-section" id="checklist-section" style="display: none;">
+        <!-- Contenido de checklist.php se cargará aquí -->
+    </section>
     
 </main>
 
@@ -381,7 +384,101 @@ document.getElementById('reset-btn').addEventListener('click', resetTimer);
 // Inicializar el cronómetro
 updateTimer();
 
+document.addEventListener('DOMContentLoaded', function() {
+    const checklistLink = document.getElementById('load-checklist');
+    const checklistSection = document.getElementById('checklist-section');
+
+    checklistLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Evita la acción por defecto del enlace
+
+        // Oculta el contenido principal
+        document.querySelector('.news-section').style.display = 'none';
+        
+        // Muestra la sección de checklist
+        checklistSection.style.display = 'block';
+
+        // Carga el contenido de checklist.php
+        fetch('checklist.php')
+            .then(response => response.text())
+            .then(html => {
+                checklistSection.innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error al cargar checklist.php:', error);
+            });
+    });
+});
+
+
+
 </script>
+
+<script>
+    function nextStep(answer) {
+        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
+        /*step1*/
+        if (answer === 'cable') {
+            document.getElementById('step2').classList.remove('hidden');
+        } else if (answer === 'wifi') {
+            document.getElementById('resultMessage').innerText = 'Ingresar queja detallando que la OTT se encuentra via wifi y esto ocasiona inconveniente con la señal y enviar a etapa FGD';
+            document.getElementById('result').classList.remove('hidden');
+        }
+
+        /*step2*/
+        if (answer === 'cobroYes') {
+            document.getElementById('step4').classList.remove('hidden');
+        } else if (answer === 'continuar_step2') {
+            document.getElementById('step3').classList.remove('hidden');
+        }
+
+        /*step3*/    
+        if (answer === 'yes_programacion') {
+            document.getElementById('resultMessage').innerText = 'Tipificar como soporte efectivo: Reclamos ▶ Avería ▶ TV IPTV ▶ Sin señal ▶ guía interactiva';
+            document.getElementById('result').classList.remove('hidden');
+      } else if (answer === 'no_programacion') {
+            document.getElementById('step4').classList.remove('hidden');
+        }
+
+
+        /*step4*/        
+        if (answer === 'step4_no') {
+            document.getElementById('step5').classList.remove('hidden');
+        }
+
+        /*step5*/        
+
+        if (answer === 'step5_yes') {
+            document.getElementById('resultMessage').innerText = 'Tipificar como soporte efectivo: Reclamos > Avería > TV IPTV > Sin señal > guía interactiva';
+            document.getElementById('result').classList.remove('hidden');
+        } else if (answer === 'step5_no') {
+            document.getElementById('step6').classList.remove('hidden');
+        }
+
+        /*step6*/        
+
+        if (answer === 'step6_no') {
+             document.getElementById('step7').classList.remove('hidden');
+        }
+   
+
+        /*step7*/  
+
+        if (answer === 'step7_yes') {
+            document.getElementById('resultMessage').innerText = 'Tipificar como soporte efectivo: Reclamos > Avería > TV IPTV > Sin señal > guía interactiva';
+            document.getElementById('result').classList.remove('hidden');
+        } else if (answer === 'step7_no') {
+            document.getElementById('step8').classList.remove('hidden');
+        }
+}
+
+    function reset() {
+        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
+        document.getElementById('step1').classList.remove('hidden');
+        document.getElementById('resultMessage').innerText = '';
+    }
+</script>
+
+
 
 
 

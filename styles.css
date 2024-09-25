@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Color de fondo */
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    max-width: 200px; /* Tamaño máximo del logo */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

@@ -1,12 +1,13 @@
 /* Estilos generales para el contenedor de autenticación */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     background: linear-gradient(to right, #4caf50, #81c784);
+    background-size: cover; 
 }
 
 
@@ -15,13 +16,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, #f2f5f2, #81c784);
+    background: linear-gradient(to right, #f2f5f2, #06567b);
 }
 
 .auth-form {
+    font-family: 'Lexend+Mega', sans-serif;
     position: absolute;
     right:  160px;
-    background-color: #3fe472;
+    background-color: #06567b;
     padding: 20px;
     border-radius: 30px;
     box-shadow: 10px 4px 6px rgba(0, 0, 0, 0.1);
@@ -33,15 +35,15 @@ body {
 
 .auth-form h1 {
     margin-bottom: 30px;
-    font-size: 24px;
-    color: #333;
+    font-size: 34px;
+    color: #fefcfc;
 }
 
 .auth-form label {
     display: block;
     margin-bottom: 8px;
     font-size: 20px;
-    color: #555;
+    color: #f5f2f2;
 }
 
 .auth-form input[type="email"],
@@ -57,10 +59,11 @@ body {
 }
 
 .auth-form button {
+    font-family: 'Oswald', sans-serif;
     width: 40%;
     margin-bottom: 30px;
     padding: 10px;
-    background-color: #fff;
+    background-color: #c2e0f6;
     border: none;
     border-radius: 15px;
     color: #090909;
@@ -70,7 +73,7 @@ body {
 }
 
 .auth-form button:hover {
-    background-color: #0056b3;
+    background-color: #7fb6f0;
 }
 
 .auth-form p.message {

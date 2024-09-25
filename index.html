@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zirius Desk</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon"> 
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .logo {
+            width: 600px; /* Aumenta el tamaño del logo */
+            height: auto;
+        }
+
+        .loading {
+            position: absolute;
+            margin-top: 20px;
+            left: 570px;
+            top: 190px;
+            width: 200px;
+            height: 200px;
+            border: 6px solid #ccc;
+            border-top-color: #4da0e8;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/assets/img/Zirius.png" alt="Logo" class="logo">
+        <div class="loading"></div> <!-- Indicador de carga -->
+    </div>
+
+    <script>
+        // Redirigir a otra página después de 3 segundos
+       setTimeout(function() {
+            window.location.href = 'http://localhost/pages/login.php'; // Cambia a la URL deseada
+       }, 3000);
+    </script>
+</body>
+</html>
