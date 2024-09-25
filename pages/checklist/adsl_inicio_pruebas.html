@@ -178,8 +178,8 @@
             </div>      
 
         </br>
-        <button class="button" onclick="nextStep('si_saldos')">Si</button>
-        <button class="button" onclick="nextStep('no_saldos')">No</button>
+        <button class="button" onclick="nextStep('step1')">Continuar Checklist</button>
+        
     </div>
 
     <!-- Modal -->
@@ -298,17 +298,33 @@
 
     <!-- Resto del código (otros pasos) -->
     <div id="step2" class="step hidden">
-        <p><h4>¿Servicio Suspendido?</h4></p>
-        <p>Revisar Bloqueos Opcion 25</p>
-        <button class="button" onclick="reset()">Reiniciar</button>
+        <p><h4>Aplicar FULL CLARO</h4></p>
+        <div class="inline-container">
+           <p>- Revisar si Aplica Full Claro ✔ </p>
+           <button class="button_modal" onclick="openfull()">Acciones</button>
+       </div> 
+   </br>
+   <button class="button" onclick="nextStep('step2')">Continuar Checklist</button>
+</div>
+
+    <div id="step3" class="step hidden">
+        <p><h4>Aplicar FULL CLARO</h4></p>
+            <div class="inline-container">
+                <p>- Revisar si Aplica Full Claro ✔ </p>
+                <button class="button_modal" onclick="openfull()">Acciones</button>
+            </div> 
+                </br>
+                <button class="button" onclick="nextStep('step3')">Continuar Checklist</button>
     </div>
 
-    <!-- Otros pasos, manteniendo la estructura original del código -->
 
-    <div id="result" class="step hidden">
-        <p id="resultMessage"></p>
-        <button class="button" onclick="reset()">Reiniciar</button>
-    </div>
+
+<!-- Otros pasos, manteniendo la estructura original del código -->
+
+<div id="result" class="step hidden">
+    <p id="resultMessage"></p>
+    <button class="button" onclick="reset()">Reiniciar</button>
+</div>
 
 </div>
 
@@ -442,8 +458,15 @@
     function nextStep(answer) {
         document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
             /* step1 */
-        if (answer === 'si_saldos') {
+        if (answer === 'step1') {
             document.getElementById('step2').classList.remove('hidden');
+        } else if (answer === 'no_saldos') {
+            document.getElementById('resultMessage').innerText = 'Debes indicarle que tiene un saldo pendiente, le brindas el saldo -  Tipificar: ▶ Consulta ▶ Factura ▶ Residencial ▶ Detalle ▶ Saldo y fecha de Corte -R' ;
+            document.getElementById('result').classList.remove('hidden');
+        }
+
+        if (answer === 'step2') {
+            document.getElementById('step3').classList.remove('hidden');
         } else if (answer === 'no_saldos') {
             document.getElementById('resultMessage').innerText = 'Debes indicarle que tiene un saldo pendiente, le brindas el saldo -  Tipificar: ▶ Consulta ▶ Factura ▶ Residencial ▶ Detalle ▶ Saldo y fecha de Corte -R' ;
             document.getElementById('result').classList.remove('hidden');
