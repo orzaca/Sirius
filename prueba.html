@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        .dashboard {
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: #2b3844;
+            width: 80px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            margin-bottom: 40px;
+            color: white;
+            font-size: 24px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 20px 0;
+            color: white;
+        }
+
+        .logout {
+            margin-top: auto;
+            color: white;
+        }
+
+        .main-content {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .tasks, .downloads, .calendar {
+            grid-column: span 2;
+        }
+
+        .small-box {
+            text-align: center;
+        }
+
+        .small-box h2 {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .small-box p {
+            font-size: 32px;
+            color: #2b3844;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+        }
+
+        .calendar-grid div {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .events {
+            margin-top: 10px;
+        }
+
+        .events ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .events ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="logo">LOGO</div>
+            <ul>
+                <li><i class="icon-eye"></i></li>
+                <li><i class="icon-user"></i></li>
+                <li><i class="icon-settings"></i></li>
+            </ul>
+            <div class="logout">
+                <i class="icon-power"></i>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="section tasks">
+                <h2>Tasks</h2>
+                <div class="task-item">Task 1: Lorem ipsum dolor sit amet.</div>
+                <div class="task-item">Task 2: Lorem ipsum dolor sit amet.</div>
+            </div>
+            <div class="section statistics">
+                <h2>Statistics</h2>
+                <canvas id="visitsChart"></canvas>
+            </div>
+            <div class="section visitors">
+                <h2>Visitors</h2>
+                <canvas id="visitorsChart"></canvas>
+            </div>
+            <div class="section small-box">
+                <h2>Visitors Today</h2>
+                <p>1,521</p>
+            </div>
+            <div class="section small-box">
+                <h2>Monthly Visits</h2>
+                <p>32,211 +10%</p>
+            </div>
+            <div class="section small-box">
+                <h2>Page Views</h2>
+                <p>351</p>
+            </div>
+            <div class="section small-box">
+                <h2>Shares</h2>
+                <p>122 +5%</p>
+            </div>
+            <div class="section downloads">
+                <h2>Downloads</h2>
+                <ul>
+                    <li>Pack 3: 3,242</li>
+                    <li>Pack 1: 1,156</li>
+                    <li>Wallpaper 22: 921</li>
+                </ul>
+            </div>
+            <div class="section calendar">
+                <h2>Calendar</h2>
+                <div class="calendar-grid">
+                    <!-- Grilla del calendario -->
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                    <div>13</div>
+                    <div>14</div>
+                    <div>15</div>
+                    <div>16</div>
+                    <div>17</div>
+                    <div>18</div>
+                    <div>19</div>
+                    <div>20</div>
+                    <div>21</div>
+                    <div>22</div>
+                    <div>23</div>
+                    <div>24</div>
+                    <div>25</div>
+                    <div>26</div>
+                    <div>27</div>
+                    <div>28</div>
+                    <div>29</div>
+                    <div>30</div>
+                </div>
+                <div class="events">
+                    <h3>June Events</h3>
+                    <ul>
+                        <li>12: Lorem ipsum dolor sit amet</li>
+                        <li>18: Praesent vehicula libero</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Gráfico de visitas
+        var ctxVisits = document.getElementById('visitsChart').getContext('2d');
+        var visitsChart = new Chart(ctxVisits, {
+            type: 'line',
+            data: {
+                labels: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+                datasets: [{
+                    label: 'Visits',
+                    data: [300, 400, 320, 500, 600, 580, 620],
+                    borderColor: '#ff6f61',
+                    fill: false
+                }]
+            }
+        });
+
+        // Gráfico de visitantes
+        var ctxVisitors = document.getElementById('visitorsChart').getContext('2d');
+        var visitorsChart = new Chart(ctxVisitors, {
+            type: 'doughnut',
+            data: {
+                labels: ['Android', 'Web', 'iOS', 'Others'],
+                datasets: [{
+                    label: 'Visitors',
+                    data: [40, 30, 20, 10],
+                    backgroundColor: ['#36a2eb', '#ff6384', '#4bc0c0', '#ffcd56']
+                }]
+            }
+        });
+    </script>
+</body>
+</html>

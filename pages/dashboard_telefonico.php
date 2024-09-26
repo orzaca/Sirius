@@ -23,475 +23,185 @@ $news_stmt = $pdo->prepare($news_sql);
 $news_stmt->execute();
 $news_list = $news_stmt->fetchAll();
 ?>
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Telefónico</title>
-    <link rel="stylesheet" href="/assets/css/dashboard_telefonico.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="/assets/js/theme-toggle.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionales para mejorar la visibilidad y usabilidad */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: width 0.3s;
+            overflow: auto;
+        }
+        .sidebar.collapsed {
+            width: 80px;
+        }
+        .sidebar a {
+            display: block;
+            padding: 15px;
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #34495e;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 250px;
+            width: calc(100% - 250px);
+            transition: width 0.3s, left 0.3s;
+        }
+        .header.collapsed {
+            left: 80px;
+            width: calc(100% - 80px);
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            transition: margin-left 0.3s;
+        }
+        .content.collapsed {
+            margin-left: 80px;
+        }
+        .module {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .module h2 {
+            margin-top: 0;
+        }
+        .timer {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .floating-form {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: none;
+            transition: opacity 0.3s;
+        }
+        .floating-form.active {
+            display: block;
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="navbar-left">
-                <h1>Zirius Desk</h1>
-            </div>
-            <div class="navbar-icons">
-                <a href="dashboard_telefonico.php" class="icon" title="Inicio"><i class="fas fa-home"></i></a>
-                <a href="#" class="icon" title="Mensajes"><i class="fas fa-envelope"></i></a>
-                <a href="#" class="icon" title="Notificaciones"><i class="fas fa-bell"></i></a>
-                <a href="#" class="icon" title="Configuración"><i class="fas fa-cog"></i></a>
-                <a href="#" class="icon" title="Ayuda"><i class="fas fa-question-circle"></i></a>
-                <a href="#" class="icon" id="theme-toggle" title="Modo oscuro"><i class="fas fa-moon"></i></a>
-            </div>
-            <div class="navbar-right">
-                <span>Hola, <?php echo htmlspecialchars($email); ?></span>
-                <a href="logout.php" class="logout-link">Cerrar sesión</a>
-            </div>
-        </nav>
-    </header>
-    
-    <aside class="sidebar">
-       <ul class="menu">
-       <li><a href="#" id="load-tipifications"><i class="fas fa-file-alt"></i> Tipificaciones</a></li>
-        <li><a href="#"><i class="fas fa-sticky-note"></i> Memo de quejas</a></li>
-        <li><a href="#"><i class="fas fa-layer-group"></i> Plantillas WF</a></li>
-        <li><a href="#"><i class="fas fa-book"></i> Manuales</a></li>
-        <li><a href="#" id="load-checklist"><i class="fas fa-check-circle"></i> Checklist</a></li>
-        <li><a href="#"><i class="fas fa-comments"></i> Guiones</a></li>
-        <li><a href="#"><i class="fas fa-cogs"></i> Configuración</a></li>
-    </ul>
-</aside>
-<main class="main-content">
-    <!-- Sección de Noticias en la parte superior -->
-    <section class="news-section">
-
-    <h2>Mensajes</h2>
-        <ul>
-            <?php foreach ($news_list as $news): ?>
-                <li>
-                    <h3><?php echo htmlspecialchars($news['title']); ?></h3>
-                    <p><?php echo htmlspecialchars($news['content']); ?></p>
-                    <span><?php echo htmlspecialchars($news['created_at']); ?></span>
-                </li>
-            <?php endforeach; ?>
-        </ul>
-
-
-        
+    <div class="sidebar">
+        <a href="#">Inicio</a>
+        <a href="#">Noticias</a>
+        <a href="#">Usuarios</a>
+        <a href="#">Configuración</a>
+        <a href="#">Cerrar sesión</a>
     </div>
-
-    <div class="news-images">
-              <div class="image-gallery">
-            <img src="/assets/img/promo.jpg" alt="Noticia 1" />
-            <!-- Más imágenes -->
+    <div class="header">
+        <h1>Panel de Control</h1>
     </div>
-
-
-   
-    </section>
-
- 
-    <!-- Módulos en la parte superior -->
-    <section class="top-modules">
-
-
-<!-- Botón de pestaña flotante -->
-
-<div id="floating-button" class="floating-button">
-    <button id="open-form-button">Tipificación</button>
-</div>
-
-<!-- Contenedor flotante del formulario -->
-<div id="floating-form-container" class="floating-form-container">
-    <button type="button" id="minimize-form-button" class="minimize-button">
-        <i class="fas fa-window-minimize"></i>
-    </button>
-    <form action="save_tipification.php" method="POST" id="tipification-form">
-        <h3>Tipificación</h3>
-        <input type="text" id="call_id" name="call_id" placeholder="ID llamada" required>
-        <input type="text" id="client_name" name="client_name" placeholder="Nombre del Cliente" required>
-        <input type="text" id="line" name="line" placeholder="Línea" required>
-        <textarea id="reported_problem" name="reported_problem" placeholder="Problema Reportado" rows="3" required></textarea>
-        <textarea id="tests" name="tests" placeholder="Pruebas" rows="3" required></textarea>
-        
-        <div class="button-container">
-            <button type="submit" class="styled-button">Guardar</button>
-            <button type="button" id="copy-button" class="styled-button copy-button">Copiar</button>
+    <div class="content">
+        <div class="module">
+            <h2>Noticias</h2>
+            <ul>
+                <!-- Aquí iría el contenido de las noticias -->
+            </ul>
         </div>
-    </form>
-</div>
-<button id="show-timer-btn">Cronómetro</button>
-       <!-- Cronómetro Flotante -->
-       <div class="floating-timer" id="floating-timer">
-    <h3>Cronómetro</h3>
-    <div id="timer">
-        <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        <div class="module">
+            <h2>Lista de Usuarios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí irían los datos de los usuarios -->
+                </tbody>
+            </table>
+        </div>
+        <div class="module">
+            <h2>Resumen</h2>
+            <p>Contenido del resumen.</p>
+        </div>
     </div>
-    <button id="start-btn">Iniciar</button>
-    <button id="stop-btn">Detener</button>
-    <button id="reset-btn">Reiniciar</button>
-</div>
-
-    </section>
-    <section class="checklist-section" id="checklist-section" style="display: none;">
-        <!-- Contenido de checklist.php se cargará aquí -->
-    </section>
-
-    
-</main>
-
-
-
-
+    <div class="timer">
+        <h2>Cronómetro</h2>
+        <p id="timer">00:00:00</p>
+    </div>
+    <div class="floating-form" id="floatingForm">
+        <h2>Formulario de Tipificación</h2>
+        <form id="tipForm">
+            <label for="tip">Tipo:</label>
+            <input type="text" id="tip" name="tip">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
     <script>
-        // Solicitar permiso para notificaciones de escritorio
-        function requestNotificationPermission() {
-            if (Notification.permission === "default") {
-                Notification.requestPermission().then(permission => {
-                    if (permission === "granted") {
-                        console.log("Notificaciones habilitadas.");
-                    } else {
-                        console.log("Notificaciones bloqueadas.");
-                    }
-                });
+        // Script para manejar la animación del cronómetro y el formulario flotante
+        document.addEventListener('DOMContentLoaded', function () {
+            let timerElement = document.getElementById('timer');
+            let formElement = document.getElementById('floatingForm');
+            
+            // Inicialización del cronómetro
+            let startTime = Date.now();
+            function updateTimer() {
+                let elapsed = Date.now() - startTime;
+                let hours = String(Math.floor(elapsed / (1000 * 60 * 60))).padStart(2, '0');
+                let minutes = String(Math.floor((elapsed % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+                let seconds = String(Math.floor((elapsed % (1000 * 60)) / 1000)).padStart(2, '0');
+                timerElement.textContent = `${hours}:${minutes}:${seconds}`;
             }
-        }
+            setInterval(updateTimer, 1000);
 
-        // Mostrar una notificación
-        function showNotification(title, body) {
-            if (Notification.permission === "granted") {
-                new Notification(title, {
-                    body: body,
-                    icon: '/assets/img/news-icon.png' // Opcional: puedes agregar un icono
-                });
-            }
-        }
+            // Mostrar/Ocultar formulario flotante
+            document.getElementById('tipForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                alert('Formulario enviado');
+                formElement.classList.remove('active');
+            });
 
-        // Verificar si hay nuevas noticias
-        let lastNewsId = 0;
-        function checkForNews() {
-            fetch('/check_news.php')
-                .then(response => response.json())
-                .then(data => {
-                    if (data && data.id > lastNewsId) {
-                        // Si es una nueva noticia, mostrar la notificación
-                        showNotification("Nueva Noticia", data.title);
-                        lastNewsId = data.id;
-                    }
-                })
-                .catch(error => console.error('Error al verificar noticias:', error));
-        }
-
-        // Al cargar la página, solicitar permisos
-        document.addEventListener("DOMContentLoaded", function() {
-            requestNotificationPermission();
-
-            // Verificar cada 30 segundos si hay noticias nuevas
-            setInterval(checkForNews, 30000);
+            // Ejemplo de cómo activar el formulario flotante (puede ser con un botón)
+            document.querySelector('.header').addEventListener('click', function () {
+                formElement.classList.toggle('active');
+            });
         });
     </script>
-
-
-
-
-<script>
-    // Botón para abrir el formulario
-    const openFormButton = document.getElementById('open-form-button');
-    const floatingFormContainer = document.getElementById('floating-form-container');
-    const minimizeFormButton = document.getElementById('minimize-form-button');
-
-    // Mostrar el formulario cuando se presiona el botón flotante
-    openFormButton.addEventListener('click', function() {
-        floatingFormContainer.style.bottom = '20px'; // Subir el formulario
-    });
-
-    // Minimizar el formulario cuando se presiona el botón "Minimizar"
-    minimizeFormButton.addEventListener('click', function() {
-        floatingFormContainer.style.bottom = '-100%'; // Bajar el formulario fuera de la pantalla
-    });
-
-    // Botón para copiar el contenido del formulario
-    document.getElementById('copy-button').addEventListener('click', function() {
-        // Obtener los valores del formulario
-        const callId = document.getElementById('call_id').value;
-        const clientName = document.getElementById('client_name').value;
-        const line = document.getElementById('line').value;
-        const reportedProblem = document.getElementById('reported_problem').value;
-        const tests = document.getElementById('tests').value;
-
-        // Crear una plantilla con los datos
-        const formContent = `
-ID llamada: ${callId}
-Nombre del Cliente: ${clientName}
-Línea: ${line}
-Problema Reportado: ${reportedProblem}
-Pruebas: ${tests}
-        `.trim(); // Remover espacios innecesarios
-
-        // Usar el API moderna para copiar al portapapeles
-        navigator.clipboard.writeText(formContent).then(function() {
-            alert('Contenido copiado al portapapeles.');
-        }).catch(function(error) {
-            console.error('Error al copiar:', error);
-            alert('Error al copiar el contenido. Por favor, inténtalo de nuevo.');
-        });
-    });
-</script>
-
-<script>
-    // Función para cargar la estadística de tipificaciones
-    function loadTipificationStatistics() {
-        fetch('/path/to/get_daily_tipifications.php')
-            .then(response => response.json())
-            .then(data => {
-                const countElement = document.getElementById('tipification-count');
-                countElement.textContent = data.count; // Actualiza el número de tipificaciones
-            })
-            .catch(error => {
-                console.error('Error al cargar la estadística:', error);
-                const countElement = document.getElementById('tipification-count');
-                countElement.textContent = 'Error al cargar datos'; // Mensaje de error
-            });
-    }
-
-    // Cargar estadísticas cuando la página esté completamente cargada
-    document.addEventListener('DOMContentLoaded', function() {
-        loadTipificationStatistics();
-    });
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Función para mostrar el aviso de nuevo mensaje
-    function showNewMessageAlert() {
-        const newMessageAlert = document.querySelector('.news-section .new-message');
-        if (newMessageAlert) {
-            newMessageAlert.style.display = 'block'; // Muestra el aviso
-            setTimeout(() => {
-                newMessageAlert.style.display = 'none'; // Oculta el aviso después de un tiempo
-            }, 5000); // Tiempo en milisegundos (5 segundos en este caso)
-        }
-    }
-
-    // Simular la llegada de una nueva noticia
-    // Reemplaza este código con la lógica para detectar nuevas noticias
-    setTimeout(showNewMessageAlert, 2000); // Simula una nueva noticia después de 2 segundos
-});
-
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Función para mostrar el aviso de nuevo mensaje
-    function showNewMessageAlert() {
-        const newMessageAlert = document.querySelector('.news-section .new-message');
-        if (newMessageAlert) {
-            newMessageAlert.style.display = 'block'; // Muestra el aviso
-            setTimeout(() => {
-                newMessageAlert.style.display = 'none'; // Oculta el aviso después de un tiempo
-            }, 5000); // Tiempo en milisegundos (5 segundos en este caso)
-        }
-    }
-
-    // Simular la llegada de una nueva noticia
-    // Reemplaza esta simulación con tu lógica para recibir nuevas noticias
-    function fetchNews() {
-        // Simulación de la llegada de una nueva noticia
-        setTimeout(() => {
-            // Mostrar el aviso de nueva noticia
-            showNewMessageAlert();
-            
-            // Aquí deberías actualizar la lista de noticias con la nueva información
-            // Ejemplo: actualizarNewsList();
-        }, 2000); // Simula una nueva noticia después de 2 segundos
-    }
-
-    // Ejecutar la función para simular la llegada de nuevas noticias
-    fetchNews();
-
-    // Si estás usando WebSockets o algún otro método de actualización en tiempo real, 
-    // puedes conectar esto a la función showNewMessageAlert() para mostrar el aviso inmediatamente.
-});
-
-</script>
-
-<script>
-
-function updateNewsList(newNewsItem) {
-    const newsList = document.querySelector('.news-section ul');
-    const newItem = document.createElement('li');
-    newItem.innerHTML = `
-        <h3>${newNewsItem.title}</h3>
-        <p>${newNewsItem.description}</p>
-    `;
-    newsList.appendChild(newItem);
-}
-</script>
-
-<script>
-// Variables para el cronómetro
-let timerInterval;
-let hours = 0;
-let minutes = 0;
-let seconds = 0;
-
-// Función para actualizar el cronómetro
-function updateTimer() {
-    document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-    document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-    document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-}
-
-// Función para iniciar el cronómetro
-function startTimer() {
-    timerInterval = setInterval(() => {
-        seconds++;
-        if (seconds >= 60) {
-            seconds = 0;
-            minutes++;
-        }
-        if (minutes >= 60) {
-            minutes = 0;
-            hours++;
-        }
-        updateTimer();
-    }, 1000);
-}
-
-// Función para detener el cronómetro
-function stopTimer() {
-    clearInterval(timerInterval);
-}
-
-// Función para reiniciar el cronómetro
-function resetTimer() {
-    clearInterval(timerInterval);
-    hours = 0;
-    minutes = 0;
-    seconds = 0;
-    updateTimer();
-}
-
-// Mostrar/Ocultar el cronómetro al hacer clic en el botón
-document.getElementById('show-timer-btn').addEventListener('click', () => {
-    const timerElement = document.getElementById('floating-timer');
-    timerElement.style.display = timerElement.style.display === 'none' ? 'block' : 'none';
-});
-
-// Asignar eventos a los botones del cronómetro
-document.getElementById('start-btn').addEventListener('click', startTimer);
-document.getElementById('stop-btn').addEventListener('click', stopTimer);
-document.getElementById('reset-btn').addEventListener('click', resetTimer);
-
-// Inicializar el cronómetro
-updateTimer();
-</script>
-
-
-<script>
-
-// LLAMA A CHECKLIST.PHP
-document.addEventListener('DOMContentLoaded', function() {
-    const checklistLink = document.getElementById('load-checklist');
-    const checklistSection = document.getElementById('checklist-section');
-
-    checklistLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Evita la acción por defecto del enlace
-
-        // Oculta el contenido principal
-        document.querySelector('.news-section').style.display = 'none';
-        
-        // Muestra la sección de checklist
-        checklistSection.style.display = 'block';
-
-        // Carga el contenido de checklist.php
-        fetch('Inicio_checklist.php')
-            .then(response => response.text())
-            .then(html => {
-                checklistSection.innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Error al cargar Inicio_checklist.php:', error);
-            });
-    });
-});
-
-
-
-</script>
-
-<script>
-    function nextStep(answer) {
-        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
-        /*step1*/
-        if (answer === 'cable') {
-            document.getElementById('step2').classList.remove('hidden');
-        } else if (answer === 'wifi') {
-            document.getElementById('resultMessage').innerText = 'Ingresar queja detallando que la OTT se encuentra via wifi y esto ocasiona inconveniente con la señal y enviar a etapa FGD';
-            document.getElementById('result').classList.remove('hidden');
-        }
-
-        /*step2*/
-        if (answer === 'cobroYes') {
-            document.getElementById('step4').classList.remove('hidden');
-        } else if (answer === 'continuar_step2') {
-            document.getElementById('step3').classList.remove('hidden');
-        }
-
-        /*step3*/    
-        if (answer === 'yes_programacion') {
-            document.getElementById('resultMessage').innerText = 'Tipificar como soporte efectivo: Reclamos ▶ Avería ▶ TV IPTV ▶ Sin señal ▶ guía interactiva';
-            document.getElementById('result').classList.remove('hidden');
-      } else if (answer === 'no_programacion') {
-            document.getElementById('step4').classList.remove('hidden');
-        }
-
-
-        /*step4*/        
-        if (answer === 'step4_no') {
-            document.getElementById('step5').classList.remove('hidden');
-        }
-
-        /*step5*/        
-
-        if (answer === 'step5_yes') {
-            document.getElementById('resultMessage').innerText = 'Tipificar como soporte efectivo: Reclamos > Avería > TV IPTV > Sin señal > guía interactiva';
-            document.getElementById('result').classList.remove('hidden');
-        } else if (answer === 'step5_no') {
-            document.getElementById('step6').classList.remove('hidden');
-        }
-
-        /*step6*/        
-
-        if (answer === 'step6_no') {
-             document.getElementById('step7').classList.remove('hidden');
-        }
-   
-
-        /*step7*/  
-
-        if (answer === 'step7_yes') {
-            document.getElementById('resultMessage').innerText = 'Tipificar como soporte efectivo: Reclamos > Avería > TV IPTV > Sin señal > guía interactiva';
-            document.getElementById('result').classList.remove('hidden');
-        } else if (answer === 'step7_no') {
-            document.getElementById('step8').classList.remove('hidden');
-        }
-}
-
-    function reset() {
-        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
-        document.getElementById('step1').classList.remove('hidden');
-        document.getElementById('resultMessage').innerText = '';
-    }
-</script>
-
-
-
-
-
-
 </body>
 </html>
