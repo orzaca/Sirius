@@ -46,34 +46,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión</title>
-    <link rel="stylesheet" href="/assets/css/login.css">
-    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@400;700&display=swap" rel="stylesheet">
+    <title>Login Mejorado</title>
+    <link rel="stylesheet" href="/assets/css/login.css"> <!-- Estilos externos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Para íconos -->
 </head>
 <body>
-    <div class="auth-container">
+     <div class="auth-container">
         <div class="auth-form">
-            <h1>Iniciar sesión</h1>
-            <?php if (!empty($message)) : ?>
-                <p class="message"><?php echo htmlspecialchars($message); ?></p>
-            <?php endif; ?>
+            <div class="form-icon">
+                <img src="/assets/img/Zirius.png" alt="User Icon" />
+            </div>
             <form action="login.php" method="post">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">Ingresar</button>
+                <div class="input-group">
+                    <label for="email"><i class="fas fa-user"></i></label>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="input-group">
+                    <label for="password"><i class="fas fa-lock"></i></label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" name="remember"> Recuérdame</label>
+                    
+                </div>
+                <button type="submit">INGRESAR</button>
             </form>
-            
         </div>
-
-
-        <div class="logo">
-        <img src="/assets/img/Zirius.png" />
-        </div>
-
     </div>
+
+    <footer>
+        <p>&copy; 2024 Orlando Zambrano. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
