@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Flujo Compacto</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #0D4D4D;
+            margin-bottom: 30px;
+        }
+
+        #diagram-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .flow-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #0D4D4D;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: none;
+            text-align: center;
+            position: relative;
+        }
+
+        .flow-box:first-of-type {
+            display: block;
+        }
+
+        .flow-box p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #0D4D4D;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #083838;
+        }
+
+        .arrow {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #0D4D4D;
+            transform: rotate(45deg);
+            top: 100%;
+            left: calc(50% - 7.5px);
+            margin-top: -7.5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Diagrama de Flujo Compacto</h1>
+
+    <div id="diagram-container">
+        <div class="flow-box" id="start">
+            <p>Inicio</p>
+            <button onclick="nextStep('start', 'decision')">Siguiente</button>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="flow-box" id="decision">
+            <p>¿Cumple la condición?</p>
+            <button onclick="nextStep('decision', 'yes')">Sí</button>
+            <button onclick="nextStep('decision', 'no')">No</button>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="flow-box" id="yes">
+            <p>Acción si es 'Sí'</p>
+            <button onclick="nextStep('yes', 'end')">Finalizar</button>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="flow-box" id="no">
+            <p>Acción si es 'No'</p>
+            <button onclick="nextStep('no', 'end')">Finalizar</button>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="flow-box" id="end">
+            <p>Fin</p>
+        </div>
+    </div>
+
+    <script>
+        function nextStep(current, next) {
+            // Oculta el cuadro actual
+            document.getElementById(current).style.display = 'none';
+
+            // Muestra el siguiente cuadro
+            document.getElementById(next).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

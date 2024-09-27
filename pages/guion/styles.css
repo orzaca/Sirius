@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.tab-container {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.tab {
+    padding: 14px 20px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+    margin-right: 2px;
+}
+
+.tab.active {
+    background-color: #666;
+}
+
+.settings-tab {
+    margin-left: auto;
+}
+
+.settings-tab a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.settings-tab i {
+    font-size: 18px;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.content.active {
+    display: block;
+}
+
+form {
+    margin: 20px;
+    font-size: 16px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}

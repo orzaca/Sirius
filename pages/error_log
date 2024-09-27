@@ -1,0 +1,10 @@
+[27-Sep-2024 18:17:34 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:17:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:17:49 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:17:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3

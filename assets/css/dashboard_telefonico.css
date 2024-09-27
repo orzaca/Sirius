@@ -643,3 +643,12 @@ body {
 
     
 
+.guion-wrapper {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px); /* Ajusta el ancho según el menú */
+    background-color: #fff; /* Fondo blanco para el contenido */
+    min-height: 100vh; /* Asegura que el contenedor cubra toda la altura */
+    position: relative; /* Posicionamiento relativo */
+    z-index: 1; /* Asegura que el contenido esté encima */
+    

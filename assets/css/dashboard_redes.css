@@ -1,113 +1,654 @@
-/* Estilo general del dashboard */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    transition: all 0.3s ease;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     background: white;
+     transition: background 0.3s;
 }
+
 
 .header {
-    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    color: #fff;
+    background: white;
+    color: #0D4D4D;
     padding: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 78%;
+    position: fixed;
+    top: 0;
+    left: 280px;
+    z-index: 1000;
+    min-height: 50px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.navbar {
+/* Estilos del sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #0D4D4D; /* Color verde azulado con opacidad */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el color de fondo y transformaciones */
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Sombra sutil en el borde derecho */
+    z-index: 1000;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
-.navbar-left h1 {
-    margin: 0;
-    font-size: 1.5em;
+/* Contenedor del logo */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.navbar-icons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.logo-img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.navbar-icons .icon {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
+/* Estilos para el menú dentro de la barra lateral */
+.menu {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margin por defecto */
 }
 
-.navbar-icons .icon:hover {
-    color: #f0f0f0; /* Cambia el color cuando se pasa el cursor */
+.menu li {
+    margin: 5px 0; /* Reduce el espacio vertical entre los elementos del menú */
 }
 
-.navbar-right {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Espacio entre iconos y texto */
+.menu a {
+    display: flex; /* Usa Flexbox para alinear el ícono y el texto */
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #fff; /* Color blanco para el texto del enlace */
+    padding: 8px 10px; /* Reduce el espacio interno del enlace */
+    border-radius: 5px; /* Bordes redondeados de los enlaces */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el color de fondo y transformaciones */
+    font-size: 0.9em; /* Tamaño de letra reducido */
 }
 
-.navbar-right .icon {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
+
+
+/* Efecto de sombra al pasar el mouse sobre el enlace del menú */
+.menu a:hover {
+    background-color: #669999; /* Color de fondo al pasar el mouse por encima */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del enlace */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra más grande */
 }
 
-.navbar-right .icon:hover {
-    color: #f0f0f0; /* Cambia el color cuando se pasa el cursor */
+/* Estilos para los íconos dentro de los enlaces */
+.menu i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    color: #fff; /* Color blanco para los íconos */
+    display: flex; /* Usa Flexbox para alinear el ícono dentro del círculo */
+    justify-content: center; /* Centra el ícono horizontalmente dentro del círculo */
+    align-items: center; /* Centra el ícono verticalmente dentro del círculo */
+    width: 35px; /* Ancho del círculo */
+    height: 35px; /* Alto del círculo */
+    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo blanco con opacidad para el círculo */
+    border-radius: 50%; /* Hace que el contenedor sea un círculo */
+    text-align: center; /* Centra el texto del ícono dentro del círculo */
+    font-size: 1.2em; /* Tamaño de letra para los íconos */
 }
 
-.navbar-right span {
-    margin-right: 20px;
-    font-weight: bold;
-}
 
-.logout-link {
-    color: #fff;
-    text-decoration: none;
-    background-color: #dc3545;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.logout-link:hover {
-    background-color: #c82333;
-}
+    .navbar-left h1 {
+        margin: 0;
+        font-size: 1.5em;
+    }
 
-.main-content {
+    .navbar-icons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar-icons .icon {
+        color: #0D4D4D;
+        text-decoration: none;
+        font-size: 1.2em;
+        transition: color 0.3s, transform 0.3s;
+    }
+
+    .navbar-icons .icon:hover {
+        color: #669999;
+        transform: scale(1.1);
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-right span {
+        margin-right: 20px;
+        font-weight: bold;
+    }
+
+    .logout-link {
+        color: #fff;
+        text-decoration: none;
+        background-color: #0D4D4D; /* Color fresco para el botón de cierre de sesión */
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .logout-link:hover {
+        background-color: #669999;
+        transform: scale(1.05);
+    }
+
+
+
+ 
+    .content-wrapper {
+        margin-left: 250px; /* Deja espacio para el menú lateral */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 0; /* Asegura que esté debajo del menú lateral */
+    }
+
+    /* Estilo para la sección de noticias flotante */
+
+    .news-section {
+        background-color: #ffffff; /* Fondo blanco para el módulo */
+        border: 1px solid #dddddd; /* Borde sutil */
+        border-radius: 8px; /* Bordes redondeados */
+        padding: 15px; /* Padding para el contenido */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        position: absolute; /* Posicionamiento absoluto para moverlo */
+        top: 80px; /* Espacio desde la parte superior del contenedor */
+        left: 300px; /* Espacio desde la parte izquierda del contenedor */
+        width: 250px; /* Ajustar el ancho según sea necesario */
+    }
+
+    .news-section h2 {
+        font-size: 1.2em; /* Tamaño de fuente para el título */
+        margin-bottom: 10px; /* Espacio debajo del título */
+        color: #f70e0e; /* Color del texto */
+    }
+
+    .news-section .news-item {
+        margin-bottom: 15px; /* Espacio entre noticias */
+    }
+
+    .news-section .news-item:last-child {
+        margin-bottom: 0; /* Quitar margen en el último elemento */
+    }
+
+
+    .news-images {
+        position: absolute;
+        left: 300px;
+        top: 0px;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 600px; /* Mismo ancho que la sección de noticias */}
+
+
+    .news-images h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #444444;
+    }
+
+    .news-images .image-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-images .image-gallery img {
+        width: 100%;
+        height: auto; /* Mantener la proporción de la imagen */
+        margin-bottom: 10px; /* Espacio entre imágenes */
+        border-radius: 4px; /* Bordes redondeados para las imágenes */
+    }
+
+
+
+
+    .news-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .news-section li {
+        margin-bottom: 15px;
+    }
+
+    .news-section h3 {
+        margin: 0;
+        font-size: 1.2em;
+        color: #004d40; /* Color de texto para los títulos */
+    }
+
+    .news-section p {
+        margin: 5px 0;
+        color: #00796b; /* Color de texto para el contenido */
+    }
+
+    /* Estilos para el modo oscuro */
+    .dark-mode {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    .dark-mode .header {
+        background: linear-gradient(90deg, rgba(62, 73, 76, 0.681) 0%, rgb(83, 86, 86) 100%);
+    }
+
+    .dark-mode .navbar-icons .icon {
+        color: #e0e0e0;
+    }
+
+    .dark-mode .navbar-icons .icon:hover {
+        color: #f0f0f0;
+    }
+
+    .dark-mode .logout-link {
+        background-color: #706a6a;
+    }
+
+    .dark-mode .sidebar {
+        background-color: #2c2c2c;
+    }
+
+    .dark-mode .menu a {
+        color: #f2f2f8;
+    }
+
+    .dark-mode .menu a:hover {
+        background-color: #333;
+    }
+
+    .main-content {
+        margin-left: 250px; /* Espacio para el menú lateral */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .top-modules {
+        display: flex;
+        justify-content: flex-start; /* Alinea los módulos hacia la izquierda */
+        gap: 20px;
+        margin-bottom: 20px; /* Espacio entre módulos y la siguiente sección */
+        margin-left: 20px; /* Añade espacio entre el menú lateral y los módulos */
+        margin-top: 80px; /* Añade espacio entre la barra superior y los módulos */
+    }
+
+    /* Estilos para el nuevo módulo de estadísticas */
+    .module {
+        background-color: #4da0e8; /* Fondo púrpura claro */
+        color: black; /* Color de fuente negro */
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        width: 100%; /* Ajusta el ancho del módulo al contenedor */
+        box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+    }
+    /* Estilos para el Módulo 1 */
+    /* Estilos para el Módulo 1 Compacto */
+    .module-1 {
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 8px;
+        padding: 15px; /* Reducir el padding */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más ligera */
+        max-width: 300px; /* Limitar el ancho para hacerlo más compacto */
+        margin: 10px; /* Espacio alrededor del módulo */
+    }
+
+    .module-1 h2 {
+        font-size: 1.2em; /* Tamaño de fuente reducido */
+        margin-bottom: 10px;
+        color: #333333;
+    }
+
+    .module-1 .chart-container {
+        height: 150px; /* Limitar la altura del contenedor del gráfico */
+        margin-top: 10px;
+    }
+
+    /* Estilos para el Módulo 2 */
+    /* Estilos para el Módulo 2 Compacto */
+    .module-2 {
+        background-color: #f9f9f9;
+        border: 1px solid #cccccc;
+        border-radius: 8px;
+        padding: 15px; /* Reducir el padding */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más ligera */
+        max-width: 300px; /* Limitar el ancho para hacerlo más compacto */
+        margin: 10px; /* Espacio alrededor del módulo */
+    }
+
+    .module-2 table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .module-2 th, .module-2 td {
+        padding: 8px; /* Reducir el padding en las celdas */
+        text-align: left;
+    }
+
+    .module-2 th {
+        background-color: #eeeeee;
+        font-size: 0.9em; /* Tamaño de fuente reducido */
+    }
+
+
+    /* Estilos para el Módulo 3 Compacto */
+    .module-3 {
+        background-color: #f9f9f9; /* Fondo gris claro para diferenciación */
+        border: 1px solid #cccccc; /* Borde sutil */
+        border-radius: 8px; /* Bordes redondeados */
+        padding: 15px; /* Padding reducido */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        max-width: 300px; /* Limitar el ancho */
+        margin: 10px; /* Espacio alrededor del módulo */
+    }
+
+    .module-3 h2 {
+        font-size: 1.2em; /* Tamaño de fuente reducido */
+        margin-bottom: 10px; /* Espacio debajo del título */
+        color: #333333; /* Color de texto oscuro */
+    }
+
+    .module-3 .content ul {
+        list-style-type: none; /* Quitar viñetas */
+        padding: 0; /* Quitar padding por defecto */
+        margin: 0; /* Quitar márgenes */
+    }
+
+    .module-3 .content li {
+        padding: 5px 0; /* Espacio entre elementos de la lista */
+        border-bottom: 1px solid #dddddd; /* Línea divisoria entre elementos */
+    }
+
+    .module-3 .content li:last-child {
+        border-bottom: none; /* Quitar línea divisoria en el último elemento */
+    }
+
+    .module h3 {
+        margin-top: 0;
+    }
+
+    .module p {
+        font-size: 24px; /* Tamaño del texto para la estadística */
+        font-weight: bold;
+    }
+
+
+    .module ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .module li {
+        margin-bottom: 10px;
+    }
+
+    .module h4 {
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    .module span {
+        display: block;
+        font-size: 0.8em;
+        color: #555;
+    }
+
+    .module form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .module input, .module textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .module button {
+        background-color: #00796b; /* Color fresco para el botón */
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .module button:hover {
+        background-color: #004d40;
+        transform: scale(1.05);
+    }
+    /* Estilo para resaltar el placeholder */
+    input::placeholder {
+        color: #000; /* Color negro para el placeholder */
+        opacity: 1; /* Asegura que el color sea completamente opaco */
+    
+    }
+
+    /* Opcional: estilo adicional para los inputs */
+    input {
+        padding: 10px;
+        font-size: 1em;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%; /* Ajusta el ancho del input al contenedor */
+    }
+
+    /* Estilo para los placeholders en los inputs */
+    textarea::placeholder {
+        color: #000; /* Negro para el texto del placeholder */
+        opacity: 1; /* Asegura que el placeholder no sea transparente */
+    }
+
+    button#copy-button {
+        margin-left: 10px; /* Espacio entre los botones */
+        background-color: #4CAF50; /* Color de fondo verde */
+        color: white; /* Color del texto */
+        border: none; /* Sin borde */
+        padding: 10px 20px; /* Espaciado interior */
+        text-align: center; /* Alinear el texto */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-block; /* Mostrar en línea */
+        font-size: 16px; /* Tamaño de la fuente */
+        cursor: pointer; /* Cursor tipo puntero */
+    }
+
+    button#copy-button:hover {
+        background-color: #45a049; /* Color de fondo al pasar el cursor */
+    }
+
+    /* Botón flotante en la esquina inferior derecha */
+    .floating-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .floating-button button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    /* Contenedor flotante del formulario */
+    .floating-form-container {
+        position: fixed;
+        bottom: -100%; /* Inicialmente oculto fuera de la pantalla */
+        right: 20px;
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        z-index: 1001;
+        transition: bottom 0.4s ease-in-out; /* Animación de subida y bajada */
+        border-radius: 10px;
+    }
+
+    /* Botón de minimizar en la parte superior derecha */
+    .minimize-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        color: #777;
+    }
+
+    .minimize-button:hover {
+        color: #000;
+    }
+
+    /* Estilos de los botones del formulario */
+    .styled-button {
+        background-color: #4CAF50; /* Verde */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .styled-button:hover {
+        background-color: #45a049;
+    }
+
+    .copy-button {
+        background-color: #2196F3; /* Azul */
+    }
+
+    .copy-button:hover {
+        background-color: #1976D2;
+    }
+
+    /* Contenedor para botones */
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .floating-form-container form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    /* Estilos para el Cronómetro Flotante */
+    .floating-timer {
+        display: none; /* Ocultar el cronómetro inicialmente */
+        position: fixed; /* Fijar la posición del cronómetro en la pantalla */
+        bottom: 20px; /* Espacio desde la parte inferior */
+        left: 170px; /* Ajustar el espacio desde la parte derecha (mover más a la izquierda) */
+        background-color: #ffffff; /* Fondo blanco para el cronómetro */
+        border: 1px solid #dddddd; /* Borde sutil */
+        border-radius: 8px; /* Bordes redondeados */
+        padding: 15px; /* Espacio interno */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    }
+
+    .floating-timer h3 {
+        margin: 0 0 10px 0; /* Espacio debajo del título */
+        font-size: 1.2em; /* Tamaño del texto */
+        color: #444444; /* Color del texto */
+    }
+
+    #timer {
+        font-size: 2em; /* Tamaño grande del cronómetro */
+        margin-bottom: 10px; /* Espacio debajo del cronómetro */
+    }
+
+    button {
+        background-color: #13d584; /* Color de fondo para los botones */
+        color: white; /* Color del texto en los botones */
+        border: none; /* Quitar borde de los botones */
+        padding: 10px 15px; /* Espacio interno en los botones */
+        border-radius: 4px; /* Bordes redondeados en los botones */
+        margin: 5px; /* Espacio entre los botones */
+        cursor: pointer; /* Cambiar cursor al pasar sobre los botones */
+        font-size: 1em; /* Tamaño del texto en los botones */
+    }
+
+    button:hover {
+        background-color: #50ec58; /* Color más oscuro al pasar el cursor sobre los botones */
+    }
+
+    /* Estilos para el Botón de Mostrar el Cronómetro */
+    #show-timer-btn {
+        position: fixed; /* Posición fija en la pantalla */
+        bottom: 20px; /* Espacio desde la parte inferior */
+        left: 20px; /* Espacio desde la parte derecha */
+        background-color: #61e3ef; /* Color de fondo del botón */
+        color: white; /* Color del texto en el botón */
+        border: none; /* Quitar borde del botón */
+        padding: 10px 15px; /* Espacio interno en el botón */
+        border-radius: 8px; /* Bordes redondeados */
+        cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+        font-size: 1em; /* Tamaño del texto en el botón */
+        z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    }
+
+    
+
+.guion-wrapper {
+    margin-left: 250px;
     padding: 20px;
-}
-
-.role-message {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #007bff;
-}
-
-/* Estilos para el modo oscuro */
-.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-.dark-mode .header {
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%);
-}
-
-.dark-mode .navbar-icons .icon {
-    color: #e0e0e0;
-}
-
-.dark-mode .navbar-icons .icon:hover {
-    color: #f0f0f0;
-}
-
-.dark-mode .logout-link {
-    background-color: #c82333;
-}
-
-.dark-mode .role-message {
-    color: #bb86fc;
-}
+    width: calc(100% - 250px); /* Ajusta el ancho según el menú */
+    background-color: #fff; /* Fondo blanco para el contenido */
+    min-height: 100vh; /* Asegura que el contenedor cubra toda la altura */
+    position: relative; /* Posicionamiento relativo */
+    z-index: 1; /* Asegura que el contenido esté encima */
+    
