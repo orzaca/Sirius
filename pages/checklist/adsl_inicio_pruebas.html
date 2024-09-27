@@ -145,7 +145,18 @@
                 <button class="button_modal" onclick="openerror()">Acciones</button>
             </div>    
 
-            <div class="inline-container">
+           
+
+        </br>
+        <button class="button" onclick="nextStep('step1')">Continuar Nivel Cero...</button>
+        
+    </div>
+
+
+    <!-- Resto del código (otros pasos) -->
+    <div id="step2" class="step hidden">
+         <h2>Nivel Cero II</h2>
+      <div class="inline-container">
                 <p>- OSS = Vel Contratada  ✔ </p>
                 <button class="button_modal" onclick="openvel()">Acciones</button>
             </div>
@@ -164,7 +175,13 @@
                 <p>- Falla General ✔ </p>
                 <button class="button_modal" onclick="openfalla()">Acciones</button>
             </div>
-            <div class="inline-container">
+     </br>
+            <button class="button" onclick="nextStep('step2')">Continuar Nivel Cero...</button>
+    </div>
+
+<div id="step3" class="step hidden">
+    <p><h4>Nivel Cero III:</h4></p>
+         <div class="inline-container">
                 <p>- Cliente reincidente ✔ </p>
                 <button class="button_modal" onclick="openreinci()">Acciones</button>
             </div> 
@@ -177,145 +194,157 @@
                 <button class="button_modal" onclick="openfull()">Acciones</button>
             </div>      
 
-        </br>
-        <button class="button" onclick="nextStep('step1')">Continuar Checklist</button>
-        
-    </div>
-
-    <!-- Modal -->
-    <div id="saldos" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closesaldos()">&times;</span>
-            <p><h4>Acciones</h4></p>
-            <p>1. Se le indica que tiene saldo Vencido</p>
-            <p>2. Se le da el Saldo que debe cancelar</p>
-        </div>
-    </div>
-
-    <div id="suspen" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closesuspen()">&times;</span>
-            <p><h4>Acciones</h4></p>
-            <p><b>Si el pago es mayor a 2 horas </b></br> Realizas WF por bloqueo mayor a 2hrs</p>
-            <p><b>Si el pago es menor a 2 horas  </b></br>Indicarle al cliente que debe esperar un maximo de dos horas, si no se activa el servicio, llamar nuevamente para revisar la activacion</p>
-        </div>
-    </div>
-
-    <div id="down" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closedown()">&times;</span>
-            <p><h4>Acciones</h4></p>
-            <p>Envia Reproceso de Liberacion (Opcion 17 en PISA)</p>
-            <p><h4>Si no Levanta, Seguir checklist</h4></p>
-        </div>
-    </div>
-
-    <div id="error" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeerror()">&times;</span>
-            <p><h4>Acciones</h4></p>
-            <p>Ingresar Registro en herramienta de Errores UMP</p>
-            <p><h4>Seguir checklist</h4></p>
-        </div>
-    </div>
-
-    <div id="vel" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closevel()">&times;</span>
-            <p><h4>Acciones</h4></p>
-            <p>Verificar Tecnologia del servicio</p>
-            <p><h4>Es Dslam?</h4></p>
-            <p>Generar WF Velocidad Mal Asignada</p>
-        </div>
-    </div>
-
-    <div id="snr" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closesnr()">&times;</span>
-            <p><h4>Acciones</h4></p>
-            <p>1. indicarle al cliente que desconecte el cable que va del router a la cajita</p>
-            <p>2. Confirmar que este bien conectada y no haya cruce de cables</p>
-            <p>3. Actualizar 3 veses UMP</p>
-            <p><h4>Si Sigue en rojo:</h4></p>
-            <p>Generar Queja a etapa TVZ, colocar como falla: Niveles SNR en rojo</p>
-        </div>
-    </div>
-
-    <div id="rest" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closerest()">&times;</span>
-            <p><h4>Acciones</h4></p>
-            <p>1. Se le brinda la informacion indicada en las restricciones</p>
-            <p>2. No se genera Queja, al menos que cliente confirme que solvento los errores</p>
-            <p><h4>Solvento?</h4></p>
-            <p>1. Si solvento: <b> Seguir checklist</b></p>
-            <p>2. No Solvento: Soporte no aplica</p>
-        </div>
-    </div>
-
-    <div id="falla" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closefalla()">&times;</span>
-            <p><h4>Acciones</h4></p>
-            <p>1. Se le indica que el servicio esta en una falla general</p>
-            <p>2. Se le brinda el numero de falla, y se reporta en la pagina de fallas</p>
-            <p><h4>Tipificacion</h4></p>
-            <p>Falla general ▶ Tramites cortos ▶ Averia Colectiva </p>   
-        </div>
-    </div>
-
-    <div id="reinci" class="modal">
-        <div class="modal-content_imagen ">
-            <span class="close" onclick="closereinci()">&times;</span>
-            <p><h4>Acciones</h4></p>
-            <p>1. Revisar Casos historicos en Qflow</p>
-            <p>2. Se le aplica politica de Reincidente</p>
-            <p><h4>Ver politica de reincidencia</h4></p>
-            <img src="reincidencia.png" alt="Imagen de Cobro" style="max-width: 100%; height: auto; margin: 10px 0;">
-        </div>
-    </div>
-
-    <div id="orden" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeorden()">&times;</span>
-            <p><h4>Acciones</h4></p>
-            <p>1. Se le aplica Seguimiento segun corresponda a la orden</p>
-            <p><h4>Ver beneficio: </h4></p>
-        </div>
-    </div>
-
-    <div id="full" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closefull()">&times;</span>
-            <p><h4>Acciones</h4></p>
-            <p>1. Revisar en la opcion 22 de PISA</p>
-            <p>2. Al momento de consultar, debe aparecer el numero de movil</p>
-            <p>3. Debe ser el titular del servicio para activar el Full Claro</p>
-        </div>
-    </div>
-
-
-
-    <!-- Resto del código (otros pasos) -->
-    <div id="step2" class="step hidden">
-        <p><h4>Aplicar FULL CLARO</h4></p>
-        <div class="inline-container">
-           <p>- Revisar si Aplica Full Claro ✔ </p>
-           <button class="button_modal" onclick="openfull()">Acciones</button>
-       </div> 
-   </br>
-   <button class="button" onclick="nextStep('step2')">Continuar Checklist</button>
+                 </br>
+            <button class="button" onclick="nextStep('step3')">Selecciona Inconveniente..</button>
 </div>
 
-    <div id="step3" class="step hidden">
-        <p><h4>Aplicar FULL CLARO</h4></p>
-            <div class="inline-container">
-                <p>- Revisar si Aplica Full Claro ✔ </p>
-                <button class="button_modal" onclick="openfull()">Acciones</button>
-            </div> 
-                </br>
-                <button class="button" onclick="nextStep('step3')">Continuar Checklist</button>
+<div id="step4" class="step hidden">
+    <p><h2>Pregunta por el estado de las Luces del Router</h2></p>
+    <p><h4>Luego Selecciona el inconveniente:</h4> </p>
+    
+         <div class="main-menu">
+            <div class="menu-item">
+                <span>Inicio Pruebas ADSL</span>
+            </div>
+        </br>
+            <div class="menu-item">
+              <span>Inicio Pruebas HFC</span>
+            </div>
+            </br>
+            <div class="menu-item">
+                <span>PON Apagada</span>
+            </div>
+            </br>
+            <div class="menu-item">
+                <span>Linea sin TONO</span>
+            </div>
+            </br>
+            <div class="menu-item">
+                <span>Sin señal TV HFC</span>
+            </div>
+            </br>
+            <div class="menu-item">
+                <span>Sin Señal IPTV</span>
+            </div>
+
+
+        </div>
+         <button class="button" onclick="reset()">Reiniciar</button>
+
+
+<!-- Modal -->
+<div id="saldos" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closesaldos()">&times;</span>
+        <p><h4>Acciones</h4></p>
+        <p>1. Se le indica que tiene saldo Vencido</p>
+        <p>2. Se le da el Saldo que debe cancelar</p>
     </div>
+</div>
+
+<div id="suspen" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closesuspen()">&times;</span>
+        <p><h4>Acciones</h4></p>
+        <p><b>Si el pago es mayor a 2 horas </b></br> Realizas WF por bloqueo mayor a 2hrs</p>
+        <p><b>Si el pago es menor a 2 horas  </b></br>Indicarle al cliente que debe esperar un maximo de dos horas, si no se activa el servicio, llamar nuevamente para revisar la activacion</p>
+    </div>
+</div>
+
+<div id="down" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closedown()">&times;</span>
+        <p><h4>Acciones</h4></p>
+        <p>Envia Reproceso de Liberacion (Opcion 17 en PISA)</p>
+        <p><h4>Si no Levanta, Seguir checklist</h4></p>
+    </div>
+</div>
+
+<div id="error" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeerror()">&times;</span>
+        <p><h4>Acciones</h4></p>
+        <p>Ingresar Registro en herramienta de Errores UMP</p>
+        <p><h4>Seguir checklist</h4></p>
+    </div>
+</div>
+
+<div id="vel" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closevel()">&times;</span>
+        <p><h4>Acciones</h4></p>
+        <p>Verificar Tecnologia del servicio</p>
+        <p><h4>Es Dslam?</h4></p>
+        <p>Generar WF Velocidad Mal Asignada</p>
+    </div>
+</div>
+
+<div id="snr" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closesnr()">&times;</span>
+        <p><h4>Acciones</h4></p>
+        <p>1. indicarle al cliente que desconecte el cable que va del router a la cajita</p>
+        <p>2. Confirmar que este bien conectada y no haya cruce de cables</p>
+        <p>3. Actualizar 3 veses UMP</p>
+        <p><h4>Si Sigue en rojo:</h4></p>
+        <p>Generar Queja a etapa TVZ, colocar como falla: Niveles SNR en rojo</p>
+    </div>
+</div>
+
+<div id="rest" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closerest()">&times;</span>
+        <p><h4>Acciones</h4></p>
+        <p>1. Se le brinda la informacion indicada en las restricciones</p>
+        <p>2. No se genera Queja, al menos que cliente confirme que solvento los errores</p>
+        <p><h4>Solvento?</h4></p>
+        <p>1. Si solvento: <b> Seguir checklist</b></p>
+        <p>2. No Solvento: Soporte no aplica</p>
+    </div>
+</div>
+
+<div id="falla" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closefalla()">&times;</span>
+        <p><h4>Acciones</h4></p>
+        <p>1. Se le indica que el servicio esta en una falla general</p>
+        <p>2. Se le brinda el numero de falla, y se reporta en la pagina de fallas</p>
+        <p><h4>Tipificacion</h4></p>
+        <p>Falla general ▶ Tramites cortos ▶ Averia Colectiva </p>   
+    </div>
+</div>
+
+<div id="reinci" class="modal">
+    <div class="modal-content_imagen ">
+        <span class="close" onclick="closereinci()">&times;</span>
+        <p><h4>Acciones</h4></p>
+        <p>1. Revisar Casos historicos en Qflow</p>
+        <p>2. Se le aplica politica de Reincidente</p>
+        <p><h4>Ver politica de reincidencia</h4></p>
+        <img src="reincidencia.png" alt="Imagen de Cobro" style="max-width: 100%; height: auto; margin: 10px 0;">
+    </div>
+</div>
+
+<div id="orden" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeorden()">&times;</span>
+        <p><h4>Acciones</h4></p>
+        <p>1. Se le aplica Seguimiento segun corresponda a la orden</p>
+        <p><h4>Ver beneficio: </h4></p>
+    </div>
+</div>
+
+<div id="full" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closefull()">&times;</span>
+        <p><h4>Acciones</h4></p>
+        <p>1. Revisar en la opcion 22 de PISA</p>
+        <p>2. Al momento de consultar, debe aparecer el numero de movil</p>
+        <p>3. Debe ser el titular del servicio para activar el Full Claro</p>
+    </div>
+</div>
+
+
 
 
 
@@ -467,6 +496,13 @@
 
         if (answer === 'step2') {
             document.getElementById('step3').classList.remove('hidden');
+        } else if (answer === 'no_saldos') {
+            document.getElementById('resultMessage').innerText = 'Debes indicarle que tiene un saldo pendiente, le brindas el saldo -  Tipificar: ▶ Consulta ▶ Factura ▶ Residencial ▶ Detalle ▶ Saldo y fecha de Corte -R' ;
+            document.getElementById('result').classList.remove('hidden');
+        }
+
+           if (answer === 'step3') {
+            document.getElementById('step4').classList.remove('hidden');
         } else if (answer === 'no_saldos') {
             document.getElementById('resultMessage').innerText = 'Debes indicarle que tiene un saldo pendiente, le brindas el saldo -  Tipificar: ▶ Consulta ▶ Factura ▶ Residencial ▶ Detalle ▶ Saldo y fecha de Corte -R' ;
             document.getElementById('result').classList.remove('hidden');

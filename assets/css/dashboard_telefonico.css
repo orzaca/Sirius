@@ -1,46 +1,114 @@
-    /* Estilo general del dashboard */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
     transition: all 0.3s ease;
 }
 
-    body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
-        background: linear-gradient(90deg, rgb(239, 240, 240) 0%, rgba(0,150,136,1) 100%);
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     background: white;
+     transition: background 0.3s;
+}
 
-    }
 
-    .header {
-        background: linear-gradient(90deg, rgb(181, 228, 203) 0%, rgba(0,150,136,1) 100%);
-        color: #fff;
-        padding: 10px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        height: 41px;
-    }
+.header {
+    background: white;
+    color: #0D4D4D;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 78%;
+    position: fixed;
+    top: 0;
+    left: 280px;
+    z-index: 1000;
+    min-height: 50px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .sidebar {
-        width: 250px;
-        background-color: #a8cdc9;
-        transition: background-color 0.3s, transform 0.3s;
-        padding: 15px;
-        position: fixed;
-        top: 60px;
-        bottom: 0;
-        left: 0;
-        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-        z-index: 1000; /* Asegura que esté sobre el contenido principal */
-        display: flex;
-        flex-direction: column;
-    }
+/* Estilos del sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #0D4D4D; /* Color verde azulado con opacidad */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el color de fondo y transformaciones */
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Sombra sutil en el borde derecho */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Contenedor del logo */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para el menú dentro de la barra lateral */
+.menu {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margin por defecto */
+}
+
+.menu li {
+    margin: 5px 0; /* Reduce el espacio vertical entre los elementos del menú */
+}
+
+.menu a {
+    display: flex; /* Usa Flexbox para alinear el ícono y el texto */
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #fff; /* Color blanco para el texto del enlace */
+    padding: 8px 10px; /* Reduce el espacio interno del enlace */
+    border-radius: 5px; /* Bordes redondeados de los enlaces */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el color de fondo y transformaciones */
+    font-size: 0.9em; /* Tamaño de letra reducido */
+}
+
+
+
+/* Efecto de sombra al pasar el mouse sobre el enlace del menú */
+.menu a:hover {
+    background-color: #669999; /* Color de fondo al pasar el mouse por encima */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del enlace */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra más grande */
+}
+
+/* Estilos para los íconos dentro de los enlaces */
+.menu i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    color: #fff; /* Color blanco para los íconos */
+    display: flex; /* Usa Flexbox para alinear el ícono dentro del círculo */
+    justify-content: center; /* Centra el ícono horizontalmente dentro del círculo */
+    align-items: center; /* Centra el ícono verticalmente dentro del círculo */
+    width: 35px; /* Ancho del círculo */
+    height: 35px; /* Alto del círculo */
+    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo blanco con opacidad para el círculo */
+    border-radius: 50%; /* Hace que el contenedor sea un círculo */
+    text-align: center; /* Centra el texto del ícono dentro del círculo */
+    font-size: 1.2em; /* Tamaño de letra para los íconos */
+}
+
 
     .navbar {
         display: flex;
@@ -60,14 +128,14 @@
     }
 
     .navbar-icons .icon {
-        color: #fff;
+        color: #0D4D4D;
         text-decoration: none;
         font-size: 1.2em;
         transition: color 0.3s, transform 0.3s;
     }
 
     .navbar-icons .icon:hover {
-        color: #ffffff;
+        color: #669999;
         transform: scale(1.1);
     }
 
@@ -84,52 +152,20 @@
     .logout-link {
         color: #fff;
         text-decoration: none;
-        background-color: #ff5722; /* Color fresco para el botón de cierre de sesión */
+        background-color: #0D4D4D; /* Color fresco para el botón de cierre de sesión */
         padding: 5px 10px;
         border-radius: 5px;
         transition: background-color 0.3s, transform 0.3s;
     }
 
     .logout-link:hover {
-        background-color: #e64a19;
+        background-color: #669999;
         transform: scale(1.05);
     }
 
 
 
-    .menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .menu li {
-        display: flex;
-        align-items: center;
-    }
-
-    .menu a {
-        text-decoration: none;
-        color: #00796b; /* Color fresco para los enlaces */
-        font-size: 1em;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        transition: background-color 0.3s, transform 0.3s;
-    }
-
-    .menu a:hover {
-        background-color: #004d40;
-        color: #ffffff;
-        transform: scale(1.02);
-    }
-
+ 
     .content-wrapper {
         margin-left: 250px; /* Deja espacio para el menú lateral */
         padding: 20px;
@@ -605,24 +641,5 @@
         z-index: 1000; /* Asegurar que esté por encima de otros elementos */
     }
 
-    /* MODULO DE CHECKLIST*/
-    .checklist-section {
-        /*background-color: #9ff3f2;  /*Fondo claro para la sección */
-        padding: 20px; /* Espacio interno */
-        border-radius: 8px; /* Bordes redondeados */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-        margin-top: 20px; /* Espacio superior */
-        display: block;
-        flex-direction: column;
-        gap: 20px;
-        position: absolute;
-        width: 75%;
-        top: 8%;
-    }
-
-    .checklist-section h2 {
-        color: #333; /* Color del texto */
-        font-size: 24px; /* Tamaño de fuente */
-        margin-bottom: 10px; /* Espacio inferior */
-    }
+    
 

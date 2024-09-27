@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         try {
             $stmt->execute([$name, $email, $hashed_password, $role]);
-            $message = 'Cuenta registrada exitosamente. <a href="login.php">Inicia sesión</a>.';
+            $message = 'Cuenta registrada exitosamente.';
         } catch (PDOException $e) {
             $message = 'Error al registrar el usuario: ' . $e->getMessage();
         }

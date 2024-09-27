@@ -1,0 +1,41 @@
+/* MODULO DE INICIO CHECKLIST*/
+.checklist-section {
+    /*background-color: #9ff3f2;  /*Fondo claro para la sección */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-top: 20px; /* Espacio superior */
+    display: block;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    width: 75%;
+    top: 8%;
+}
+
+.checklist-section h2 {
+    color: #333; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* ADSL INICIO PRUEBAS*/
+.adsl_inicio_pruebas-section {
+    /*background-color: #9ff3f2;  /*Fondo claro para la sección */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-top: 20px; /* Espacio superior */
+    display: block;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    width: 75%;
+    top: 8%;
+}
+
+.adsl_inicio_pruebas-section h2 {
+    color: #333; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior */
+}

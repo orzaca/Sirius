@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú con Submenús</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #B4CBD9;
+        }
+
+        nav.menu {
+            background-color: #182E59;
+        }
+
+        nav.menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav.menu ul li {
+            position: relative;
+         justify-content: left;
+        }
+
+        nav.menu ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            background-color: #333;
+        }
+
+        nav.menu ul li a:hover {
+            background-color: #B4CBD9;
+        }
+
+        nav.menu ul li ul.submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            padding: 0;
+        }
+
+        nav.menu ul li ul.submenu li a {
+            padding: 10px 15px;
+        }
+
+        nav.menu ul li:hover ul.submenu {
+            display: block;
+        }
+
+        /* Adjust the submenu styling for clarity */
+        nav.menu ul li ul.submenu li {
+            width: 260px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="menu">
+    <ul>
+        <li><a href="#">Adsl</a>
+            <ul class="submenu">
+                <li><a href="/pages/checklist/adsl_inicio_pruebas.html">Inicio Pruebas</a></li>
+                <li><a href="#">Leds OK No navega</a></li>
+                <li><a href="#">CPE Dañado</a></li>
+                <li><a href="#">CPE se Reinicia</a></li>
+                <li><a href="#">Ethernet OFF</a></li>
+                <li><a href="#">Internet Rojo / Apagado</a></li>
+                <li><a href="#">Lentitud e Inestabilidad</a></li>
+                <li><a href="#">Portadora OFF / Intermitente</a></li>
+                <li><a href="#">Wlan Rojo / OFF</a></li>
+                <li><a href="#">Linea Fija</a></li>
+            </ul>
+        </li>
+        <li><a href="#">HFC</a>
+            <ul class="submenu">
+                <li><a href="#">Inicio Pruebas</a></li>
+                <li><a href="#">Onlinea Intermitente</a></li>
+                <li><a href="#">No navega / luces Ok</a></li>
+                <li><a href="#">Ethernet Rojo / Naranja</a></li>
+                <li><a href="#">Ethernet OFF</a></li>
+                <li><a href="#">Lentitud e Inestabilidad</a></li>
+                <li><a href="#">Linea Fija</a></li>
+                <li><a href="#">Modem no enciende, se reinicia</a></li>
+            </ul>
+        </li>
+        <li><a href="#">HFC TV</a>
+            <ul class="submenu">
+                <li><a href="#">Inicio Pruebas</a></li>
+                <li><a href="#">Sin Señal</a></li>
+                <li><a href="#">Sin Audio</a></li>
+                <li><a href="#">Algunos canales Sin Señal</a></li>
+                <li><a href="#">Cintillo de Venta</a></li>
+                <li><a href="#">DTA Inhibido</a></li>
+                <li><a href="#">Falla Guia Interactiva</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Gpon</a>
+            <ul class="submenu">
+                <li><a href="#">No Navega</a></li>
+                <li><a href="#">Lentitud</a></li>
+                <li><a href="#">Inestabilidad</a></li>
+                <li><a href="#">PON Apagado / LOS Rojo</a></li>
+                <li><a href="#">Sin tono</a></li>
+                <li><a href="#">OTT Dañado</a></li>
+                <li><a href="#">Migracion a Gpon</a></li>
+            </ul>
+        </li>
+        <li><a href="#">IPTV</a>
+            <ul class="submenu">
+                <li><a href="#">Inicio Pruebas</a></li>
+                <li><a href="#">Sin Señal</a></li>
+                <li><a href="#">Prog. No coincide con Guia</a></li>
+                <li><a href="#">Si Audio</a></li>
+                <li><a href="#">Algunos canales sin señal</a></li>
+                <li><a href="#">Aprovisio. de Paquetes</a></li>
+                <li><a href="#">Falla Guia Interactiva</a></li>
+                <li><a href="#">Imagen Pixelada</a></li>
+                <li><a href="#">Mensaje de Error</a></li>
+                <li><a href="#">OTT no Vinculada</a></li>
+                <li><a href="#">OTT Dañado</a></li>
+
+            </ul>
+        </li>
+        <li><a href="#">DTH</a>
+            <ul class="submenu">
+                <li><a href="#">Inicio DTH</a></li>
+                <li><a href="#">Sin Señal</a></li>
+                <li><a href="#">Sin Audio</a></li>
+                <li><a href="#">Algunos canales sin señal</a></li>
+                <li><a href="#">Cintillo de cobro</a></li>
+                <li><a href="#">Imagen Blanco Y negro</a></li>
+                <li><a href="#">Imagen Congelada Pixeleada</a></li>
+                <li><a href="#">Mensajes Especiales</a></li>
+                <li><a href="#">STB no enciende</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Wireless</a>
+            <ul class="submenu">
+                <li><a href="#">Inicio Pruebas</a></li>
+                <li><a href="#">Imposible conectarse a la Red</a></li>
+                <li><a href="#">Conectividad Limitada o Nula</a></li>
+                
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>

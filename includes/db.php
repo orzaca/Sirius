@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$db = 'sirius';
-$user = 'root';  // Ajusta según tu configuración
-$pass = '';      // Ajusta según tu configuración
+$db = 'ziriuson_zirius';
+$user = 'ziriuson_orzaca';  // Ajusta según tu configuración
+$pass = 'Orzaca2024*';      // Ajusta según tu configuración
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
