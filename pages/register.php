@@ -15,18 +15,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($name) || empty($email) || empty($password) || empty($role)) {
         $message = 'Por favor, completa todos los campos.';
     } else {
-        // Cifra la contraseña
-        $hashed_password = password_hash($password, PASSWORD_BCRYPT);
-
-        // Inserta el nuevo usuario en la base de datos
-        $sql = "INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)";
+        // Verificar si el correo ya está registrado
+        $sql = "SELECT COUNT(*) FROM users WHERE email = ?";
         $stmt = $pdo->prepare($sql);
+        $stmt->execute([$email]);
+        $emailExists = $stmt->fetchColumn();
 
-        try {
-            $stmt->execute([$name, $email, $hashed_password, $role]);
-            $message = 'Cuenta registrada exitosamente.';
-        } catch (PDOException $e) {
-            $message = 'Error al registrar el usuario: ' . $e->getMessage();
+        if ($emailExists) {
+            $message = 'El correo electrónico ya está registrado.';
+        } else {
+            // Cifra la contraseña
+            $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+
+            // Inserta el nuevo usuario en la base de datos
+            $sql = "INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)";
+            $stmt = $pdo->prepare($sql);
+
+            try {
+                $stmt->execute([$name, $email, $hashed_password, $role]);
+                $user_id = $pdo->lastInsertId(); // Obtener el ID del nuevo usuario
+
+                // Agregar un párrafo por defecto para el nuevo usuario
+                $defaultParagraph = "Este es un párrafo por defecto."; // Puedes ajustar este contenido
+                $sql = "INSERT INTO paragraphs (content, user_id) VALUES (?, ?)";
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute([$defaultParagraph, $user_id]);
+
+                $message = 'Cuenta registrada exitosamente.';
+            } catch (PDOException $e) {
+                $message = 'Error al registrar el usuario: ' . $e->getMessage();
+            }
         }
     }
 }

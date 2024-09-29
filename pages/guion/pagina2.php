@@ -1,10 +1,27 @@
+<?php
+session_start(); // Iniciar sesión para acceder a la información del usuario
+
+require '/home/ziriuson/public_html/includes/db.php'; // Conexión a la base de datos
+
+// Suponiendo que ya tienes la sesión iniciada y $userId es el ID del usuario logueado
+$userId = $_SESSION['user_id'];
+
+// Obtener los párrafos específicos del usuario de la base de datos
+$sql = "SELECT p.id, COALESCE(up.content, p.content) AS content FROM paragraphs p 
+        LEFT JOIN user_paragraphs up ON p.id = up.paragraph_id AND up.user_id = :userId";
+$stmt = $pdo->prepare($sql);
+$stmt->execute(['userId' => $userId]);
+$paragraphs = $stmt->fetchAll();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Copia y Modificación de Múltiples Párrafos</title>
+    <title>Ejemplo de Copia, Modificación y Eliminación de Párrafos</title>
     <style>
+        /* Estilos similares a los del ejemplo anterior */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -51,6 +68,13 @@
         button:hover {
             background-color: #0056b3;
         }
+        /* Estilo para botón de eliminar */
+        .delete-button {
+            background-color: #FF0000;
+        }
+        .delete-button:hover {
+            background-color: #cc0000;
+        }
 
         /* Estilos del modal */
         #modal {
@@ -90,23 +114,12 @@
 
     <div class="container">
         <?php
-        session_start(); // Asegúrate de que la sesión esté iniciada
-        require '/home/ziriuson/public_html/includes/db.php'; // Asegúrate de que este archivo contenga la conexión a tu base de datos
-
-        // Obtener el user_id de la sesión
-        $userId = $_SESSION['user_id']; // Supón que guardaste el user_id en la sesión al iniciar sesión
-
-        // Obtener los párrafos específicos del usuario
-        $sql = "SELECT id, content FROM paragraphs WHERE user_id = :user_id";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute(['user_id' => $userId]);
-        $paragraphs = $stmt->fetchAll();
-        
         foreach ($paragraphs as $paragraph) {
             echo '<div class="paragraph-container" id="paragraph' . $paragraph['id'] . '">';
             echo '<p>' . htmlspecialchars($paragraph['content']) . '</p>';
             echo '<button onclick="copyToClipboard(\'paragraph' . $paragraph['id'] . '\')">Copiar</button>';
             echo '<button onclick="openModal(' . $paragraph['id'] . ')">Modificar</button>';
+            echo '<button class="delete-button" onclick="deleteParagraph(' . $paragraph['id'] . ')">Eliminar</button>';
             echo '</div>';
         }
         ?>
@@ -147,11 +160,9 @@
 
         function saveText() {
             const newText = document.getElementById('modalText').value;
-            // Actualiza el texto en la interfaz
             const textElement = document.getElementById('paragraph' + currentParagraphId).getElementsByTagName('p')[0];
             textElement.innerText = newText;
 
-            // Actualiza el texto en la base de datos
             fetch('update_paragraph.php', {
                 method: 'POST',
                 headers: {
@@ -165,7 +176,25 @@
             })
             .catch(error => console.error('Error:', error));
 
-            closeModal(); // Oculta el modal después de guardar
+            closeModal();
+        }
+
+        function deleteParagraph(paragraphId) {
+            if (confirm("¿Estás seguro de que quieres eliminar este párrafo?")) {
+                fetch('delete_paragraph.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: 'id=' + paragraphId
+                })
+                .then(response => response.text())
+                .then(data => {
+                    console.log(data); // Para depuración
+                    document.getElementById('paragraph' + paragraphId).remove(); // Elimina el párrafo de la interfaz
+                })
+                .catch(error => console.error('Error:', error));
+            }
         }
     </script>
 

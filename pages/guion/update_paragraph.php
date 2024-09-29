@@ -1,23 +1,19 @@
 <?php
-session_start();
-require '/home/ziriuson/public_html/includes/db.php'; // Asegúrate de que este archivo contenga la conexión a tu base de datos
+session_start(); // Iniciar sesión para acceder a la información del usuario
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $id = intval($_POST['id']);
-    $content = trim($_POST['content']);
+require '/home/ziriuson/public_html/includes/db.php'; // Conexión a la base de datos
 
-    if (!empty($content)) {
-        $sql = "UPDATE paragraphs SET content = ? WHERE id = ?";
-        $stmt = $pdo->prepare($sql);
-        if ($stmt->execute([$content, $id])) {
-            echo "Párrafo actualizado correctamente.";
-        } else {
-            echo "Error al actualizar el párrafo.";
-        }
-    } else {
-        echo "El contenido no puede estar vacío.";
-    }
-} else {
-    echo "Método no permitido.";
-}
+// Obtener el ID del usuario
+$userId = $_SESSION['user_id'];
+
+// Obtener los datos enviados por POST
+$paragraphId = $_POST['id'];
+$content = $_POST['content'];
+
+// Verificar si el párrafo ya existe para el usuario
+$sql = "REPLACE INTO user_paragraphs (user_id, paragraph_id, content) VALUES (:userId, :paragraphId, :content)";
+$stmt = $pdo->prepare($sql);
+$stmt->execute(['userId' => $userId, 'paragraphId' => $paragraphId, 'content' => $content]);
+
+echo "Párrafo actualizado"; // Mensaje de éxito
 ?>

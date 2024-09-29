@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.module-1').style.display = 'none';
         document.querySelector('.module-2').style.display = 'none';
          document.querySelector('.noticias').style.display = 'none';
+         document.querySelector('.module-3').style.display = 'none';
         
         // Muestra la sección de guiones
         guionSection.style.display = 'block';
@@ -39,13 +40,14 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.module-1').style.display = 'none';
         document.querySelector('.module-2').style.display = 'none';
          document.querySelector('.noticias').style.display = 'none';
+          document.querySelector('.module-3').style.display = 'none';
         
         // Muestra la sección de checklist
         checklistSection.style.display = 'block';
         guionSection.style.display = 'none'; // Asegúrate de ocultar la sección de guiones
 
         // Carga el contenido de checklist
-        fetch('/pages/checklist.php') // Asegúrate de que esta ruta sea correcta
+        fetch('/pages/Inicio_checklist.php') // Asegúrate de que esta ruta sea correcta
             .then(response => response.text())
             .then(html => {
                 checklistSection.innerHTML = html;

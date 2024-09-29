@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Para íconos -->
 </head>
 <body>
-     <div class="auth-container">
+    <div class="auth-container">
         <div class="auth-form">
             <div class="form-icon">
                 <img src="/assets/img/Zirius.png" alt="User Icon" />
@@ -69,10 +69,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <div class="remember-forgot">
                     <label><input type="checkbox" name="remember"> Recuérdame</label>
-                    
                 </div>
                 <button type="submit">INGRESAR</button>
             </form>
+            <?php if (!empty($message)): ?>
+                <p class="message"><?php echo htmlspecialchars($message); ?></p>
+            <?php endif; ?>
         </div>
     </div>
 
