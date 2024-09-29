@@ -86,7 +86,7 @@ $news_list = $news_stmt->fetchAll();
 
  <main class="main-content">
 	<div class="module-1">
-		<p class="titulo_modulo1">Acceso Directo</p>
+		<p class="titulo_modulo">Acceso Directo</p>
 			</br>
 			<div class="image-grid">
 				<a href="pagina1.html">
@@ -133,7 +133,7 @@ $news_list = $news_stmt->fetchAll();
 
 	</div>
 		<div class="module-2">
-			<h2 class="titulo_modulo1">Métricas</h2>
+			<h2 class="titulo_modulo">Métricas Mes</h2>
 			<div class="metrics-container">
 				<div class="metric-item">
 					<h3>TMO</h3>
@@ -145,6 +145,28 @@ $news_list = $news_stmt->fetchAll();
 				</div>
 			</div>
 		</div>
+
+		<div class="module-3">
+			<h2 class="titulo_modulo">Grillas TV</h2>
+			<di class="image-modulo3">
+				</br>
+					<a href="pagina1.html">
+					<img src="/assets/img/clarohogar.jpg" alt="IPTV">
+					<span>Grilla IPTV</span>
+					</a>
+				<a href="pagina2.html">
+					<img src="/assets/img/clarotvplus.png" alt="HFC">
+					<span>Grilla HFC</span>
+				</a>
+				<a href="pagina3.html">
+					<img src="/assets/img/tv.jpg" alt="DTH">
+					<span>Grilla DTH</span>
+				</a>
+
+
+			</div>
+		</div>
+
 
 
 
@@ -231,6 +253,7 @@ $news_list = $news_stmt->fetchAll();
 <script src="/assets/js/cronometro.js"></script>
 <script src="/assets/js/tipiform.js"></script>
 <script src="/assets/js/noticias.js"></script>
+ <script src="principal.js"></script>
 
 
 

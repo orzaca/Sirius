@@ -51,7 +51,7 @@
         button:hover {
             background-color: #0056b3;
         }
-        
+
         /* Estilos del modal */
         #modal {
             display: none; /* Inicialmente oculto */
@@ -90,12 +90,16 @@
 
     <div class="container">
         <?php
-        // Conexión a la base de datos
-       require '/home/ziriuson/public_html/includes/db.php'; // Asegúrate de que este archivo contenga la conexión a tu base de datos
+        session_start(); // Asegúrate de que la sesión esté iniciada
+        require '/home/ziriuson/public_html/includes/db.php'; // Asegúrate de que este archivo contenga la conexión a tu base de datos
 
-        // Obtener los párrafos de la base de datos
-        $sql = "SELECT id, content FROM paragraphs";
-        $stmt = $pdo->query($sql);
+        // Obtener el user_id de la sesión
+        $userId = $_SESSION['user_id']; // Supón que guardaste el user_id en la sesión al iniciar sesión
+
+        // Obtener los párrafos específicos del usuario
+        $sql = "SELECT id, content FROM paragraphs WHERE user_id = :user_id";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute(['user_id' => $userId]);
         $paragraphs = $stmt->fetchAll();
         
         foreach ($paragraphs as $paragraph) {

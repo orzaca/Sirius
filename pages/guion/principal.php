@@ -168,10 +168,10 @@ $nombres = $stmtPestanas->fetchAll(PDO::FETCH_COLUMN); // Usamos fetchAll para o
         <!-- El contenido se cargará aquí mediante AJAX -->
     </div>
 
+
+
     <script src="principal.js"></script>
-    <script src="copiar.js"></script>
-    <script src="edittext.js"></script>
-
-
+  
+    
 </body>
 </html>
