@@ -63,7 +63,7 @@ $news_list = $news_stmt->fetchAll();
         </div>
     <ul class="menu">
         <li><a href="#" id="load-tipifications"><i class="fas fa-file-alt"></i> Tipificaciones</a></li>
-        <li><a href="#"><i class="fas fa-sticky-note"></i> Memo de quejas</a></li>
+        <li><a href="#" id="load-quejas"><i class="fas fa-sticky-note"></i> Memo de quejas</a></li>
         <li><a href="#"><i class="fas fa-layer-group"></i> Plantillas WF</a></li>
         <li><a href="#"><i class="fas fa-book"></i> Manuales</a></li>
         <li><a href="#" id="load-checklist"><i class="fas fa-check-circle"></i> Checklist</a></li>
@@ -150,32 +150,15 @@ $news_list = $news_stmt->fetchAll();
 </section>
 
 
-<div class="guion-wrapper" id="guion-wrapper">
+<section class="quejas-wrapper" id="quejas-wrapper" style="display: none;">>
         <!-- El contenido se cargará aquí -->
-</div>
+</section>
 
 
 
 
 </main>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Añade un event listener a la opción de "Guiones"
-    document.getElementById('guiones').addEventListener('click', function(event) {
-        event.preventDefault(); // Evita el comportamiento por defecto del enlace
-        
-        // Usa Fetch API para cargar el contenido desde un archivo
-        fetch('guiones.html')
-            .then(response => response.text())
-            .then(data => {
-                // Inserta el contenido en el contenedor
-                document.getElementById('guion-wrapper').innerHTML = data;
-            })
-            .catch(error => console.error('Error al cargar el contenido:', error));
-    });
-});
-    </script>
 
 <script src="/assets/js/theme-toggle.js" defer></script> 
 <script src="/assets/js/step.js"></script>
