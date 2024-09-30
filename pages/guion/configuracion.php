@@ -89,7 +89,7 @@ $nombres = $stmt->fetchAll(PDO::FETCH_COLUMN);
 <body>
     <h1>Configuración de Pestañas</h1>
     <form action="configuracion.php" method="POST">
-        <?php for ($i = 1; $i <= 8; $i++): ?>
+        <?php for ($i = 1; $i <= 6; $i++): ?>
             <label>Pestaña <?php echo $i; ?>: </label>
             <input type="text" name="nombre<?php echo $i; ?>" value="<?php echo htmlspecialchars($nombres[$i-1]); ?>"><br><br>
         <?php endfor; ?>

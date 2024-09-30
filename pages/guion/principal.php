@@ -35,107 +35,113 @@ $nombres = $stmtPestanas->fetchAll(PDO::FETCH_COLUMN); // Usamos fetchAll para o
 <style>
 
 
-     body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-      .tab-container {
-    position: fixed; /* Fija el menú en la pantalla */
-    top: 0; /* Pegado a la parte superior */
-    left: 0; /* Pegado a la parte izquierda */
-    width: 100%; /* Ancho completo para el menú */
-    background-color: #0D4D4D; /* Color de fondo del menú */
-    display: flex; /* Alinea los elementos en línea */
-    flex-wrap: wrap; /* Permite que el contenido se ajuste a la línea siguiente si es necesario */
-    justify-content: space-evenly; /* Distribuye los elementos de manera uniforme */
-    padding: 10px; /* Espaciado interno */
-    z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+     /* Estilo básico para el body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
+/* Estilos para el contenedor de pestañas */
+.tab-container {
+    position: fixed; /* Fija el menú en la pantalla */
+      left: 20.7%;
+  top: 11%;
+    width: 100%; /* Ancho completo para el menú */
+    background-color: #922b21; /* Color de fondo del menú */
+    display: flex; /* Alinea los elementos en línea */
+    flex-wrap: wrap; /* Permite que el contenido se ajuste a la línea siguiente si es necesario */
+    justify-content: left; /* Distribuye los elementos de manera uniforme */
+    padding: 5px; /* Espaciado interno */
+    z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para cada pestaña */
 .tab {
     padding: 10px 20px;
     cursor: pointer;
     color: white;
     font-size: 16px;
     border-bottom: 3px solid transparent;
-    transition: border-bottom 0.3s ease;
+    transition: border-bottom 0.3s ease; /* Transición suave para el borde */
 }
 
-        .tab {
-            padding: 10px 20px;
-            cursor: pointer;
-            color: white;
-            font-size: 16px;
-            border-bottom: 3px solid transparent;
-            transition: border-bottom 0.3s ease;
-        }
-        .tab:hover, .tab.active {
-            border-bottom: 3px solid #FFD700; /* Amarillo dorado */
-        }
-        .content {
-            padding: 20px;
-            background-color: white;
-            border-top: 1px solid #ddd;
-        }
-        .message {
-            position: fixed;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 14px;
-            display: none;
-            z-index: 1000;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-        /* Estilos de fondo y texto por cada contenido */
-        #content1 { background-color: #E5F5F5; color: #0D4D4D; }
-        #content2 { background-color: #FFF2E5; color: #B35C00; }
-        #content3 { background-color: #E5E9FF; color: #0033B3; }
-        #content4 { background-color: #F5E5FF; color: #800080; }
-        #content5 { background-color: #E5FFE5; color: #008000; }
-        #content6 { background-color: #FFFDE5; color: #B39C00; }
-        #content7 { background-color: #F5E5E5; color: #B30000; }
-        #content8 { background-color: #E5FFF9; color: #00665B; }
-        /* Estilo para el ícono de configuración */
-        
+.tab:hover, .tab.active {
+    border-bottom: 3px solid #FFD700; /* Amarillo dorado */
+}
 
-        .settings-tab {
-            padding: 10px;
-            cursor: pointer;
-            color: white;
-            font-size: 18px;
-            border-bottom: 3px solid transparent;
-            transition: border-bottom 0.3s ease;
-            text-decoration: none;
-        }
-        .settings-tab:hover {
-            border-bottom: 3px solid #FFD700; /* Amarillo dorado */
-        }
+/* Estilos para el contenido principal */
+.content {
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid #ddd; /* Línea superior para separar el contenido */
+}
+
+/* Estilos para el mensaje de notificación */
+.message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50; /* Color de fondo de la notificación */
+    color: white; /* Color del texto de la notificación */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none; /* Oculto por defecto */
+    z-index: 1000; /* Asegura que la notificación esté por encima de otros elementos */
+    opacity: 0; /* Inicia con opacidad 0 */
+    transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
+}
+
+/* Estilos de fondo y texto por cada contenido */
+#content1 { background-color: #E5F5F5; color: #0D4D4D; }
+#content2 { background-color: #FFF2E5; color: #B35C00; }
+#content3 { background-color: #E5E9FF; color: #0033B3; }
+#content4 { background-color: #F5E5FF; color: #800080; }
+#content5 { background-color: #E5FFE5; color: #008000; }
+#content6 { background-color: #FFFDE5; color: #B39C00; }
+#content7 { background-color: #F5E5E5; color: #B30000; }
+#content8 { background-color: #E5FFF9; color: #00665B; }
+
+/* Estilo para el ícono de configuración */
+.settings-tab {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease;
+    text-decoration: none;
+}
+
+.settings-tab:hover {
+    border-bottom: 3px solid #FFD700; /* Amarillo dorado */
+}
+
+/* Estilos para los enlaces dentro de la pestaña de configuración */
 .settings-tab a {
     color: #FFFFFF; /* Color del ícono */
     text-decoration: none; /* Quita el subrayado del enlace */
 }
 
+/* Mantiene el color en todos los estados */
 .settings-tab a:active,
 .settings-tab a:visited,
 .settings-tab a:hover {
     color: #FFFFFF; /* Mantén el color en todos los estados */
 }
 
-
-        #dynamic-content {
+/* Estilo para el contenido dinámico */
+#dynamic-content {
     margin-top: 60px; /* Deja espacio suficiente para el menú fijo */
     padding: 20px;
     background-color: white;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #ddd; /* Línea superior para separar el contenido dinámico */
 }
+
 
 </style>
 </head>
@@ -149,23 +155,25 @@ $nombres = $stmtPestanas->fetchAll(PDO::FETCH_COLUMN); // Usamos fetchAll para o
     <div class="tab-container">
         <?php 
         $urls = [
-            'pagina1.php', // URL para la pestaña 1
-            'pagina2.php', // URL para la pestaña 2
-            'pagina3.php', // URL para la pestaña 3
-            'pagina4.php', // URL para la pestaña 4
+            '/pages/guion/pagina1.php', // URL para la pestaña 1
+            '/pages/guion/pagina2.php', // URL para la pestaña 2
+            '/pages/guion/pagina3.php', // URL para la pestaña 3
+            '/pages/guion/pagina3.php', // URL para la pestaña 4
             'pagina5.php', // URL para la pestaña 5
             'pagina6.php', // URL para la pestaña 6
             'pagina7.php', // URL para la pestaña 7
             'pagina8.php', // URL para la pestaña 8
+            'configuracion.php'
+
         ];
 
-        for ($i = 1; $i <= 8; $i++): ?>
+        for ($i = 1; $i <= 10; $i++): ?>
             <div class="tab<?php echo $i === 1 ? ' active' : ''; ?>" onclick="loadContent('<?php echo $urls[$i-1]; ?>')">
                 <?php echo isset($nombres[$i-1]) ? htmlspecialchars($nombres[$i-1]) : "Pestaña $i"; ?>
             </div>
         <?php endfor; ?>
         <div class="settings-tab">
-            <a href="configuracion.php"><i class="fas fa-cog"></i></a>
+            <a href="/pages/guion/configuracion.php"><i class="fas fa-cog"></i></a>
         </div>
     </div>
 
@@ -176,8 +184,8 @@ $nombres = $stmtPestanas->fetchAll(PDO::FETCH_COLUMN); // Usamos fetchAll para o
 
 
 
-  <script src="/assets/js/principal.js"></script>
-   <script src="/assets/js/clipboard.js"></script>
+<script src="/assets/js/principal.js"></script> <!-- Controla los menus -->
+<script src="/assets/js/clipboard.js"></script>
 <script src="/assets/js/modal.js"></script>
 <script src="/assets/js/save.js"></script>
 <script src="/assets/js/delete.js"></script>
@@ -185,3 +193,5 @@ $nombres = $stmtPestanas->fetchAll(PDO::FETCH_COLUMN); // Usamos fetchAll para o
     
 </body>
 </html>
+
+   <!-- HASTA AQUI LLEGA EL CONTROL + Z -->

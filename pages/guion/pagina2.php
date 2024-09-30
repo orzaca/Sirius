@@ -23,14 +23,12 @@ $paragraphs = $stmt->fetchAll();
     <style>
         /* Estilos similares a los del ejemplo anterior */
         body {
-            font-family: Arial, sans-serif;
+ 
+            font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
+            top: 10%;
         }
         .container {
             display: flex;

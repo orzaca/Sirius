@@ -33,7 +33,8 @@ $news_list = $news_stmt->fetchAll();
 		<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/assets/css/dashboard_redes.css">
 		<link rel="stylesheet" href="/assets/css/checklist.css">
-		    
+		<link rel="stylesheet" href="/assets/css/quejas.css">
+		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	</head>
 	<body>
@@ -205,21 +206,23 @@ $news_list = $news_stmt->fetchAll();
 		<div id="floating-form-container" class="floating-form-container">
 				<button type="button" id="minimize-form-button" class="minimize-button">
 					<i class="fas fa-window-minimize"></i>
-				</button>
-			<form action="save_tipification.php" method="POST" id="tipification-form"><h3>Tipificación</h3>
-				<input type="text" id="call_id" name="call_id" placeholder="ID llamada" required>
-				<input type="text" id="client_name" name="client_name" placeholder="Nombre del Cliente" required>
-				<input type="text" id="line" name="line" placeholder="Línea" required>
-				<textarea id="reported_problem" name="reported_problem" placeholder="Problema Reportado" rows="3" required></textarea>
-				<textarea id="tests" name="tests" placeholder="Pruebas" rows="3" required></textarea>
-				<div class="button-container">
+				</button> 
+			 	<form action="save_tipification.php" method="POST" id="tipification-form"><p>Tipificador</p>
+					<input type="text" id="call_id" name="call_id" placeholder="ID llamada" required>
+					<input type="text" id="client_name" name="client_name" placeholder="Nombre del Cliente" required>
+					<input type="text" id="line" name="line" placeholder="Línea" required> 
+					<textarea id="reported_problem" name="reported_problem" placeholder="Problema Reportado" rows="3" required></textarea>
+					<textarea id="tests" name="tests" placeholder="Pruebas" rows="3" required></textarea>
+					<div class="button-container">
 					<button type="submit" class="styled-button">Guardar</button>
 					<button type="button" id="copy-button" class="styled-button copy-button">Copiar</button>
 				</div>
 			</form>
 		</div>
+
+
+			<!-- Cronómetro Flotante -->
 		<button id="show-timer-btn">Cronómetro</button>
-	<!-- Cronómetro Flotante -->
 		<div class="floating-timer" id="floating-timer">
 			<h3>Cronómetro</h3>
 				<div id="timer">
@@ -241,20 +244,23 @@ $news_list = $news_stmt->fetchAll();
 	<!-- Contenido de guion.php se cargará aquí -->
 </section>
 
+<section class="quejas-section" id="quejas-section" style="display: none;">
+	<!-- Contenido de guion.php se cargará aquí -->
+</section>
+
+
 
 
 </main>
 
-
-
-<script src="/assets/js/theme-toggle.js" defer></script> 
-<script src="/assets/js/step.js"></script>
-<script src="/assets/js/checklist.js"></script>
-<script src="/assets/js/cronometro.js"></script>
-<script src="/assets/js/tipiform.js"></script>
-<script src="/assets/js/noticias.js"></script>
- <script src="/assets/js/principal.js"></script>
-
+<script src="/assets/js/theme-toggle.js" defer></script>  <!-- Controla el modo nocturno -->
+<script src="/assets/js/step.js"></script> <!-- controla las acciones en los checklist -->
+<script src="/assets/js/checklist.js"></script>  <!-- controla los enlaces en el menu lateral -->
+<script src="/assets/js/cronometro.js"></script> <!-- controla cronometro -->
+<script src="/assets/js/tipiform.js"></script> <!-- controla el tipificador -->
+<script src="/assets/js/noticias.js"></script> <!-- controla la seccion de mensajes -->
+<script src="/assets/js/principal.js"></script> <!-- controla la opcion de guiones-->
+<script src="/assets/js/memo_dsl_internet.js"></script> <!-- controla el copiar del memo de las quejas-->
 
 
 
