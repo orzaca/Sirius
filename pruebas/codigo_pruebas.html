@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Copiado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E5F5F5;
+            color: #0D4D4D;
+            margin: 0;
+            padding: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #FFFFFF;
+            background-color: #0D4D4D;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .btn:hover {
+            background-color: #004d4d;
+        }
+        .copied-notification {
+            display: none;
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        #text-to-copy, #text-to-copy2 {
+            font-size: 12px; /* Ajusta el tamaño del texto aquí */
+            color: #0D4D4D; /* Opcional: ajusta el color si es necesario */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="text-to-copy">Este es el texto que se copiará al portapapeles.</p>
+        <button class="btn" onclick="copyToClipboard('text-to-copy', 'copied-notification1')">Copiar Texto 1</button>
+        <p id="copied-notification1" class="copied-notification">¡Texto 1 copiado al portapapeles!</p>
+    </div>
+    <div>
+        <p id="text-to-copy2">Este es el segundo texto que se copiará al portapapeles.</p>
+        <button class="btn" onclick="copyToClipboard('text-to-copy2', 'copied-notification2')">Copiar Texto 2</button>
+        <p id="copied-notification2" class="copied-notification">¡Texto 2 copiado al portapapeles!</p>
+    </div>
+
+    <script>
+        function copyToClipboard(textId, notificationId) {
+            var textElement = document.getElementById(textId);
+            var text = textElement.innerText;
+            var notification = document.getElementById(notificationId);
+
+            navigator.clipboard.writeText(text).then(function() {
+                // Mostrar la notificación
+                notification.style.display = 'block';
+
+                // Ocultar la notificación después de 2 segundos
+                setTimeout(function() {
+                    notification.style.display = 'none';
+                }, 2000);
+            }).catch(function(error) {
+                console.error('Error al copiar el texto: ', error);
+            });
+        }
+    </script>
+</body>
+</html>

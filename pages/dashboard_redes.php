@@ -33,7 +33,7 @@ $news_list = $news_stmt->fetchAll();
 		<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/assets/css/dashboard_redes.css">
 		<link rel="stylesheet" href="/assets/css/checklist.css">
-		      <link rel="stylesheet" href="/assets/css/pagina1.css"> 
+		    
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	</head>
 	<body>
@@ -254,10 +254,7 @@ $news_list = $news_stmt->fetchAll();
 <script src="/assets/js/tipiform.js"></script>
 <script src="/assets/js/noticias.js"></script>
  <script src="/assets/js/principal.js"></script>
- <script src="/assets/js/clipboard.js"></script>
-<script src="/assets/js/modal.js"></script>
-<script src="/assets/js/save.js"></script>
-<script src="/assets/js/delete.js"></script>
+
 
 
 

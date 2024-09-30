@@ -1,10 +1,13 @@
-[27-Sep-2024 18:17:34 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
-[27-Sep-2024 18:17:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
-Stack trace:
-#0 {main}
-  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
-[27-Sep-2024 18:17:49 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
-[27-Sep-2024 18:17:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
-Stack trace:
-#0 {main}
-  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[26-Sep-2024 18:16:07 UTC] PHP Warning:  include(): Failed opening 'menu_navegacion.html' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/Inicio_checklist.php on line 65
+[29-Sep-2024 17:05:41 UTC] PHP Warning:  Undefined variable $email in /home/ziriuson/public_html/pages/dashboard_redes.php on line 54
+[29-Sep-2024 17:05:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/ziriuson/public_html/pages/dashboard_redes.php on line 54
+[29-Sep-2024 17:05:41 UTC] PHP Warning:  Undefined variable $news_list in /home/ziriuson/public_html/pages/dashboard_redes.php on line 182
+[29-Sep-2024 17:05:41 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/ziriuson/public_html/pages/dashboard_redes.php on line 182
+[29-Sep-2024 17:06:32 UTC] PHP Warning:  Undefined variable $email in /home/ziriuson/public_html/pages/dashboard_redes.php on line 54
+[29-Sep-2024 17:06:32 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/ziriuson/public_html/pages/dashboard_redes.php on line 54
+[29-Sep-2024 17:06:32 UTC] PHP Warning:  Undefined variable $news_list in /home/ziriuson/public_html/pages/dashboard_redes.php on line 182
+[29-Sep-2024 17:06:32 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/ziriuson/public_html/pages/dashboard_redes.php on line 182
+[29-Sep-2024 17:06:34 UTC] PHP Warning:  Undefined variable $email in /home/ziriuson/public_html/pages/dashboard_redes.php on line 54
+[29-Sep-2024 17:06:34 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/ziriuson/public_html/pages/dashboard_redes.php on line 54
+[29-Sep-2024 17:06:34 UTC] PHP Warning:  Undefined variable $news_list in /home/ziriuson/public_html/pages/dashboard_redes.php on line 182
+[29-Sep-2024 17:06:34 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/ziriuson/public_html/pages/dashboard_redes.php on line 182

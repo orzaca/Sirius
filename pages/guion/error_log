@@ -1,0 +1,678 @@
+[27-Sep-2024 18:17:34 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:17:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:17:49 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:17:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:20:08 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:20:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:23:52 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:23:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:24:37 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:24:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:25:12 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:25:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:25:54 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:25:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:26:42 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:26:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:28:23 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:28:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:28:25 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:28:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/principal.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/principal.php on line 3
+[27-Sep-2024 18:29:59 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/configuracion.php on line 4
+[27-Sep-2024 18:29:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/configuracion.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/configuracion.php on line 4
+[27-Sep-2024 18:36:34 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/configuracion.php on line 4
+[27-Sep-2024 18:36:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/configuracion.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/configuracion.php on line 4
+[27-Sep-2024 18:45:52 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/configuracion.php on line 4
+[27-Sep-2024 18:45:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/configuracion.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/configuracion.php on line 4
+[27-Sep-2024 18:46:33 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/configuracion.php on line 4
+[27-Sep-2024 18:46:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/configuracion.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/configuracion.php on line 4
+[27-Sep-2024 18:46:35 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/configuracion.php on line 4
+[27-Sep-2024 18:46:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/configuracion.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/configuracion.php on line 4
+[27-Sep-2024 18:47:07 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:47:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/ziriuson/public_html/pages/guion/configuracion.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:47:09 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:47:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/ziriuson/public_html/pages/guion/configuracion.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:47:35 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:47:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/ziriuson/public_html/pages/guion/configuracion.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:47:37 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:47:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/ziriuson/public_html/pages/guion/configuracion.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:47:45 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:47:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/ziriuson/public_html/pages/guion/configuracion.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:49:27 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:49:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/ziriuson/public_html/pages/guion/configuracion.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:49:47 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:49:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/ziriuson/public_html/pages/guion/configuracion.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/configuracion.php on line 48
+[27-Sep-2024 18:50:49 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:49 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:49 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:49 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:49 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:49 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:49 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:49 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:54 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:54 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:54 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:54 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:54 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:54 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:54 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:50:54 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:42 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:42 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:42 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:42 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:42 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:42 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:42 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:51:42 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:52:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:52:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:52:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:52:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:52:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:52:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:52:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:52:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:53:57 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:53:57 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:53:57 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:53:57 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:53:57 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:53:57 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:53:57 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:53:57 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:16 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:16 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:16 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:16 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:16 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:16 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:16 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:16 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:22 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:22 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:22 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:22 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:22 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:22 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:22 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:22 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:54:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:55:43 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:55:43 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:55:43 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:55:43 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:55:43 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:55:43 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:55:43 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:55:43 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:57:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:57:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:57:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:57:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:57:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:57:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:57:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 18:57:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:02:36 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:02:36 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:02:36 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:02:36 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:02:36 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:02:36 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:02:36 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:02:36 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:27:41 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:27:41 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:27:41 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:27:41 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:27:41 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:27:41 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:27:41 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 19:27:41 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 20:09:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 20:09:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 20:09:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 20:09:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 20:09:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 20:09:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 20:09:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 20:09:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/ziriuson/public_html/pages/guion/configuracion.php on line 29
+[27-Sep-2024 22:46:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.textos' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->query('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[27-Sep-2024 22:46:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.textos' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->query('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[27-Sep-2024 22:46:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.textos' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->query('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[27-Sep-2024 22:46:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.textos' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->query('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[27-Sep-2024 22:46:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.textos' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->query('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[27-Sep-2024 22:46:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.textos' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->query('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[27-Sep-2024 22:47:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.textos' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->query('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[27-Sep-2024 22:47:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.textos' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->query('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[27-Sep-2024 22:47:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.textos' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->query('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[27-Sep-2024 22:47:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.textos' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->query('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[27-Sep-2024 22:47:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.textos' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->query('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[29-Sep-2024 18:07:37 UTC] PHP Warning:  require(db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:07:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:07:41 UTC] PHP Warning:  require(db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:07:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:07:43 UTC] PHP Warning:  require(db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:07:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:07:43 UTC] PHP Warning:  require(db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:07:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:08:16 UTC] PHP Warning:  require(db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:08:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:08:17 UTC] PHP Warning:  require(db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:08:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:08:18 UTC] PHP Warning:  require(db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:08:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:08:19 UTC] PHP Warning:  require(db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:08:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:09:50 UTC] PHP Warning:  require(db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 18:09:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 60
+[29-Sep-2024 19:36:46 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 19:36:46 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:36:46 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:37:08 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 19:37:08 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:37:08 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:39:31 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 19:39:31 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:39:31 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:39:35 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 19:39:35 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:39:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:40:55 UTC] PHP Warning:  require(db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/update_paragraph.php on line 3
+[29-Sep-2024 19:40:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/update_paragraph.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/update_paragraph.php on line 3
+[29-Sep-2024 19:50:22 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 19:50:22 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:50:22 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:50:24 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 19:50:24 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:50:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:50:59 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 19:50:59 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:50:59 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 19:52:05 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 19:52:05 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 19:52:05 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 19:52:11 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 19:52:11 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 19:52:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 20:02:12 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 20:02:12 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 20:02:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 20:02:51 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 20:02:51 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 20:02:51 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 20:15:47 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 91
+[29-Sep-2024 20:16:05 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 91
+[29-Sep-2024 20:16:15 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 91
+[29-Sep-2024 20:16:25 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 91
+[29-Sep-2024 20:17:17 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 91
+[29-Sep-2024 20:17:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:17:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 91
+[29-Sep-2024 20:17:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:17:19 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 91
+[29-Sep-2024 20:17:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:17:21 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 91
+[29-Sep-2024 20:17:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:17:21 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 91
+[29-Sep-2024 20:17:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:22:29 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 91
+[29-Sep-2024 20:22:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:25:42 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 20:28:53 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 20:32:42 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 20:33:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 20:33:35 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 93
+[29-Sep-2024 20:40:57 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 20:40:57 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 98
+[29-Sep-2024 20:40:57 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 98
+[29-Sep-2024 20:41:02 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 20:41:02 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 98
+[29-Sep-2024 20:41:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 98
+[29-Sep-2024 20:41:23 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 20:41:23 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 98
+[29-Sep-2024 20:41:23 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 98
+[29-Sep-2024 20:41:24 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 20:41:24 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 98
+[29-Sep-2024 20:41:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 98
+[29-Sep-2024 20:41:34 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 20:41:34 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 98
+[29-Sep-2024 20:41:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 98
+[29-Sep-2024 20:45:07 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 97
+[29-Sep-2024 20:45:07 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 98
+[29-Sep-2024 20:45:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 98
+[29-Sep-2024 20:46:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:46:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 100
+[29-Sep-2024 20:46:28 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:46:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 100
+[29-Sep-2024 20:46:29 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:46:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 100
+[29-Sep-2024 20:46:55 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:46:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 100
+[29-Sep-2024 20:47:01 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:47:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 100
+[29-Sep-2024 20:47:11 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:47:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 100
+[29-Sep-2024 20:47:14 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:47:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 100
+[29-Sep-2024 20:47:17 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:47:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 100
+[29-Sep-2024 20:47:33 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/guion/pagina2.php on line 96
+[29-Sep-2024 20:47:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ziriuson/public_html/pages/guion/pagina2.php:1) in /home/ziriuson/public_html/pages/guion/pagina2.php on line 100
+[29-Sep-2024 21:02:32 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 13
+[29-Sep-2024 21:02:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/ziriuson/public_html/pages/guion/save_paragraph.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 13
+[29-Sep-2024 21:02:37 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 13
+[29-Sep-2024 21:02:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/ziriuson/public_html/pages/guion/save_paragraph.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 13
+[29-Sep-2024 21:04:48 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 13
+[29-Sep-2024 21:04:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/ziriuson/public_html/pages/guion/save_paragraph.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 13
+[29-Sep-2024 21:08:15 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 13
+[29-Sep-2024 21:08:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/ziriuson/public_html/pages/guion/save_paragraph.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 13
+[29-Sep-2024 21:08:20 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 13
+[29-Sep-2024 21:08:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/ziriuson/public_html/pages/guion/save_paragraph.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 13
+[29-Sep-2024 21:10:30 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 39
+[29-Sep-2024 21:10:30 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 39
+[29-Sep-2024 21:10:34 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 3
+[29-Sep-2024 21:10:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/save_paragraph.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 3
+[29-Sep-2024 21:10:35 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 3
+[29-Sep-2024 21:10:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/save_paragraph.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 3
+[29-Sep-2024 21:10:38 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 3
+[29-Sep-2024 21:10:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/save_paragraph.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 3
+[29-Sep-2024 21:10:39 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 39
+[29-Sep-2024 21:10:39 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 39
+[29-Sep-2024 21:10:41 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 3
+[29-Sep-2024 21:10:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/save_paragraph.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 3
+[29-Sep-2024 21:10:45 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/guion/pagina2.php on line 39
+[29-Sep-2024 21:10:45 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/guion/pagina2.php on line 39
+[29-Sep-2024 21:12:45 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 3
+[29-Sep-2024 21:12:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/save_paragraph.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 3
+[29-Sep-2024 21:12:50 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 3
+[29-Sep-2024 21:12:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/save_paragraph.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/save_paragraph.php on line 3
+[29-Sep-2024 21:52:47 UTC] PHP Warning:  Undefined array key "user_id" in /home/ziriuson/public_html/pages/guion/delete_paragraph.php on line 7
+[29-Sep-2024 21:55:53 UTC] PHP Warning:  Undefined array key "user_id" in /home/ziriuson/public_html/pages/guion/pagina1.php on line 7
+[29-Sep-2024 21:55:57 UTC] PHP Warning:  Undefined array key "user_id" in /home/ziriuson/public_html/pages/guion/delete_paragraph.php on line 7
+[29-Sep-2024 21:55:58 UTC] PHP Warning:  Undefined array key "user_id" in /home/ziriuson/public_html/pages/guion/pagina1.php on line 7
+[29-Sep-2024 21:57:35 UTC] PHP Warning:  Undefined array key "user_id" in /home/ziriuson/public_html/pages/guion/pagina1.php on line 7
+[29-Sep-2024 22:01:29 UTC] PHP Warning:  Undefined array key "user_id" in /home/ziriuson/public_html/pages/guion/pagina1.php on line 7
+[29-Sep-2024 22:01:32 UTC] PHP Warning:  Undefined array key "user_id" in /home/ziriuson/public_html/pages/guion/delete_paragraph.php on line 7
+[29-Sep-2024 22:01:34 UTC] PHP Warning:  Undefined array key "user_id" in /home/ziriuson/public_html/pages/guion/pagina1.php on line 7
+[30-Sep-2024 01:27:32 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 3
+[30-Sep-2024 01:27:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 3
+[30-Sep-2024 01:27:34 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 3
+[30-Sep-2024 01:27:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 3
+[30-Sep-2024 01:27:35 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 3
+[30-Sep-2024 01:27:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 3
+[30-Sep-2024 01:28:10 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 3
+[30-Sep-2024 01:28:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 3
+[30-Sep-2024 01:28:13 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 3
+[30-Sep-2024 01:28:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 3
+[30-Sep-2024 01:28:13 UTC] PHP Warning:  require(../includes/db.php): Failed to open stream: No such file or directory in /home/ziriuson/public_html/pages/guion/pagina1.php on line 3
+[30-Sep-2024 01:28:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../includes/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ziriuson/public_html/pages/guion/pagina1.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 3
+[30-Sep-2024 02:20:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina2.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina2.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina2.php on line 12
+[30-Sep-2024 02:20:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina2.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina2.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina2.php on line 12
+[30-Sep-2024 02:20:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[30-Sep-2024 02:20:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[30-Sep-2024 02:20:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina2.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina2.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina2.php on line 12
+[30-Sep-2024 02:20:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina2.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina2.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina2.php on line 12
+[30-Sep-2024 02:20:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina2.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina2.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina2.php on line 12
+[30-Sep-2024 02:20:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[30-Sep-2024 02:20:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[30-Sep-2024 02:21:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[30-Sep-2024 02:21:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[30-Sep-2024 02:21:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina1.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 12
+[30-Sep-2024 02:21:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina2.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina2.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina2.php on line 12
+[30-Sep-2024 02:22:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina2.php:12
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina2.php(12): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina2.php on line 12
+[30-Sep-2024 02:23:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.page' in 'on clause' in /home/ziriuson/public_html/pages/guion/pagina1.php:14
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(14): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 14
+[30-Sep-2024 02:26:42 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:26:50 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/update_paragraph.php on line 20
+[30-Sep-2024 02:27:08 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:27:12 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:27:17 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:27:21 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:27:26 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/update_paragraph.php on line 20
+[30-Sep-2024 02:27:27 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:27:32 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/update_paragraph.php on line 20
+[30-Sep-2024 02:27:35 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:28:54 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:29:00 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:29:07 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:29:14 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:31:33 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:31:47 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:31:52 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:31:58 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:34:42 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:39:41 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:39:43 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:40:15 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:40:25 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:41:19 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:41:27 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:41:28 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 02:42:28 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:42:36 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:42:37 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:47:18 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:47:22 UTC] Error al actualizar párrafo: SQLSTATE[HY093]: Invalid parameter number
+[30-Sep-2024 02:47:24 UTC] Error al actualizar párrafo: SQLSTATE[HY093]: Invalid parameter number
+[30-Sep-2024 02:47:26 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:47:29 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:47:31 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:56:20 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:57:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.user_paragraphs' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:14
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(14): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 14
+[30-Sep-2024 02:57:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ziriuson_zirius.user_paragraphs' doesn't exist in /home/ziriuson/public_html/pages/guion/pagina1.php:14
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/pagina1.php(14): PDO->prepare('SELECT p.id, CO...')
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/pagina1.php on line 14
+[30-Sep-2024 02:57:24 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:57:32 UTC] Error al actualizar párrafo: SQLSTATE[HY093]: Invalid parameter number
+[30-Sep-2024 02:57:33 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:57:53 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:57:57 UTC] Error al actualizar párrafo: SQLSTATE[HY093]: Invalid parameter number
+[30-Sep-2024 02:57:58 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:58:06 UTC] Error al actualizar párrafo: SQLSTATE[HY093]: Invalid parameter number
+[30-Sep-2024 02:58:07 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:59:06 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:59:11 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:59:17 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:59:21 UTC] Error al actualizar párrafo: SQLSTATE[HY093]: Invalid parameter number
+[30-Sep-2024 02:59:22 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 02:59:59 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 03:00:02 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 03:00:05 UTC] Error al actualizar párrafo: SQLSTATE[HY093]: Invalid parameter number
+[30-Sep-2024 03:00:06 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 03:01:01 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 03:01:52 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 03:01:57 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 03:02:04 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/update_paragraph.php on line 20
+[30-Sep-2024 03:02:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null in /home/ziriuson/public_html/pages/guion/update_paragraph.php:20
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/update_paragraph.php(20): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/update_paragraph.php on line 20
+[30-Sep-2024 03:02:05 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 03:02:06 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 03:02:06 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 03:02:43 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 03:02:45 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 03:02:50 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/update_paragraph.php on line 20
+[30-Sep-2024 03:02:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null in /home/ziriuson/public_html/pages/guion/update_paragraph.php:20
+Stack trace:
+#0 /home/ziriuson/public_html/pages/guion/update_paragraph.php(20): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ziriuson/public_html/pages/guion/update_paragraph.php on line 20
+[30-Sep-2024 03:02:51 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 03:02:52 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina2.php on line 15
+[30-Sep-2024 03:05:07 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
+[30-Sep-2024 03:05:17 UTC] PHP Warning:  Undefined variable $userId in /home/ziriuson/public_html/pages/guion/pagina1.php on line 15
