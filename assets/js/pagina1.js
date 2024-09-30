@@ -1,61 +1,41 @@
+let currentParagraphId;
+let currentPage;
 
-        let currentParagraphId = null;
+// Abre el modal para editar el párrafo
+function openModal(paragraphId, page) {
+    currentParagraphId = paragraphId;
+    currentPage = page;
 
-        function copyToClipboard(paragraphId) {
-            const paragraphText = document.getElementById(paragraphId).getElementsByTagName('p')[0].innerText;
-            navigator.clipboard.writeText(paragraphText).then(() => {
-                alert("¡Texto copiado al portapapeles!");
-            }).catch(err => {
-                console.error('Error al copiar el texto: ', err);
-            });
-        }
+    const text = document.getElementById('paragraph' + paragraphId).getElementsByTagName('p')[0].innerText;
+    document.getElementById('modalText').value = text;
+    document.getElementById('modal').style.display = 'block';
+}
 
-        function openModal(paragraphId) {
-            currentParagraphId = paragraphId;
-            const textElement = document.getElementById('paragraph' + paragraphId).getElementsByTagName('p')[0];
-            document.getElementById('modalText').value = textElement.innerText; // Rellena el textarea con el texto actual
-            document.getElementById('modal').style.display = "block"; // Muestra el modal
-        }
+// Cierra el modal
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+}
 
-        function closeModal() {
-            document.getElementById('modal').style.display = "none"; // Oculta el modal
-        }
+// Guarda el nuevo texto en la base de datos
+function saveText() {
+    const newText = document.getElementById('modalText').value;
+    const textElement = document.getElementById('paragraph' + currentParagraphId).getElementsByTagName('p')[0];
+    textElement.innerText = newText;
 
-        function saveText() {
-            const newText = document.getElementById('modalText').value;
-            const textElement = document.getElementById('paragraph' + currentParagraphId).getElementsByTagName('p')[0];
-            textElement.innerText = newText;
+    // Realizar la solicitud AJAX para guardar los cambios
+    fetch('update_paragraph.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: 'id=' + currentParagraphId + '&content=' + encodeURIComponent(newText) + '&page=' + currentPage
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data); // Para depuración
+        alert("Párrafo actualizado para " + currentPage);
+    })
+    .catch(error => console.error('Error:', error));
 
-            fetch('update_paragraph.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: 'id=' + currentParagraphId + '&content=' + encodeURIComponent(newText)
-            })
-            .then(response => response.text())
-            .then(data => {
-                console.log(data); // Para depuración
-            })
-            .catch(error => console.error('Error:', error));
-
-            closeModal();
-        }
-
-        function deleteParagraph(paragraphId) {
-            if (confirm("¿Estás seguro de que quieres eliminar este párrafo?")) {
-                fetch('delete_paragraph.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded',
-                    },
-                    body: 'id=' + paragraphId
-                })
-                .then(response => response.text())
-                .then(data => {
-                    console.log(data); // Para depuración
-                    document.getElementById('paragraph' + paragraphId).remove(); // Elimina el párrafo de la interfaz
-                })
-                .catch(error => console.error('Error:', error));
-            }
-        }
+    closeModal();
+}
