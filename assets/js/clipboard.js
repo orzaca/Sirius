@@ -1,3 +1,5 @@
+// funcion copiar en los parrafos
+
 let currentParagraphId = null;
 
 function copyToClipboard(paragraphId) {

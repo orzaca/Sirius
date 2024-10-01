@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/imagen/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memo Quejas +</title>
+</head>
+
+<body>
+  <header id="menu_quejas" class="menu_quejas">
+    <ul>
+      <li><a href="./memo_gpon_internet.html">Internet Gpon</a></li>
+      <li><a href="./memo_dsl_internet.html">Internet DSL</a></li>
+      <li><a href="./memo_hfc_internet.html">Internet HFC</a></li>
+      <li><a href="./memo_hfc_tv.html">TV HFC</a></li>
+      <li><a href="./memo_dth.html">TV DTH</a></li>
+      <li><a href="./memo_iptv.html">IPTV</a></li>
+      <li><a href="./memo_linea.html">Linea Fija</a></li>
+    </ul>
+  </header>
+
+
+  <main>
+    <!-- ... INTERNET GPON -->
+    <section id="gpon_internet" class="main-section">
+      <div class="gpon_internet" id="gpon">
+        <p class="titulo_memo" >INTERNET DSL</p>  
+        <form class="form_quejas">
+          <label for="cpe">CPE model::::::::::</label> 
+          <input type="text" id="cpe_dsl" name="cpe" placeholder="CPE model" required>
+          <label for="luz">Luz Portadora::::::</label>
+          <input type="text" id="luz_dsl" name="serie_ont" value="LUZ INTERNET: OFF" required>
+          <label for="Puerto">Estado del Puerto::</label> 
+          <input type="text" id="Puerto_dsl" name="Puerto"  placeholder="UP / DORMANT / DOWN" required>
+          <label for="Velocidad">Velocidad Current::</label>
+          <input type="text" id="Velocidad_dsl" name="Velocidad"  placeholder="Velocidad Current" required>
+          <label for="SNR">SNR::::::::::::::::</label>
+          <input type="text" id="snr_dsl" name="snr"  placeholder="SNR" required>
+          <label for="atenuacion">Perfil Atenuacion:::</label>
+          <input type="text" id="atenuacion_dsl" name="atenuacion"  placeholder="Atenuacion" required> 
+          <label for="canal_dls">Canal Dañado::::::</label>
+          <input type="text" id="canal_dsl" name="canal_dsl"  placeholder="Voz o Datos" required> 
+          <label for="problema_dsl">Problema reportado::</label>
+          <input type="text" id="problema_dsl" name="problema_dsl"  placeholder="Falla reportada" required>
+          <label for="pruebas_dls">Pruebas realizadas::</label>
+          <input type="text" id="pruebas_dsl" name="pruebas" placeholder="Pruebas reales en llamadas"required>
+          <label for="contacto_dsl">Contacto en sitio:::</label>
+          <input type="text" id="contacto_dsl" name="contacto_dsl"  placeholder="Contacto en sitio" required> 
+          <label for="tel_dsl">Tel de contacto:::::</label>
+          <input type="text" id="tel_dsl" name="tel_dsl"  placeholder="Tel de contacto"  required>
+          <label for="direccion_dsl">Direccion:::::::::::</label>
+          <input type="text" id="direccion_dsl" name="direccion_dsl"  placeholder="Direccion" oninput="capitalizeFirstLetter(this)" required>
+          <label for="horario_dsl">Horario de visita:::</label>
+          <input type="text" id="horario_dsl" name="horario_dsl"  value="08:00 a 17:00 HORAS" required>
+
+
+          <div class="botones-copiar">
+            <button class="boton_memo" type="button" onclick="formularioUtils.copiarFormularioQuejas()">Copiar Memo</button>
+
+          </div>
+
+        </form>
+      </div>
+
+    </section>   
+  </main>
+
+
+</body>
+</html>
