@@ -13,8 +13,8 @@ if (!isset($_SESSION['user_id'])) {
 $userId = $_SESSION['user_id'];
 
 // Obtener los párrafos específicos del usuario de la base de datos
-$sql = "SELECT p.id, COALESCE(up.content, p.content) AS content FROM pagina1 p 
-        LEFT JOIN user_pagina1 up ON p.id = up.pagina1_id AND up.user_id = :userId";
+$sql = "SELECT p.id, COALESCE(up.content, p.content) AS content FROM pagina6 p  
+        LEFT JOIN user_pagina6 up ON p.id = up.pagina6_id AND up.user_id = :userId";
 $stmt = $pdo->prepare($sql);
 $stmt->execute(['userId' => $userId]);
 $paragraphs = $stmt->fetchAll(); // Obtener todos los párrafos
@@ -25,7 +25,7 @@ $paragraphs = $stmt->fetchAll(); // Obtener todos los párrafos
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Párrafos de Página 1</title>
+    <title>Gestión de Párrafos de Página 2</title>
     <style>
         /* Estilos generales para la página */
         body {
@@ -75,16 +75,19 @@ $paragraphs = $stmt->fetchAll(); // Obtener todos los párrafos
         }
 
         /* Estilos del modal */
-        #editModal {
+     #editModal6 {
             display: none; /* Inicialmente oculto */
             position: fixed;
-            z-index: 10;
+            z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+            animation: fadeIn 0.3s ease; /* Animación de aparición */
         }
+
+
         .modal-content {
             background-color: #fff;
             margin: 15% auto;
@@ -106,10 +109,10 @@ $paragraphs = $stmt->fetchAll(); // Obtener todos los párrafos
         <?php
         // Mostrar cada párrafo en la interfaz
         foreach ($paragraphs as $para) {
-            echo '<div class="paragraph-box" id="para' . $para['id'] . '">';
+            echo '<div class="paragraph-box" id="para6' . $para['id'] . '">'; // Cambiado a para2
             echo '<p>' . htmlspecialchars($para['content']) . '</p>';
-            echo '<button onclick="copyText(\'para' . $para['id'] . '\')">Copiar</button>';
-            echo '<button onclick="openEditModal(' . $para['id'] . ')">Modificar</button>';
+            echo '<button onclick="copyText(\'para6' . $para['id'] . '\')">Copiar</button>';// Cambiado a para2
+            echo '<button onclick="openEditModal6(' . $para['id'] . ')">Modificar</button>';
             echo '<button class="remove-button" onclick="confirmRemoval(' . $para['id'] . ')">Eliminar</button>';
             echo '</div>';
         }
@@ -117,12 +120,12 @@ $paragraphs = $stmt->fetchAll(); // Obtener todos los párrafos
     </div>
 
     <!-- Modal para editar párrafos -->
-    <div id="editModal">
+    <div id="editModal6"> <!-- Cambiado a editModal3 -->
         <div class="modal-content">
             <span class="close-btn" onclick="closeEditModal()">&times;</span>
             <h2>Editar Párrafo</h2>
-            <textarea id="editText" rows="4" style="width: 100%;"></textarea>
-            <button id="saveChanges" onclick="saveParagraph()">Guardar</button>
+            <textarea id="editText6" rows="4" style="width: 100%;"></textarea> <!-- Cambiado a editText3 -->
+            <button id="saveChanges6" onclick="saveParagraph()">Guardar</button> <!-- Cambiado a saveChanges3  -->
         </div>
     </div>
 
@@ -140,26 +143,26 @@ $paragraphs = $stmt->fetchAll(); // Obtener todos los párrafos
         }
 
         // Abre el modal para editar el párrafo
-        function openEditModal(paraId) {
+        function openEditModal6(paraId) {
             currentParaId = paraId;
-            const textElement = document.getElementById('para' + paraId).getElementsByTagName('p')[0];
-            document.getElementById('editText').value = textElement.innerText; // Rellena el textarea
-            document.getElementById('editModal').style.display = "block"; // Muestra el modal
+            const textElement = document.getElementById('para6' + paraId).getElementsByTagName('p')[0]; // Cambiado a para2
+            document.getElementById('editText6').value = textElement.innerText; // Rellena el textarea
+            document.getElementById('editModal6').style.display = "block"; // Muestra el modal
         }
 
         // Cierra el modal
         function closeEditModal() {
-            document.getElementById('editModal').style.display = "none"; // Oculta el modal
+            document.getElementById('editModal6').style.display = "none"; // Oculta el modal
         }
 
         // Guarda el texto editado
         function saveParagraph() {
-            const updatedText = document.getElementById('editText').value;
-            const textElement = document.getElementById('para' + currentParaId).getElementsByTagName('p')[0];
+            const updatedText = document.getElementById('editText6').value; // Cambiado a editText2
+            const textElement = document.getElementById('para6' + currentParaId).getElementsByTagName('p')[0]; // Cambiado a para2
             textElement.innerText = updatedText; // Actualiza el párrafo en la interfaz
 
             // Envía la nueva información al servidor
-            fetch('update_pagina1.php', {
+            fetch('update_pagina6.php', { // Cambiado a update_pagina2.php
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
@@ -182,25 +185,7 @@ $paragraphs = $stmt->fetchAll(); // Obtener todos los párrafos
             }
         }
 
-        // Función para eliminar el párrafo
-        function deleteParagraph(paraId) {
-            fetch('delete_paragraph_pagina1.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: 'id=' + paraId
-            })
-            .then(response => {
-                if (response.ok) {
-                    document.getElementById('para' + paraId).remove(); // Elimina el párrafo de la interfaz
-                    alert("Párrafo eliminado con éxito.");
-                } else {
-                    alert("Error al eliminar el párrafo.");
-                }
-            })
-            .catch(error => console.error('Error:', error));
-        }
+        
     </script>
 </body>
 </html>

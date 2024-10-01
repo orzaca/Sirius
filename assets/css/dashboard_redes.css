@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+ 
 }
 
 /*  Estilo de barra superior*/
@@ -27,7 +28,7 @@ body {
     left: 280px;
     z-index: 1000;
     min-height: 50px;
-    /*transition: background 0.3s ease, box-shadow 0.3s ease;*/
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Estilos del menu latera */

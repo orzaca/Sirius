@@ -34,7 +34,7 @@ $nombres = $stmtPestanas->fetchAll(PDO::FETCH_COLUMN); // Usamos fetchAll para o
 
 <style>
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
      /* Estilo básico para el body */
 body {
     font-family: 'Poppins', sans-serif;
@@ -46,8 +46,8 @@ body {
 /* Estilos para el contenedor de pestañas */
 .tab-container {
     position: fixed; /* Fija el menú en la pantalla */
-      left: 20.7%;
-  top: 11%;
+    left: 0%;
+    top: 0%;
     width: 100%; /* Ancho completo para el menú */
     background-color: #922b21; /* Color de fondo del menú */
     display: flex; /* Alinea los elementos en línea */
@@ -55,7 +55,7 @@ body {
     justify-content: left; /* Distribuye los elementos de manera uniforme */
     padding: 5px; /* Espaciado interno */
     z-index: 1000; /* Asegura que el menú esté por encima del contenido */
-     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 /* Estilos para cada pestaña */
@@ -63,7 +63,7 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     color: white;
-    font-size: 16px;
+    font-size: 13px;
     border-bottom: 3px solid transparent;
     transition: border-bottom 0.3s ease; /* Transición suave para el borde */
 }
@@ -74,6 +74,9 @@ body {
 
 /* Estilos para el contenido principal */
 .content {
+    position: absolute;
+    left: 0% ;
+    top: 15%;
     padding: 20px;
     background-color: white;
     border-top: 1px solid #ddd; /* Línea superior para separar el contenido */
@@ -157,8 +160,8 @@ body {
         $urls = [
             '/pages/guion/pagina1.php', // URL para la pestaña 1
             '/pages/guion/pagina2.php', // URL para la pestaña 2
-            '/pages/guion/pagina3.php', // URL para la pestaña 3
-            '/pages/guion/pagina3.php', // URL para la pestaña 4
+            'pagina3.php', // URL para la pestaña 3
+            'pagina4.php', // URL para la pestaña 4
             'pagina5.php', // URL para la pestaña 5
             'pagina6.php', // URL para la pestaña 6
             'pagina7.php', // URL para la pestaña 7
@@ -178,9 +181,9 @@ body {
     </div>
 
     <!-- Contenedor para el contenido dinámico -->
-    <div id="dynamic-content" class="content active">
-        <!-- El contenido se cargará aquí mediante AJAX -->
-    </div>
+   <div id="dynamic-content" class="content active">
+    <p>Selecciona una pestaña para ver el contenido.</p>
+</div>
 
 
 
@@ -189,6 +192,7 @@ body {
 <script src="/assets/js/modal.js"></script>
 <script src="/assets/js/save.js"></script>
 <script src="/assets/js/delete.js"></script>
+<script src="/assets/js/funcion_pagina2.js"></script> <!-- controla la pagina2 del principal de guion-->
   
     
 </body>

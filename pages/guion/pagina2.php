@@ -3,15 +3,21 @@ session_start(); // Iniciar sesión para acceder a la información del usuario
 
 require '/home/ziriuson/public_html/includes/db.php'; // Conexión a la base de datos
 
+// Verificar que el usuario esté autenticado
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php"); // Redirigir a inicio de sesión si no está autenticado
+    exit();
+}
+
 // Suponiendo que ya tienes la sesión iniciada y $userId es el ID del usuario logueado
 $userId = $_SESSION['user_id'];
 
 // Obtener los párrafos específicos del usuario de la base de datos
-$sql = "SELECT p.id, COALESCE(up.content, p.content) AS content FROM paragraphs p 
-        LEFT JOIN user_paragraphs up ON p.id = up.paragraph_id AND up.user_id = :userId";
+$sql = "SELECT p.id, COALESCE(up.content, p.content) AS content FROM pagina2 p 
+        LEFT JOIN user_pagina2 up ON p.id = up.pagina2_id AND up.user_id = :userId";
 $stmt = $pdo->prepare($sql);
 $stmt->execute(['userId' => $userId]);
-$paragraphs = $stmt->fetchAll();
+$paragraphs = $stmt->fetchAll(); // Obtener todos los párrafos
 ?>
 
 <!DOCTYPE html>
@@ -19,154 +25,146 @@ $paragraphs = $stmt->fetchAll();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Copia, Modificación y Eliminación de Párrafos</title>
+    <title>Gestión de Párrafos de Página 2</title>
     <style>
-        /* Estilos similares a los del ejemplo anterior */
+        /* Estilos generales para la página */
         body {
- 
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            top: 10%;
+            background-color: #eef;
         }
-        .container {
+        .content-wrapper {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            width: 100%;
+            margin: 20px;
         }
-        .paragraph-container {
+        .paragraph-box {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 10px;
+            margin: 15px;
             padding: 20px;
-            background-color: #ffffff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-            width: 200px;
-        }
-        .paragraph-container:hover {
-            transform: scale(1.02);
+            background-color: #fff;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
         }
         button {
             margin: 5px;
-            padding: 5px 10px;
-            font-size: 14px;
+            padding: 8px 12px;
+            font-size: 15px;
             cursor: pointer;
-            background-color: #007BFF;
-            color: #ffffff;
+            background-color: #28a745;
+            color: #fff;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
             transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #218838; /* Color más oscuro al pasar el mouse */
         }
-        /* Estilo para botón de eliminar */
-        .delete-button {
-            background-color: #FF0000;
+        /* Estilo para el botón de eliminar */
+        .remove-button {
+            background-color: #dc3545; /* Color rojo para eliminar */
         }
-        .delete-button:hover {
-            background-color: #cc0000;
+        .remove-button:hover {
+            background-color: #c82333;
         }
 
         /* Estilos del modal */
-        #modal {
+        #editModal2 {
             display: none; /* Inicialmente oculto */
             position: fixed;
-            z-index: 1;
+            z-index: 10;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
         }
         .modal-content {
-            background-color: #fefefe;
+            background-color: #fff;
             margin: 15% auto;
             padding: 20px;
-            border: 1px solid #888;
+            border-radius: 8px;
             width: 300px; /* Ancho del modal */
-            border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .close {
-            color: #aaa;
+        .close-btn {
             float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
+            font-size: 20px;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="content-wrapper">
         <?php
-        foreach ($paragraphs as $paragraph) {
-            echo '<div class="paragraph-container" id="paragraph' . $paragraph['id'] . '">';
-            echo '<p>' . htmlspecialchars($paragraph['content']) . '</p>';
-            echo '<button onclick="copyToClipboard(\'paragraph' . $paragraph['id'] . '\')">Copiar</button>';
-            echo '<button onclick="openModal(' . $paragraph['id'] . ')">Modificar</button>';
-            echo '<button class="delete-button" onclick="deleteParagraph(' . $paragraph['id'] . ')">Eliminar</button>';
+        // Mostrar cada párrafo en la interfaz
+        foreach ($paragraphs as $para) {
+            echo '<div class="paragraph-box" id="para2' . $para['id'] . '">'; // Cambiado a para2
+            echo '<p>' . htmlspecialchars($para['content']) . '</p>';
+            echo '<button onclick="copyText(\'para2' . $para['id'] . '\')">Copiar</button>';
+            echo '<button onclick="openEditModal(' . $para['id'] . ')">Modificar</button>';
+            echo '<button class="remove-button" onclick="confirmRemoval(' . $para['id'] . ')">Eliminar</button>';
             echo '</div>';
         }
         ?>
     </div>
 
-    <!-- Modal -->
-    <div id="modal">
+    <!-- Modal para editar párrafos -->
+    <div id="editModal2"> <!-- Cambiado a editModal2 -->
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Modificar Párrafo</h2>
-            <textarea id="modalText" rows="4" style="width: 100%;"></textarea>
-            <button id="saveButton" onclick="saveText()">Guardar</button>
+            <span class="close-btn" onclick="closeEditModal()">&times;</span>
+            <h2>Editar Párrafo</h2>
+            <textarea id="editText2" rows="4" style="width: 100%;"></textarea> <!-- Cambiado a editText2 -->
+            <button id="saveChanges2" onclick="saveParagraph()">Guardar</button>
         </div>
     </div>
 
     <script>
-        let currentParagraphId = null;
+        let currentParaId = null;
 
-        function copyToClipboard(paragraphId) {
-            const paragraphText = document.getElementById(paragraphId).getElementsByTagName('p')[0].innerText;
-            navigator.clipboard.writeText(paragraphText).then(() => {
-                alert("¡Texto copiado al portapapeles!");
+        // Función para copiar texto al portapapeles
+        function copyText(paraId) {
+            const textContent = document.getElementById(paraId).getElementsByTagName('p')[0].innerText;
+            navigator.clipboard.writeText(textContent).then(() => {
+                alert("Texto copiado al portapapeles!");
             }).catch(err => {
                 console.error('Error al copiar el texto: ', err);
             });
         }
 
-        function openModal(paragraphId) {
-            currentParagraphId = paragraphId;
-            const textElement = document.getElementById('paragraph' + paragraphId).getElementsByTagName('p')[0];
-            document.getElementById('modalText').value = textElement.innerText; // Rellena el textarea con el texto actual
-            document.getElementById('modal').style.display = "block"; // Muestra el modal
+        // Abre el modal para editar el párrafo
+        function openEditModal(paraId) {
+            currentParaId = paraId;
+            const textElement = document.getElementById('para2' + paraId).getElementsByTagName('p')[0]; // Cambiado a para2
+            document.getElementById('editText2').value = textElement.innerText; // Rellena el textarea
+            document.getElementById('editModal2').style.display = "block"; // Muestra el modal
         }
 
-        function closeModal() {
-            document.getElementById('modal').style.display = "none"; // Oculta el modal
+        // Cierra el modal
+        function closeEditModal() {
+            document.getElementById('editModal2').style.display = "none"; // Oculta el modal
         }
 
-        function saveText() {
-            const newText = document.getElementById('modalText').value;
-            const textElement = document.getElementById('paragraph' + currentParagraphId).getElementsByTagName('p')[0];
-            textElement.innerText = newText;
+        // Guarda el texto editado
+        function saveParagraph() {
+            const updatedText = document.getElementById('editText2').value; // Cambiado a editText2
+            const textElement = document.getElementById('para2' + currentParaId).getElementsByTagName('p')[0]; // Cambiado a para2
+            textElement.innerText = updatedText; // Actualiza el párrafo en la interfaz
 
-            fetch('update_paragraph.php', {
+            // Envía la nueva información al servidor
+            fetch('update_pagina2.php', { // Cambiado a update_pagina2.php
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
-                body: 'id=' + currentParagraphId + '&content=' + encodeURIComponent(newText)
+                body: 'id=' + currentParaId + '&content=' + encodeURIComponent(updatedText)
             })
             .then(response => response.text())
             .then(data => {
@@ -174,27 +172,17 @@ $paragraphs = $stmt->fetchAll();
             })
             .catch(error => console.error('Error:', error));
 
-            closeModal();
+            closeEditModal(); // Cierra el modal
         }
 
-        function deleteParagraph(paragraphId) {
-            if (confirm("¿Estás seguro de que quieres eliminar este párrafo?")) {
-                fetch('delete_paragraph.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded',
-                    },
-                    body: 'id=' + paragraphId
-                })
-                .then(response => response.text())
-                .then(data => {
-                    console.log(data); // Para depuración
-                    document.getElementById('paragraph' + paragraphId).remove(); // Elimina el párrafo de la interfaz
-                })
-                .catch(error => console.error('Error:', error));
+        // Función para confirmar la eliminación del párrafo
+        function confirmRemoval(paraId) {
+            if (confirm("¿Estás seguro de que deseas eliminar este párrafo?")) {
+                deleteParagraph(paraId);
             }
         }
-    </script>
 
+        
+    </script>
 </body>
 </html>

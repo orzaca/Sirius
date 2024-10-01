@@ -143,8 +143,8 @@ $nombres = $stmtPestanas->fetchAll(PDO::FETCH_COLUMN); // Usamos fetchAll para o
     <div class="tab-container">
         <?php 
         $urls = [
-            'pagina1.php', // URL para la pestaña 1
-            'pagina2.php', // URL para la pestaña 2
+            'https://zirius.online/pages/guion/pagina1.php', // URL para la pestaña 1
+            'https://zirius.online/pages/guion/pagina2.php', // URL para la pestaña 2
             'pagina3.php', // URL para la pestaña 3
             'pagina4.php', // URL para la pestaña 4
             'pagina5.php', // URL para la pestaña 5
@@ -165,12 +165,13 @@ $nombres = $stmtPestanas->fetchAll(PDO::FETCH_COLUMN); // Usamos fetchAll para o
 
     <!-- Contenedor para el contenido dinámico -->
     <div id="dynamic-content" class="content active">
-        <!-- El contenido se cargará aquí mediante AJAX -->
+            <p>ELIGE CUALQUIER OPCION DEL MENU</p>
     </div>
 
 
 
-  <script src="/assets/js/principal.js"></script>
+  <script src="/assets/js/principal.js"></script> <!-- controla el menu superior del principal de guion-->
+
   
     
 </body>

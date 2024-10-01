@@ -1,6 +1,5 @@
 /* MODULO DE INICIO CHECKLIST*/
 .checklist-section {
-    /*background-color: #9ff3f2;  /*Fondo claro para la sección */
     padding: 20px; /* Espacio interno */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
@@ -21,7 +20,7 @@
 
 /* ADSL INICIO PRUEBAS*/
 .adsl_inicio_pruebas-section {
-    /*background-color: #9ff3f2;  /*Fondo claro para la sección */
+  
     padding: 20px; /* Espacio interno */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */

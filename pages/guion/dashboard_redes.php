@@ -32,8 +32,7 @@ $news_list = $news_stmt->fetchAll();
 		<title>Dashboard Redes Sociales</title>
 		<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/assets/css/dashboard_redes.css">
-
-	
+		<link rel="stylesheet" href="/assets/css/checklist.css">
 		
 		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -68,11 +67,11 @@ $news_list = $news_stmt->fetchAll();
 			
 			</div>
 			<ul class="menu">
-				<li><a href="https://zirius.online/pages/guion/principal.php" ><i class="fas fa-comments"></i> Guiones</a></li>
-				<li><a href="https://zirius.online/pages/checklist/Ok_nonavega_adsl.php" ><i class="fas fa-check-circle"></i> Checklist</a></li>
-				<li><a href="#" id="load-Manuales"><i class="fas fa-sticky-note"></i> Memo de quejas</a></li>
+				<li><a href="#" id="load-guion"><i class="fas fa-comments"></i> Guiones</a></li>
+				<li><a href="#" id="load-checklist"><i class="fas fa-check-circle"></i> Checklist</a></li>
+				<li><a href="#" id="load-quejas"><i class="fas fa-sticky-note"></i> Memo de quejas</a></li>
 				<li><a href="#" id="load-wf"><i class="fas fa-layer-group"></i> Plantillas WF</a></li>
-				<li><a href="#" ><i class="fas fa-book"></i> Manuales</a></li>
+				<li><a href="#" id="load-Manuales"><i class="fas fa-book"></i> Manuales</a></li>
 				<li><a href="#" id="load-orden"><i class="fas fa-clipboard-list"></i> Ordenes de Servicios</a></li>
 				<li><a href="#" id="load-zonas"><i class="fas fa-map-marked-alt"></i> Zonas operativas</a></li>
 				<li><a href="#" id="load-training"><i class="fas fa-chalkboard-teacher"></i> Zirius Training</a></li>
@@ -249,14 +248,10 @@ $news_list = $news_stmt->fetchAll();
 	<!-- Contenido de guion.php se cargará aquí -->
 </section>
 
-
-<section class="manuales-section" id="manuales-section" style="display: none; margin-top: 5px; position: absolute; left: 130px; top:50px; width: 80%; height: 800px;">
-    <iframe id="manuales-iframe" src="" frameborder="0" style="width: 80%; height: 800px; border: none; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);"></iframe>
+<section class="manuales-section" id="manuales-section" style="display: none; margin-top: 20px; position: absolute; left: 23%; top:20%">
+    <iframe id="manuales-iframe" src="" frameborder="0" style="width: 600px; height: 600px; border: none; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);"></iframe>
 </section>
 
-<section class="wf-section" id="wf-section" style="display: none; margin-top: 5px; position: absolute; left: 130px; top:50px; width: 80%; height: 800px;">
-    <iframe id="wf-iframe" src="" frameborder="0" style="width: 80%; height: 800px; border: none; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);"></iframe>
-</section>
 
 
 </main>

@@ -1,0 +1,24 @@
+[01-Oct-2024 03:52:01 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/prueba/prueba.php on line 91
+[01-Oct-2024 03:52:01 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/prueba/prueba.php on line 96
+[01-Oct-2024 03:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/prueba/prueba.php on line 96
+[01-Oct-2024 03:52:01 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/prueba/prueba.php on line 99
+[01-Oct-2024 03:52:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/ziriuson/public_html/pages/prueba/prueba.php:99
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/prueba/prueba.php on line 99
+[01-Oct-2024 03:52:04 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/prueba/prueba.php on line 91
+[01-Oct-2024 03:52:04 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/prueba/prueba.php on line 96
+[01-Oct-2024 03:52:04 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/prueba/prueba.php on line 96
+[01-Oct-2024 03:52:04 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/prueba/prueba.php on line 99
+[01-Oct-2024 03:52:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/ziriuson/public_html/pages/prueba/prueba.php:99
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/prueba/prueba.php on line 99
+[01-Oct-2024 03:52:59 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ziriuson/public_html/pages/prueba/prueba.php on line 91
+[01-Oct-2024 03:52:59 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/ziriuson/public_html/pages/prueba/prueba.php on line 96
+[01-Oct-2024 03:52:59 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/ziriuson/public_html/pages/prueba/prueba.php on line 96
+[01-Oct-2024 03:52:59 UTC] PHP Warning:  Undefined variable $conn in /home/ziriuson/public_html/pages/prueba/prueba.php on line 99
+[01-Oct-2024 03:52:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/ziriuson/public_html/pages/prueba/prueba.php:99
+Stack trace:
+#0 {main}
+  thrown in /home/ziriuson/public_html/pages/prueba/prueba.php on line 99
