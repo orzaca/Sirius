@@ -1,118 +1,159 @@
-✅ Core – Entities (los más usados en BI)
+✅ CORE API – ENTITIES
 
+/accounts – Cuentas maestras del sistema (estructura contractual u organizacional)
+/app-licenses – Licencias activas de módulos y aplicaciones
+/asset-files – Archivos asociados a activos
+/asset-type-files – Archivos por tipo de activo
+/client-users – Usuarios pertenecientes a un cliente
 /clients – Clientes y sitios operativos
-/employees – Empleados / guardias
-/positions – Puestos o posiciones operativas
-/regions – Regiones organizacionales
+/contacts – Contactos vinculados a clientes u otras entidades
 /departments – Departamentos internos
-/users – Usuarios del sistema
+/employee-extra-regions – Regiones adicionales asignadas a empleados
+/employee-roles – Roles asignados a empleados
+/employee-seniorities – Antigüedad del empleado
+/employees – Empleados / guardias
+/event-activities – Registro de actividades y eventos del sistema
+/geo-countries – Países
+/geo-country-subdivisions – Estados, provincias o divisiones territoriales
+/managed-permission-policies – Políticas de permisos gestionadas
+/me – Información del usuario autenticado
+/mobile-device-geo-locations – Posiciones GPS de dispositivos móviles
+/mobile-devices – Dispositivos móviles registrados
+/operation-center-escalation-policies – Políticas de escalamiento
+/operation-centers – Centros de operación
+/position-expense-reimbursements – Reembolsos asociados a posiciones
+/positions – Posiciones o puestos operativos
+/regions – Regiones organizacionales
+/role-access-policies – Políticas de acceso por rol
+/role-managed-permission-policies – Permisos gestionados por rol
+/role-permissions – Permisos individuales
 /roles – Roles del sistema
-/user-roles – Asignación de roles a usuarios
-/accounts – Cuentas maestras del sistema
-/units – Unidades operativas
-/contacts – Contactos asociados a clientes o entidades
-/vehicles – Vehículos
-/zones – Zonas operativas
-/zone-clients – Relación zonas–clientes
+/site-templates – Plantillas de sitios
+/site-vendors – Proveedores por sitio
+/system-exception-ticket-configurations – Configuración de tickets de excepción
+/system-exception-ticket-instructions – Instrucciones de tickets de excepción
+/system-exception-tickets – Tickets de excepciones del sistema
 /tenants – Información del tenant
+/units – Unidades organizacionales
+/user-roles – Relación usuario–rol
+/users – Usuarios del sistema
+/vehicles – Vehículos
 /work-sessions – Sesiones de trabajo (base para horas trabajadas)
+/zone-clients – Relación zonas–clientes
+/zone-templates – Plantillas de zonas
+/zones – Zonas operativas
 
 
-✅ Scheduling (muy importante para BI operativo)
+✅ SCHEDULING
 
-/shifts – Turnos programados
-/shift-logs – Historial y cambios de turnos
-/shift-templates – Plantillas de turnos
-/break-sessions – Pausas y descansos
+/break-rule-compliance-logs – Cumplimiento de reglas de descanso
+/break-rule-conditions – Condiciones para reglas de descanso
+/break-rule-exceptions – Excepciones a reglas de descanso
+/break-rule-relations – Relaciones entre reglas de descanso
+/break-rules – Reglas de descansos
+/break-sessions – Descansos tomados
+/open-shift-requests – Solicitudes de turnos abiertos
+/overtime-rule-items – Items de reglas de horas extra
 /overtime-rules – Reglas de horas extra
+/position-skills – Habilidades requeridas por posición
 /schedule-off-periods – Periodos no laborables
+/shift-logs – Historial y cambios de turnos
+/shift-proposal-queue-items – Propuestas de asignación de turnos
+/shift-template-settings – Configuración de plantillas
+/shift-templates – Plantillas de turnos
+/shifts – Turnos programados
 
 
-✅ Reporting (clave para analítica avanzada)
+✅ REPORTING
 
-/reports – Reportes generados
-/report-templates – Plantillas de reportes
-/report-fields – Campos utilizados en reportes
+/report-condition-set-actions – Acciones asociadas a condiciones
+/report-condition-sets – Conjuntos de condiciones
+/report-conditions – Condiciones de campos
+/report-fields – Campos disponibles en reportes
+/report-flag-categories – Categorías de flags/incidentes
+/report-flag-group-assignments – Asignación de flags a grupos
+/report-flag-groups – Grupos de flags
+/report-flag-template-field-group-fields – Campos por grupo de flags
+/report-flag-template-field-groups – Grupos de campos de flags
+/report-flag-template-fields – Campos configurables por flag
+/report-flag-templates – Plantillas de flags
+/report-flags – Flags/incidentes reportados
 /report-libraries – Librerías de campos
 /report-library-fields – Campos de librerías
-/report-flag-categories – Categorías de flags/incidentes
-/report-flags – Flags marcados en reportes
-/report-conditions – Condiciones de campos
-/report-template-fields – Campos por plantilla
+/report-template-feature-associations – Funcionalidades por plantilla
+/report-template-field-group-fields – Campos por grupo en plantilla
+/report-template-field-groups – Grupos de campos en plantilla
+/report-template-fields – Campos de la plantilla
+/report-templates – Plantillas de reportes
+/report-templates-category – Categorías de plantillas
+/reports – Reportes realizados
+/workflow-status-transition-forms – Formularios de transición de estado
 
 
-✅ Patrols / Mobile / Operaciones en campo
+✅ HR
 
-/patrol-recordings – Grabaciones de patrullaje
-/geo-fences – Geocercas
-/periodic-schedules – Programaciones periódicas
-/mobile-runsheets – Rutas de patrullaje móvil
-/mobile-runsheet-occurrences – Ejecuciones de rutas
-
-
-✅ HR (Recursos Humanos)
-
-/employment-profiles – Perfil laboral del empleado
-/employee-classes – Clases de empleado
-/employee-skills – Habilidades
-/skill-categories – Categorías de habilidades
-/employee-availabilities – Disponibilidad
+/employee-account-assignments – Asignación empleado–cuenta
+/employee-account-bans – Bloqueos de cuentas por empleado
+/employee-availabilities – Disponibilidad de empleados
+/employee-classes – Clases de empleados
+/employee-external-id-fields – Campos de IDs externos
+/employee-external-ids – Identificadores externos
+/employee-skills – Habilidades del empleado
+/employment-profiles – Perfil laboral
 /employment-termination-reasons – Motivos de terminación
+/skill-categories – Categorías de habilidades
+/skills – Habilidades
 
 
-✅ Leave Management (ausencias y licencias)
+✅ LEAVE MANAGEMENT
 
-/leave-requests – Solicitudes de ausencia
+/leave-accruals – Acumulación de licencias
 /leave-balances – Saldos de licencias
+/leave-management-adjustments – Ajustes de licencias
+/leave-policies – Políticas de licencias
+/leave-policy-carry-over-logs – Arrastre de licencias
+/leave-policy-items – Detalle de políticas
+/leave-request-logs – Historial de solicitudes
+/leave-request-vacated-shifts – Turnos liberados por licencia
+/leave-requests – Solicitudes de licencia
 /leave-types – Tipos de licencia
-/leave-policies – Políticas de licencia
 
 
-✅ Billing / Finance (para BI financiero)
+✅ BILLING
 
-/invoices – Facturas
-/invoice-line-taxes – Impuestos de factura
-/payments – Pagos recibidos
-/credit-memos – Notas crédito
-/contracts – Contratos
-/billable-items – Ítems facturables
 /bill-items – Detalle de facturación
+/billable-items – Ítems facturables
+/billing-adhoc-items – Cargos manuales
+/client-billing-settings – Configuración de facturación por cliente
+/client-invoice-split-settings – División de facturas
+/contract-occurrence-logs – Historial de contratos
+/contract-occurrences – Ejecuciones de contratos
+/contract-recurrent-fixed-services – Servicios fijos recurrentes
+/contract-service-models – Modelos de servicio
+/contracts – Contratos
+/credit-memos – Notas crédito
+/invoice-line-taxes – Impuestos por línea
+/invoices – Facturas
+/master-service-types – Tipos de servicio
+/payment-methods – Métodos de pago
+/payments – Pagos recibidos
+/price-tiers – Escalas de precios
+/revenue-processor-occurrences – Procesamiento de ingresos
+/task-price-tiers – Precios por tarea
+/tax-class-items – Items fiscales
+/tax-classes – Clases impositivas
 
 
-✅ Payroll (nómina)
+✅ PAYROLL
 
-/payroll-payruns – Corridas de nómina
-/payroll-payrun-items – Detalles de nómina
-/processed-payroll-payruns – Nómina procesada
+/employee-premium-assignments – Primas por empleado
+/payroll-adhocs – Ajustes manuales de nómina
 /payroll-codes – Códigos de nómina
-
-
-✅ Asset Management
-
-/assets – Activos
-/asset-types – Tipos de activos
-/asset-categories – Categorías
-/asset-transactions – Movimientos de activos
-/asset-reservations – Reservas de activos
-
-
-✅ Checkpoints / Tours
-
-/checkpoints – Puntos de control
-/checkpoint-scans – Escaneos
-/checkpoint-tours – Tours
-/checkpoint-tour-sessions – Sesiones de tour
-
-
-✅ Safety / Incidentes
-
-/hazard-alerts – Alertas de riesgo
-/event-activities – Eventos registrados
-
-
-✅ System / Logs (útil para auditoría)
-
-/user-login-logs – Logs de login
-/system-usage-logs – Uso del sistema
-/phone-call-logs – Llamadas
-/sms-logs – SMS enviados
+/payroll-deductions – Deducciones
+/payroll-payrun-items – Detalle de nómina
+/payroll-payruns – Corridas de nómina
+/payroll-schedule-occurrences – Ejecuciones de calendario
+/payroll-schedules – Calendarios de nómina
+/position-premium-assignments – Primas por posición
+/position-premiums – Tipos de primas
+/processed-payroll-payruns – Nómina procesada
