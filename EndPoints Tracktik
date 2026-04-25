@@ -1,0 +1,118 @@
+✅ Core – Entities (los más usados en BI)
+
+/clients – Clientes y sitios operativos
+/employees – Empleados / guardias
+/positions – Puestos o posiciones operativas
+/regions – Regiones organizacionales
+/departments – Departamentos internos
+/users – Usuarios del sistema
+/roles – Roles del sistema
+/user-roles – Asignación de roles a usuarios
+/accounts – Cuentas maestras del sistema
+/units – Unidades operativas
+/contacts – Contactos asociados a clientes o entidades
+/vehicles – Vehículos
+/zones – Zonas operativas
+/zone-clients – Relación zonas–clientes
+/tenants – Información del tenant
+/work-sessions – Sesiones de trabajo (base para horas trabajadas)
+
+
+✅ Scheduling (muy importante para BI operativo)
+
+/shifts – Turnos programados
+/shift-logs – Historial y cambios de turnos
+/shift-templates – Plantillas de turnos
+/break-sessions – Pausas y descansos
+/overtime-rules – Reglas de horas extra
+/schedule-off-periods – Periodos no laborables
+
+
+✅ Reporting (clave para analítica avanzada)
+
+/reports – Reportes generados
+/report-templates – Plantillas de reportes
+/report-fields – Campos utilizados en reportes
+/report-libraries – Librerías de campos
+/report-library-fields – Campos de librerías
+/report-flag-categories – Categorías de flags/incidentes
+/report-flags – Flags marcados en reportes
+/report-conditions – Condiciones de campos
+/report-template-fields – Campos por plantilla
+
+
+✅ Patrols / Mobile / Operaciones en campo
+
+/patrol-recordings – Grabaciones de patrullaje
+/geo-fences – Geocercas
+/periodic-schedules – Programaciones periódicas
+/mobile-runsheets – Rutas de patrullaje móvil
+/mobile-runsheet-occurrences – Ejecuciones de rutas
+
+
+✅ HR (Recursos Humanos)
+
+/employment-profiles – Perfil laboral del empleado
+/employee-classes – Clases de empleado
+/employee-skills – Habilidades
+/skill-categories – Categorías de habilidades
+/employee-availabilities – Disponibilidad
+/employment-termination-reasons – Motivos de terminación
+
+
+✅ Leave Management (ausencias y licencias)
+
+/leave-requests – Solicitudes de ausencia
+/leave-balances – Saldos de licencias
+/leave-types – Tipos de licencia
+/leave-policies – Políticas de licencia
+
+
+✅ Billing / Finance (para BI financiero)
+
+/invoices – Facturas
+/invoice-line-taxes – Impuestos de factura
+/payments – Pagos recibidos
+/credit-memos – Notas crédito
+/contracts – Contratos
+/billable-items – Ítems facturables
+/bill-items – Detalle de facturación
+
+
+✅ Payroll (nómina)
+
+/payroll-payruns – Corridas de nómina
+/payroll-payrun-items – Detalles de nómina
+/processed-payroll-payruns – Nómina procesada
+/payroll-codes – Códigos de nómina
+
+
+✅ Asset Management
+
+/assets – Activos
+/asset-types – Tipos de activos
+/asset-categories – Categorías
+/asset-transactions – Movimientos de activos
+/asset-reservations – Reservas de activos
+
+
+✅ Checkpoints / Tours
+
+/checkpoints – Puntos de control
+/checkpoint-scans – Escaneos
+/checkpoint-tours – Tours
+/checkpoint-tour-sessions – Sesiones de tour
+
+
+✅ Safety / Incidentes
+
+/hazard-alerts – Alertas de riesgo
+/event-activities – Eventos registrados
+
+
+✅ System / Logs (útil para auditoría)
+
+/user-login-logs – Logs de login
+/system-usage-logs – Uso del sistema
+/phone-call-logs – Llamadas
+/sms-logs – SMS enviados
